@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const run = require("gulp-run-command").default;
 
 const HOME_DIR  = "../../";
-const WATCH_DIR = "./keymap/user/*";
+const WATCH_DIR = "./keymap/user/**";
 
 const BUILD_CMD = `kmonad ./keymap/user/molleweide/mbp.kbd -d`;
 
@@ -17,17 +17,15 @@ gulp.task(
   gulp.series(
     run(BUILD_CMD, {
       ignoreErrors: true,
-    }),
-    // "copy-mollew",
+    })
   )
 );
 
 gulp.task(
   "watch",
-  gulp.series("build")
-  // gulp.series("build", () => {
-  //   gulp.watch(WATCH_DIR, gulp.series("build"));
-  // })
+  gulp.series("build", () => {
+    gulp.watch(WATCH_DIR, gulp.series("build"));
+  })
 );
 
 gulp.task("default", gulp.series("watch"));

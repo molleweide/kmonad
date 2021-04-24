@@ -8,14 +8,8 @@
 
 ;; TODO
 
-- create symbols layer
+- add symbols to num layer
 - add thumb tab / enter
-- fork
-  + gulp flow
-    copy npm from KEcomplex
-- tmuxinator
-  create project under keys.yaml
-- autocmd .kbd filetype
 
   -------------------------------------------------------------------------- |#
 
