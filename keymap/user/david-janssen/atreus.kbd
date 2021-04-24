@@ -97,7 +97,7 @@
   ;; Every-day typing mode --------------------------------------------------
 
   ;; Compound switching and tapping buttons
-  L    (tap-hold-next 500 tab @num)
+  L    (tap-next 500 tab @num)
   R    (tap-next esc @sym)
 
   ;; Gaming mode layers -----------------------------------------------------
