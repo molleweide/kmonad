@@ -8,10 +8,6 @@
 
 ;; TODO
 
-- why isn't homerow hyper workig?
-- what is difference btw
-  + tap-next
-  + tap-next-release
 - thumb modifiers
 
   -------------------------------------------------------------------------- |#
@@ -34,14 +30,14 @@
 
 
   ;; HOMEROW
-  a (tap-next-release a lctl)
-  s (tap-next-release s lsft)
-  d (tap-next-release d lalt)
-  f (tap-next-release f lmet)
-  j (tap-next-release j rmet)
-  k (tap-next-release k ralt)
-  l (tap-next-release l rsft)
-  ; (tap-next-release ; rctl)
+  a (tap-next a lctl)
+  s (tap-next s lsft)
+  d (tap-next d lalt)
+  f (tap-next f lmet)
+  j (tap-next j rmet)
+  k (tap-next k ralt)
+  l (tap-next l rsft)
+  ; (tap-next ; rctl)
 
   ;; BOTTOM
   lnu (tap-next x @num)
