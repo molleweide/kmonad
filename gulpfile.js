@@ -4,7 +4,7 @@ const run = require("gulp-run-command").default;
 const HOME_DIR  = "../../";
 const WATCH_DIR = "./keymap/user/*";
 
-const BUILD_CMD = `kmonad ./keymap/user/molleweide/mbp.kbd `;
+const BUILD_CMD = `kmonad ./keymap/user/molleweide/mbp.kbd -d`;
 
 // test if i can do only mollew*
 // gulp.task('copy-mollew', function() {

@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/david-hanssen/kmonad/issues"
   },
-  "homepage": "https://github.com/david-hanssen/kmonad#readme"
+  "homepage": "https://github.com/david-hanssen/kmonad#readme",
+  "directories": {
+    "doc": "doc"
+  },
+  "keywords": [
+    "keymapper"
+  ]
 }
