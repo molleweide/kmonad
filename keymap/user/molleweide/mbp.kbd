@@ -11,13 +11,11 @@
 - create symbols layer
 - add thumb tab / enter
 - fork
-  + dotfiles script > where karabiner is installed??
-      `fn install kmonad() {}`
-  + molleweide branch / create add my own keymap to the list of keymaps.
   + gulp flow
     copy npm from KEcomplex
 - tmuxinator
   create project under keys.yaml
+- autocmd .kbd filetype
 
   -------------------------------------------------------------------------- |#
 
