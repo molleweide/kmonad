@@ -9,6 +9,7 @@
 ;; TODO
 
 - thumb modifiers
+- homerow gh toggle layers
 
   -------------------------------------------------------------------------- |#
 
@@ -18,7 +19,7 @@
        1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
-  grv  z    x    c    v    b    bspc n    m    ,    .    /    rsft up
+  lsft grv  z    x    c    v    b    n    m    ,    .    /    rsft up
   fn   lctl lalt lmet           spc            rmet ralt left down rght
 )
 
@@ -52,7 +53,7 @@
        _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   esc  @a   @s   @d   @f   _         _    @j   @k   @l   @;   _    _
-  _    _    @lnu _    _    _    _    _    _    _    @rnu _    _    _
+  grv  z    @lnu c    v    b    bspc _    _    _    @rnu _    _    _
   XX   XX   @num tab            @spc           ret  @num _    _    _
 )
 
