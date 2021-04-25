@@ -8,8 +8,16 @@
 
 ;; TODO
 
-- thumb modifiers
+
 - homerow gh toggle layers
+
+- if press `paragraph` key >> restart kmo
+
+- force only 5by3 layout
+
+- thumbs
+  + hold down space > put edit commands on homerow
+   tab/enter/spc/bspc more??
 
   -------------------------------------------------------------------------- |#
 
