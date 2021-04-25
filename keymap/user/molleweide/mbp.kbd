@@ -15,10 +15,10 @@
 
 (defsrc
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
-  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+       1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
-  lsft grv  z    x    c    v    b    n    m    ,    .    /    rsft up
+  grv  z    x    c    v    b    bspc n    m    ,    .    /    rsft up
   fn   lctl lalt lmet           spc            rmet ralt left down rght
 )
 
@@ -49,16 +49,16 @@
 
 (deflayer on
   _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
-  @off _    _    _    _    _    _    _    _    _    _    _    _    _
+       _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  esc  @a   @s   @d   @f   g    h    @j   @k   @l   @;   _    _
-  grv  z    @lnu c    v    b    bspc n    m    ,    @rnu /    XX   _
+  esc  @a   @s   @d   @f   _         _    @j   @k   @l   @;   _    _
+  _    _    @lnu _    _    _    _    _    _    _    @rnu _    _    _
   XX   XX   @num tab            @spc           ret  @num _    _    _
 )
 
 (deflayer function
   _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+       _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
@@ -67,7 +67,7 @@
 
 (deflayer numbers
   _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+       _    _    _    _    _    _    _    _    _    _    _    _    _
   _    !    @    {    }    |    '    7    8    9    =    _    _    _
   _    #    $    \(   \)   `    0    4    5    6    +    _    _
   &    ^    %    [    ]    ~    _    *    1    2    3    -    _    _
@@ -78,10 +78,9 @@
 
 (deflayer off
   _    _    _    _    _    _    _    _    _    _    _    _    _
-  @on  _    _    _    _    _    _    _    _    _    _    _    _    _
+       _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   @on  _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-
   _    _    _    _              _              _    _    _    _    _
 )
