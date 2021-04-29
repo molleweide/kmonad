@@ -6,52 +6,27 @@
 
 #| --------------------------------------------------------------------------
 
+
+;; (deflayer starter
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _
+;;        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+;;   XX   _    _    _    _    _         _    _    _    _    _    XX   XX   XX
+;;   XX   _    _    _    _    _         _    _    _    _    _    XX   XX
+;;   XX   _    _    _    _    _    b    _    _    _    _    _    XX   XX
+;;   XX   XX   _    _              _              _    _    XX   XX   XX
+;; )
+
 ;; TODO
 
-- !!!! do i have to put l/r or can i just go with the one
-  that works.
-    ask on reddit <<<
-    do I need to care about whether I am using
-    l meta key or r meta key. i have noticed that
-    sometimes rmeta does not work but usually always
-    lmeta. why is this?? convention or what is the general
-    theme
-
-- numbers layer
-  should thumbs send ctrl??
-  spc???
-
 - if press `paragraph` key >> restart kmo
-
-- force only 5by3 layout
-
-- thumbs
-  + hold down space > put edit commands on homerow
-   tab/enter/spc/bspc more??
-
-- if hold not released >> don't output char..
 
 - mouse keys
   ,https://github.com/david-janssen/kmonad/issues/150'
 
-- || SPACELAYER ||
-  use space hold to enter edit keys
-    which can make it
-  super easy to handle and write on a keyboard that has single
-  and double space.
-    this would make mappings identical on all types of keyboards.
+- clean midi layer
 
-    > also add arrow keys to space layer??
+- always get back to base layer
 
-- make my qmk layout fit into one half size view. it has to be
-around same size as kmonad so I can align them up and make sure
-they are the same. so tht my layout is the same where ever I am.
-you have to be a bit more precise in your typing but you can achieve
-things super fast by really doing things smart.
-
-- hold lag delay as in QMK.
-
-- create clean layer > midi keys
 
 
   -------------------------------------------------------------------------- |#
@@ -101,30 +76,31 @@ things super fast by really doing things smart.
 
 (deflayer on
   _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
-       _    _    _    _    _    _    _    _    _    _    _    _    _
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   _    _    @lnT _    _    _    _    @rnT _    _    XX   XX   XX
   XX   @a   @s   @d   @f   _         _    @j   @k   @l   @;   XX   XX
   XX   z    @lnu c    v    b    bspc _    _    _    @rnu _    XX   XX
   XX   XX   @num @tb            @spc           @rt  @num XX   XX   XX
 )
 
+(deflayer numbers
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+       _    _    _    _    _    _    _    _    _    _    _    _    _
+  XX   !    @    {    }    \         *    7    8    9    &    _    _    _
+  XX   #    $    \(   \)   `         0    4    5    6    =    _    _
+  XX   ^    %    [    ]    ~    _    '    1    2    3    -    _    _
+  _    _    _    lctl           lsft           lctl _    _    _    _
+)
+
 (deflayer function
   _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
        _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    lsft lmet _    _    _    _    rmet rsft _    _    _    _
-  _    _    tab  ret  bspc esc       left down up   rght _    _    _
+  _    _    tab  bspc esc  _         left down up   rght _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    esc            _              esc  _    _    _    _
 )
 
-(deflayer numbers
-  _    _    _    _    _    _    _    _    _    _    _    _    _
-       _    _    _    _    _    _    _    _    _    _    _    _    _
-  XX   !    @    {    }    |    *    7    8    9    &    _    _    _
-  XX   #    $    \(   \)   `         0    4    5    6    =    \    _
-  XX   ^    %    [    ]    ~    _    '    1    2    3    -    _    _
-  _    _    _    lsft           lctl           lsft _    _    _    _
-)
 
 (defalias on (layer-switch on))
 
