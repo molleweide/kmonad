@@ -6,7 +6,6 @@
 
 #| --------------------------------------------------------------------------
 
-
 ;; (deflayer starter
 ;;   _    _    _    _    _    _    _    _    _    _    _    _    _
 ;;        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
@@ -18,19 +17,18 @@
 
 ;; TODO
 
-- if press `paragraph` key >> restart kmo
-
-- mouse keys
-  ,https://github.com/david-janssen/kmonad/issues/150'
-
+- double tap space to send esc ?? use hold layer to be able to send multiple spacebars??
+- spacelayer > make NOT permissive
+- if press `paragraph` key >> restart kmo ?!
+- mouse keys https://github.com/david-janssen/kmonad/issues/150'
 - clean midi layer
-
 - always get back to base layer
+- put shift on symblayer index held down.
 
+;; NOT WORKING
 
-
+homerow alt > spacebar left arrow (h)
   -------------------------------------------------------------------------- |#
-
 
 (defsrc
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
@@ -41,66 +39,98 @@
   fn   lctl lalt lmet           spc            rmet ralt left down rght
 )
 
+;;#| ---------------------------------------------------------------
+;;
+;; BASE LAYER
+;;
+;; - middle hold space >> send esc??
+;; - top layer >> hold enter symbols
+;; - bottom layer >> tap enter symbols
+;;--------------------------------------------------------------- |#
+
 (defalias
   fn (around (layer-toggle function) fn)
-  ;; symbols_hold (around (layer-toggle numbers))
   off (layer-switch off)
   num (layer-toggle numbers)
-
-  ;; TOP  ROW
-  lnT (tap-hold-next-release 2000 e @num)
-  rnT (tap-hold-next-release 2000 i @num)
-
+  ;; TOP ROW
+  lnT (tap-hold-next-release 500 e @num)
+  rnT (tap-hold-next-release 500 i @num)
   ;; HOME ROW
-  a (tap-hold-next-release 2000 a lctl)
-  s (tap-hold-next-release 2000 s lsft)
-  d (tap-hold-next-release 2000 d lalt)
-  f (tap-hold-next-release 2000 f lmet)
-  ;; g (tap-next g lmet)
-  ;; h (tap-next h lmet)
-  j (tap-hold-next-release 2000 j lmet)
-  k (tap-hold-next-release 2000 k lalt)
-  l (tap-hold-next-release 2000 l lsft)
-  ; (tap-hold-next-release 2000 ; lctl)
-
+  a (tap-hold-next-release 500 a lctl)
+  s (tap-hold-next-release 500 s lsft)
+  d (tap-hold-next-release 500 d lalt)
+  f (tap-hold-next-release 500 f lmet)
+  j (tap-hold-next-release 500 j lmet)
+  k (tap-hold-next-release 500 k lalt)
+  l (tap-hold-next-release 500 l lsft)
+  ; (tap-hold-next-release 500 ; lctl)
   ;; BOTTOM ROW
-  lnu (tap-hold-next-release 2000 x @num)
-  rnu (tap-hold-next-release 2000 . @num)
-
+  lnu (tap-hold-next-release 500 x @num)
+  rnu (tap-hold-next-release 500 . @num)
   ;; THUMBS
-  tb  (tap-hold-next-release 2000 tab lmet)
-  spc (tap-hold-next-release 2000 spc @fn)
-  rt  (tap-hold-next-release 2000 ret lmet)
-
+  tb  (tap-hold-next-release 500 tab lmet)
+  spc (tap-hold-next-release 500 spc @fn)
+  rt  (tap-hold-next-release 500 ret lmet)
 )
 
 (deflayer on
   _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   _    _    @lnT _    _    _    _    @rnT _    _    XX   XX   XX
+  XX   _    _    @lnT _    _         _    _    @rnT _    _    XX   XX   XX
   XX   @a   @s   @d   @f   _         _    @j   @k   @l   @;   XX   XX
   XX   z    @lnu c    v    b    bspc _    _    _    @rnu _    XX   XX
   XX   XX   @num @tb            @spc           @rt  @num XX   XX   XX
 )
 
+
+;;#| ---------------------------------------------------------------
+;;
+;; SYMBOLS LAYER
+;;
+;;--------------------------------------------------------------- |#
+
+(defalias
+  ;; TOP ROW
+  ;; HOME ROW
+  syP (tap-hold-next-release 500 \) lsft)
+  sy4 (tap-hold-next-release 500 4 lsft)
+  ;; BOTTOM ROW
+)
+
 (deflayer numbers
   _    _    _    _    _    _    _    _    _    _    _    _    _
        _    _    _    _    _    _    _    _    _    _    _    _    _
-  XX   !    @    {    }    \         *    7    8    9    &    _    _    _
-  XX   #    $    \(   \)   `         0    4    5    6    =    _    _
-  XX   ^    %    [    ]    ~    _    '    1    2    3    -    _    _
+  _    !    @    {    }    \         *    7    8    9    &    _    _    _
+  _    #    $    \(   @syP `         0    @sy4 5    6    =    _    _
+  _    ^    %    [    ]    ~    _    '    1    2    3    -    _    _
   _    _    _    lctl           lsft           lctl _    _    _    _
 )
 
+;;#| ---------------------------------------------------------------
+;;
+;; SPACEBAR LAYER
+;;
+;;--------------------------------------------------------------- |#
+
+(defalias
+  ;; TOP ROW
+  ;; HOME ROW
+  ;; BOTTOM ROW
+)
 (deflayer function
   _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
        _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    lsft lmet _    _    _    _    rmet rsft _    _    _    _
+  _    _    ret  lmet _    _         _    _    lmet ret  _    _    _    _
   _    _    tab  bspc esc  ret       left down up   rght _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    ret  _    ret  _    _    _    _    _    _
   _    _    _    esc            _              esc  _    _    _    _
 )
 
+;;#| ---------------------------------------------------------------
+;;
+;; UTILS
+;;
+;;--------------------------------------------------------------- |#
 
 (defalias on (layer-switch on))
 
