@@ -6,28 +6,54 @@
 
 #| --------------------------------------------------------------------------
 
+;; APPLE MACBOOK KEYBOARD
+
 ;; (deflayer starter
 ;;   _    _    _    _    _    _    _    _    _    _    _    _    _
 ;;        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-;;   XX   _    _    _    _    _         _    _    _    _    _    XX   XX   XX
+;;   XX   q    _    _    _    t         y    _    _    _    p    XX   XX   XX
 ;;   XX   _    _    _    _    _         _    _    _    _    _    XX   XX
-;;   XX   _    _    _    _    _    b    _    _    _    _    _    XX   XX
-;;   XX   XX   _    _              _              _    _    XX   XX   XX
+;;   XX   z    _    _    _    b    _    n    _    _    _    /    XX   XX
+;;   XX   XX   _    tab            spc            ret  _    XX   XX   XX
 ;; )
+
+;; DESIGN
+
+;; - z shift
+  move all `zxcvb` one step left to achieve a pseudo ortho feel
+
+;; - laptop first thumb keys
+  i want my layouts to be absolutely identical. i do a lot of music and
+  I have to be sure that my bindings are super mega tight. Whenever
+  I introduce specific keyboard stuff I always try to access the specific
+  fucntionality on the wrong keyboard and I just cannot allow this to happen.
+  Therefore my layout is designed with a big spacebar in mind so that I always
+  know that I am bullet proof when I jump back and forth between laptop
+  and various mechanicals.
+  My final design is to think in terms of a 5 by 3 layout with a big spacebar.
+  I achieve this on my split keybs by setting both left and right thumb keys to
+  space.
 
 ;; TODO
 
 - double tap space to send esc ?? use hold layer to be able to send multiple spacebars??
 - spacelayer > make NOT permissive
-- if press `paragraph` key >> restart kmo ?!
+- if press `paragraph` key >> restart kmo ?! hmm??
+    hacky way to get around crash
 - mouse keys https://github.com/david-janssen/kmonad/issues/150'
-- clean midi layer
+- clean MIDI layer
 - always get back to base layer
-- put shift on symblayer index held down.
+- todo macros layer
 
 ;; NOT WORKING
 
 homerow alt > spacebar left arrow (h)
+homerow lmet > spacebar tab (h)
+
+there seems to be some kind of general pattern where you cannot
+use a modifier from one layer and then use a special key in next
+hold layer with some special key combos. it works perfectly
+between base and symbols layer, hmmm but not with space layer.
   -------------------------------------------------------------------------- |#
 
 (defsrc
@@ -49,12 +75,15 @@ homerow alt > spacebar left arrow (h)
 ;;--------------------------------------------------------------- |#
 
 (defalias
+
   fn (around (layer-toggle function) fn)
   off (layer-switch off)
   num (layer-toggle numbers)
+
   ;; TOP ROW
   lnT (tap-hold-next-release 500 e @num)
   rnT (tap-hold-next-release 500 i @num)
+
   ;; HOME ROW
   a (tap-hold-next-release 500 a lctl)
   s (tap-hold-next-release 500 s lsft)
@@ -64,9 +93,11 @@ homerow alt > spacebar left arrow (h)
   k (tap-hold-next-release 500 k lalt)
   l (tap-hold-next-release 500 l lsft)
   ; (tap-hold-next-release 500 ; lctl)
+
   ;; BOTTOM ROW
   lnu (tap-hold-next-release 500 x @num)
   rnu (tap-hold-next-release 500 . @num)
+
   ;; THUMBS
   tb  (tap-hold-next-release 500 tab lmet)
   spc (tap-hold-next-release 500 spc @fn)
@@ -90,11 +121,8 @@ homerow alt > spacebar left arrow (h)
 ;;--------------------------------------------------------------- |#
 
 (defalias
-  ;; TOP ROW
-  ;; HOME ROW
   syP (tap-hold-next-release 500 \) lsft)
   sy4 (tap-hold-next-release 500 4 lsft)
-  ;; BOTTOM ROW
 )
 
 (deflayer numbers
@@ -112,14 +140,9 @@ homerow alt > spacebar left arrow (h)
 ;;
 ;;--------------------------------------------------------------- |#
 
-(defalias
-  ;; TOP ROW
-  ;; HOME ROW
-  ;; BOTTOM ROW
-)
 (deflayer function
   _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
-       _    _    _    _    _    _    _    _    _    _    _    _    _
+       f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
   _    _    ret  lmet _    _         _    _    lmet ret  _    _    _    _
   _    _    tab  bspc esc  ret       left down up   rght _    _    _
   _    _    _    _    _    ret  _    ret  _    _    _    _    _    _
