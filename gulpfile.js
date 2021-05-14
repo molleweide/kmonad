@@ -4,20 +4,23 @@ const run = require("gulp-run-command").default;
 const HOME_DIR  = "../../";
 const WATCH_DIR = "./keymap/user/**";
 
-const BUILD_CMD = `kmonad ./keymap/user/molleweide/mbp.kbd -d`;
-
-// test if i can do only mollew*
-// gulp.task('copy-mollew', function() {
-//   return gulp.src(['./public/json/molleweide*.json', './public/json/molleweide_no_dual_keys.json'])
-//     .pipe(gulp.dest(`${HOME_DIR}.config/karabiner/assets/complex_modifications`));
-// });
+const BUILD_MBP = `kmonad ./keymap/user/molleweide/mbp.kbd -d`;
+const BUILD_EZ  = `kmonad ./keymap/user/molleweide/ez.kbd -d`;
 
 gulp.task(
   "build",
   gulp.series(
-    run(BUILD_CMD, {
+
+    // macbook pro
+    run(BUILD_MBP, {
+      ignoreErrors: true,
+    }),
+
+    // ergodox ez
+    run(BUILD_EZ, {
       ignoreErrors: true,
     })
+
   )
 );
 

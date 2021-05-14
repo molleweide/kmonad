@@ -1,5 +1,5 @@
 (defcfg
-  input (iokit-name)
+  input (iokit-name "Apple Internal Keyboard / Trackpad")
   output (kext)
   fallthrough true
 )
@@ -36,6 +36,7 @@
 
 ;; TODO
 
+- mv sym layer to index finger bottom
 - double tap space to send esc ?? use hold layer to be able to send multiple spacebars??
 - spacelayer > make NOT permissive
 - if press `paragraph` key >> restart kmo ?! hmm??
@@ -54,6 +55,8 @@ there seems to be some kind of general pattern where you cannot
 use a modifier from one layer and then use a special key in next
 hold layer with some special key combos. it works perfectly
 between base and symbols layer, hmmm but not with space layer.
+
+also alterna file is not working sometimes
   -------------------------------------------------------------------------- |#
 
 (defsrc
@@ -69,16 +72,18 @@ between base and symbols layer, hmmm but not with space layer.
 ;;
 ;; BASE LAYER
 ;;
-;; - middle hold space >> send esc??
-;; - top layer >> hold enter symbols
-;; - bottom layer >> tap enter symbols
 ;;--------------------------------------------------------------- |#
 
 (defalias
 
-  fn (around (layer-toggle function) fn)
+  ;; back to base layer (on)
+  bz  (layer-switch on)
+
+
+  ;; fn (around (layer-toggle spacelayer) fn)
   off (layer-switch off)
   num (layer-toggle numbers)
+  Lspace (layer-toggle layerspace)
 
   ;; TOP ROW
   lnT (tap-hold-next-release 500 e @num)
@@ -100,7 +105,7 @@ between base and symbols layer, hmmm but not with space layer.
 
   ;; THUMBS
   tb  (tap-hold-next-release 500 tab lmet)
-  spc (tap-hold-next-release 500 spc @fn)
+  spc (tap-hold-next-release 500 spc @Lspace)
   rt  (tap-hold-next-release 500 ret lmet)
 )
 
@@ -109,7 +114,7 @@ between base and symbols layer, hmmm but not with space layer.
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   _    _    @lnT _    _         _    _    @rnT _    _    XX   XX   XX
   XX   @a   @s   @d   @f   _         _    @j   @k   @l   @;   XX   XX
-  XX   z    @lnu c    v    b    bspc _    _    _    @rnu _    XX   XX
+  XX   z    @lnu c    v    b    XX   _    _    _    @rnu _    XX   XX
   XX   XX   @num @tb            @spc           @rt  @num XX   XX   XX
 )
 
@@ -127,10 +132,10 @@ between base and symbols layer, hmmm but not with space layer.
 
 (deflayer numbers
   _    _    _    _    _    _    _    _    _    _    _    _    _
-       _    _    _    _    _    _    _    _    _    _    _    _    _
+       _    _    _    _    _    @bz  _    _    _    _    _    _    _
   _    !    @    {    }    \         *    7    8    9    &    _    _    _
   _    #    $    \(   @syP `         0    @sy4 5    6    =    _    _
-  _    ^    %    [    ]    ~    _    '    1    2    3    -    _    _
+  _    ^    %    [    ]    ~    @bz  '    1    2    3    -    _    _
   _    _    _    lctl           lsft           lctl _    _    _    _
 )
 
@@ -140,12 +145,12 @@ between base and symbols layer, hmmm but not with space layer.
 ;;
 ;;--------------------------------------------------------------- |#
 
-(deflayer function
-  _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+(deflayer layerspace
+  _    _    _    _    _    _    _    _    _    _    _    _    _
        f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
-  _    _    ret  lmet _    _         _    _    lmet ret  _    _    _    _
-  _    _    tab  bspc esc  ret       left down up   rght _    _    _
-  _    _    _    _    _    ret  _    ret  _    _    _    _    _    _
+  _    _    _    ret  _    _         _    _    ret  _    _    _    _    _
+  _    _    tab  bspc esc  _         left down up   rght _    _    _
+  _    _    _    _    ret  _    @bz  _    ret  _    _    _    _    _
   _    _    _    esc            _              esc  _    _    _    _
 )
 
