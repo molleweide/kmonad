@@ -76,8 +76,8 @@ also alterna file is not working sometimes
 
 (defalias
 
-  ;; back to base layer (on)
-  bz  (layer-switch on)
+  ;; back to base layer (base)
+  bz  (layer-switch base)
 
 
   ;; fn (around (layer-toggle spacelayer) fn)
@@ -109,7 +109,7 @@ also alterna file is not working sometimes
   rt  (tap-hold-next-release 500 ret lmet)
 )
 
-(deflayer on
+(deflayer base
   _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   _    _    @lnT _    _         _    _    @rnT _    _    XX   XX   XX
@@ -160,7 +160,7 @@ also alterna file is not working sometimes
 ;;
 ;;--------------------------------------------------------------- |#
 
-(defalias on (layer-switch on))
+(defalias on (layer-switch base))
 
 (deflayer off
   _    _    _    _    _    _    _    _    _    _    _    _    _
