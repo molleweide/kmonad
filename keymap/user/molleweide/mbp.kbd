@@ -82,7 +82,7 @@ also alterna file is not working sometimes
 
   ;; fn (around (layer-toggle spacelayer) fn)
   off (layer-switch off)
-  num (layer-toggle numbers)
+  num (layer-toggle symbols)
   Lspace (layer-toggle layerspace)
 
   ;; TOP ROW
@@ -130,7 +130,7 @@ also alterna file is not working sometimes
   sy4 (tap-hold-next-release 500 4 lsft)
 )
 
-(deflayer numbers
+(deflayer symbols
   _    _    _    _    _    _    _    _    _    _    _    _    _
        _    _    _    _    _    @bz  _    _    _    _    _    _    _
   _    !    @    {    }    \         *    7    8    9    &    _    _    _

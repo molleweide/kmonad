@@ -29,7 +29,7 @@
   bz  (layer-switch on)
 
   ;; fn (around (layer-toggle function) fn)
-  num (layer-toggle numbers)
+  num (layer-toggle symbols)
   Lspace (layer-toggle layerspace)
 
   ;; TOP ROW
@@ -75,7 +75,7 @@
   syP (tap-hold-next-release 500 \) lsft)
   sy4 (tap-hold-next-release 500 4 lsft)
 )
-(deflayer numbers
+(deflayer symbols
   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   @bz
   XX   !    @    {    }    \    XX   XX   *    7    8    9    &    XX
   XX   #    $    \(   @syP `              0    @sy4 5    6    =    XX
