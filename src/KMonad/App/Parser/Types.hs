@@ -1,5 +1,5 @@
 {-|
-Module      : KMonad.Args.Types
+Module      : KMonad.App.Parser.Types
 Description : The basic types of configuration parsing.
 Copyright   : (c) David Janssen, 2019
 License     : MIT
@@ -9,7 +9,7 @@ Stability   : experimental
 Portability : non-portable (MPTC with FD, FFI to Linux-only c-code)
 
 -}
-module KMonad.Args.Types
+module KMonad.App.Parser.Types
   ( -- * $bsc
     Parser
   , PErrors(..)
@@ -35,10 +35,6 @@ module KMonad.Args.Types
     -- * $lenses
   , AsKExpr(..)
   , AsDefSetting(..)
-
-    -- * Reexports
-  , module Text.Megaparsec
-  , module Text.Megaparsec.Char
 ) where
 
 
@@ -91,8 +87,7 @@ data DefButton
   | KAroundNextSingle DefButton            -- ^ Surround a future button
   | KMultiTap [(Int, DefButton)] DefButton -- ^ Do things depending on tap-count
   | KAround DefButton DefButton            -- ^ Wrap 1 button around another
-  | KTapMacro [DefButton] (Maybe Int)
-    -- ^ Sequence of buttons to tap, possible delay between each press
+  | KTapMacro [DefButton]                  -- ^ Sequence of buttons to tap
   | KComposeSeq [DefButton]                -- ^ Compose-key sequence
   | KPause Milliseconds                    -- ^ Pause for a period of time
   | KLayerDelay Int LayerTag               -- ^ Switch to a layer for a period of time
@@ -107,10 +102,6 @@ data DefButton
 
 --------------------------------------------------------------------------------
 -- $cfg
---
--- The Cfg token that can be extracted from a config-text without ever enterring
--- IO. This will then directly be translated to a DaemonCfg
---
 
 -- | The 'CfgToken' contains all the data needed to construct an
 -- 'KMonad.App.AppCfg'.
@@ -172,7 +163,6 @@ data DefSetting
   | SInitStr     Text
   | SFallThrough Bool
   | SAllowCmd    Bool
-  | SCmpSeqDelay Int
   deriving Show
 makeClassyPrisms ''DefSetting
 
@@ -202,7 +192,3 @@ data KExpr
   | KDefAlias DefAlias
   deriving Show
 makeClassyPrisms ''KExpr
-
-
---------------------------------------------------------------------------------
--- $act
