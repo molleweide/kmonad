@@ -8,15 +8,16 @@
 ;; ERGODOX EZ
   -------------------------------------------------------------------------- |#
 
+  ;; _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
 (defsrc
-  esc  1    2    3    4    5    lp   mctl 6    7    8    9    0    esc
-  -    q    w    e    r    t    vold volu y    u    i    o    p    \
+  esc  1    2    3    4    5    mute mute 6    7    8    9    0    bspc
+  -    q    w    e    r    t    mute mute y    u    i    o    p    \
   esc  a    s    d    f    g              h    j    k    l    ;    '
-  lsft z    x    c    v    b    bspc bspc n    m    ,    .    /    lsft
-  lmet lctl lalt tab  spc                      spc  ret  lalt lctl lmet
-                           brdn prev next brup
-                                vold volu
-                      lmet lalt lctl lctl lalt lmet
+  lsft z    x    c    v    b    mute mute n    m    ,    .    /    lsft
+  lctl lalt lmet tab  spc                      spc  ret  lmet lalt lctl
+                           mute mute mute mute
+                                mute mute
+                      mute mute mute mute mute mute
 )
 
 ;;#| ---------------------------------------------------------------
