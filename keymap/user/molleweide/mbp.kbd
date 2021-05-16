@@ -17,26 +17,10 @@
 ;;   XX   XX   _    tab            spc            ret  _    XX   XX   XX
 ;; )
 
-;; DESIGN
-
-;; - z shift
-  move all `zxcvb` one step left to achieve a pseudo ortho feel
-
-;; - laptop first thumb keys
-  i want my layouts to be absolutely identical. i do a lot of music and
-  I have to be sure that my bindings are super mega tight. Whenever
-  I introduce specific keyboard stuff I always try to access the specific
-  fucntionality on the wrong keyboard and I just cannot allow this to happen.
-  Therefore my layout is designed with a big spacebar in mind so that I always
-  know that I am bullet proof when I jump back and forth between laptop
-  and various mechanicals.
-  My final design is to think in terms of a 5 by 3 layout with a big spacebar.
-  I achieve this on my split keybs by setting both left and right thumb keys to
-  space.
-
 ;; TODO
 
 - mv sym layer to index finger bottom
+    this could be super nice actually
 - double tap space to send esc ?? use hold layer to be able to send multiple spacebars??
 - spacelayer > make NOT permissive
 - if press `paragraph` key >> restart kmo ?! hmm??
