@@ -1,0 +1,1111 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/hjalmarjakobsson/code/kmonad/src/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+Action	KMonad/Model/Action.hs	/^newtype Action = Action { runAction :: AnyK ()}$/;"	c
+Action	KMonad/Model/Action.hs	/^newtype Action = Action { runAction :: AnyK ()}$/;"	t
+Aliases	KMonad/App/Parser/TokenJoiner.hs	/^type Aliases = M.HashMap Text Button$/;"	t
+Aliases	KMonad/Args/Joiner.hs	/^type Aliases = M.HashMap Text Button$/;"	t
+AnyK	KMonad/Model/Action.hs	/^type AnyK a = forall m. MonadK m => m a$/;"	t
+AppCfg	KMonad/App/Types.hs	/^data AppCfg = AppCfg$/;"	c
+AppCfg	KMonad/App/Types.hs	/^data AppCfg = AppCfg$/;"	t
+AppEnv	KMonad/App/Types.hs	/^data AppEnv = AppEnv$/;"	c
+AppEnv	KMonad/App/Types.hs	/^data AppEnv = AppEnv$/;"	t
+BEnv	KMonad/Model/BEnv.hs	/^data BEnv = BEnv$/;"	c
+BEnv	KMonad/Model/BEnv.hs	/^data BEnv = BEnv$/;"	t
+BadMacSwitch	KMonad/Keyboard/IO/Mac/Types.hs	/^  | BadMacSwitch     MacSwitch  -- ^ Error interpreting 'MacSwitch'$/;"	c
+Button	KMonad/Model/Button.hs	/^data Button = Button$/;"	c
+Button	KMonad/Model/Button.hs	/^data Button = Button$/;"	t
+CanKey	KMonad/Util/LayerStack.hs	/^type CanKey k = (Eq k, Hashable k)$/;"	t
+CanMM	KMonad/Util/MultiMap.hs	/^type CanMM k v = (Eq k, Ord v, Hashable k, Hashable v)$/;"	t
+Catch	KMonad/Model/Action.hs	/^data Catch = Catch | NoCatch deriving (Show, Eq)$/;"	c
+Catch	KMonad/Model/Action.hs	/^data Catch = Catch | NoCatch deriving (Show, Eq)$/;"	t
+CfgToken	KMonad/App/Parser/Types.hs	/^data CfgToken = CfgToken$/;"	c
+CfgToken	KMonad/App/Parser/Types.hs	/^data CfgToken = CfgToken$/;"	t
+CfgToken	KMonad/Args/Types.hs	/^data CfgToken = CfgToken$/;"	c
+CfgToken	KMonad/Args/Types.hs	/^data CfgToken = CfgToken$/;"	t
+Cmd	KMonad/Args/Cmd.hs	/^data Cmd = Cmd$/;"	c
+Cmd	KMonad/Args/Cmd.hs	/^data Cmd = Cmd$/;"	t
+DefAlias	KMonad/App/Parser/Types.hs	/^type DefAlias = [(Text, DefButton)]$/;"	t
+DefAlias	KMonad/Args/Types.hs	/^type DefAlias = [(Text, DefButton)]$/;"	t
+DefButton	KMonad/App/Parser/Types.hs	/^data DefButton$/;"	t
+DefButton	KMonad/Args/Types.hs	/^data DefButton$/;"	t
+DefLayer	KMonad/App/Parser/Types.hs	/^data DefLayer = DefLayer$/;"	c
+DefLayer	KMonad/App/Parser/Types.hs	/^data DefLayer = DefLayer$/;"	t
+DefLayer	KMonad/Args/Types.hs	/^data DefLayer = DefLayer$/;"	c
+DefLayer	KMonad/Args/Types.hs	/^data DefLayer = DefLayer$/;"	t
+DefSetting	KMonad/App/Parser/Types.hs	/^data DefSetting$/;"	t
+DefSetting	KMonad/Args/Types.hs	/^data DefSetting$/;"	t
+DefSettings	KMonad/App/Parser/Types.hs	/^type DefSettings = [DefSetting]$/;"	t
+DefSettings	KMonad/Args/Types.hs	/^type DefSettings = [DefSetting]$/;"	t
+DefSrc	KMonad/App/Parser/Types.hs	/^type DefSrc = [Keycode]$/;"	t
+DefSrc	KMonad/Args/Types.hs	/^type DefSrc = [Keycode]$/;"	t
+DeviceFile	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^data DeviceFile = DeviceFile$/;"	c
+DeviceFile	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^data DeviceFile = DeviceFile$/;"	t
+DeviceSourceCfg	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^data DeviceSourceCfg = DeviceSourceCfg$/;"	c
+DeviceSourceCfg	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^data DeviceSourceCfg = DeviceSourceCfg$/;"	t
+DeviceSourceError	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^data DeviceSourceError$/;"	t
+Dispatch	KMonad/Model/Dispatch.hs	/^data Dispatch = Dispatch$/;"	c
+Dispatch	KMonad/Model/Dispatch.hs	/^data Dispatch = Dispatch$/;"	t
+Duplicate	KMonad/App/Parser/TokenJoiner.hs	/^  | Duplicate$/;"	c
+Duplicate	KMonad/Args/Joiner.hs	/^  | Duplicate$/;"	c
+DuplicateAlias	KMonad/App/Parser/TokenJoiner.hs	/^  | DuplicateAlias   Text$/;"	c
+DuplicateAlias	KMonad/Args/Joiner.hs	/^  | DuplicateAlias   Text$/;"	c
+DuplicateBlock	KMonad/App/Parser/TokenJoiner.hs	/^  = DuplicateBlock   Text$/;"	c
+DuplicateBlock	KMonad/Args/Joiner.hs	/^  = DuplicateBlock   Text$/;"	c
+DuplicateLayer	KMonad/App/Parser/TokenJoiner.hs	/^  | DuplicateLayer   Text$/;"	c
+DuplicateLayer	KMonad/Args/Joiner.hs	/^  | DuplicateLayer   Text$/;"	c
+DuplicateSetting	KMonad/App/Parser/TokenJoiner.hs	/^  | DuplicateSetting Text$/;"	c
+DuplicateSetting	KMonad/Args/Joiner.hs	/^  | DuplicateSetting Text$/;"	c
+EmptyNameError	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  | EmptyNameError                               -- ^ Invalid name$/;"	c
+Entry	KMonad/Model/Hooks.hs	/^data Entry = Entry$/;"	c
+Entry	KMonad/Model/Hooks.hs	/^data Entry = Entry$/;"	t
+EvBuf	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^data EvBuf = EvBuf$/;"	c
+EvBuf	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^data EvBuf = EvBuf$/;"	t
+EvBuf	KMonad/Keyboard/IO/Mac/KextSink.hs	/^data EvBuf = EvBuf$/;"	c
+EvBuf	KMonad/Keyboard/IO/Mac/KextSink.hs	/^data EvBuf = EvBuf$/;"	t
+Hook	KMonad/Model/Action.hs	/^data Hook m = Hook$/;"	c
+Hook	KMonad/Model/Action.hs	/^data Hook m = Hook$/;"	t
+HookLocation	KMonad/Model/Action.hs	/^data HookLocation$/;"	t
+Hooks	KMonad/Model/Hooks.hs	/^data Hooks = Hooks$/;"	c
+Hooks	KMonad/Model/Hooks.hs	/^data Hooks = Hooks$/;"	t
+IOCtlGrabError	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  = IOCtlGrabError    FilePath$/;"	c
+IOCtlReleaseError	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  | IOCtlReleaseError FilePath$/;"	c
+IToken	KMonad/App/Parser/Types.hs	/^data IToken$/;"	t
+IToken	KMonad/Args/Types.hs	/^data IToken$/;"	t
+InputHook	KMonad/Model/Action.hs	/^  = InputHook  -- ^ Install the hook immediately after receiving a 'KeyEvent'$/;"	c
+InvalidComposeKey	KMonad/App/Parser/TokenJoiner.hs	/^  | InvalidComposeKey$/;"	c
+InvalidComposeKey	KMonad/Args/Joiner.hs	/^  | InvalidComposeKey$/;"	c
+InvalidOS	KMonad/App/Parser/TokenJoiner.hs	/^  | InvalidOS        Text$/;"	c
+InvalidOS	KMonad/Args/Joiner.hs	/^  | InvalidOS        Text$/;"	c
+Invoc	KMonad/App/Invocation/Types.hs	/^data Invoc = Invoc$/;"	c
+Invoc	KMonad/App/Invocation/Types.hs	/^data Invoc = Invoc$/;"	t
+J	KMonad/App/Parser/TokenJoiner.hs	/^newtype J a = J { unJ :: ExceptT JoinError (Reader JCfg) a }$/;"	t
+J	KMonad/Args/Joiner.hs	/^newtype J a = J { unJ :: ExceptT JoinError (Reader JCfg) a }$/;"	t
+JCfg	KMonad/App/Parser/TokenJoiner.hs	/^data JCfg = JCfg$/;"	c
+JCfg	KMonad/App/Parser/TokenJoiner.hs	/^data JCfg = JCfg$/;"	t
+JCfg	KMonad/Args/Joiner.hs	/^data JCfg = JCfg$/;"	c
+JCfg	KMonad/Args/Joiner.hs	/^data JCfg = JCfg$/;"	t
+JoinError	KMonad/App/Parser/TokenJoiner.hs	/^data JoinError$/;"	t
+JoinError	KMonad/Args/Joiner.hs	/^data JoinError$/;"	t
+KAround	KMonad/App/Parser/Types.hs	/^  | KAround DefButton DefButton            -- ^ Wrap 1 button around another$/;"	c
+KAround	KMonad/Args/Types.hs	/^  | KAround DefButton DefButton            -- ^ Wrap 1 button around another$/;"	c
+KAroundNext	KMonad/App/Parser/Types.hs	/^  | KAroundNext DefButton                  -- ^ Surround a future button$/;"	c
+KAroundNext	KMonad/Args/Types.hs	/^  | KAroundNext DefButton                  -- ^ Surround a future button$/;"	c
+KAroundNextSingle	KMonad/App/Parser/Types.hs	/^  | KAroundNextSingle DefButton            -- ^ Surround a future button$/;"	c
+KAroundNextSingle	KMonad/Args/Types.hs	/^  | KAroundNextSingle DefButton            -- ^ Surround a future button$/;"	c
+KBlock	KMonad/App/Parser/Types.hs	/^  | KBlock                                 -- ^ Button that catches event$/;"	c
+KBlock	KMonad/Args/Types.hs	/^  | KBlock                                 -- ^ Button that catches event$/;"	c
+KCommand	KMonad/App/Parser/Types.hs	/^  | KCommand Text (Maybe Text)             -- ^ Execute a shell command on press, as well$/;"	c
+KCommand	KMonad/Args/Types.hs	/^  | KCommand Text (Maybe Text)             -- ^ Execute a shell command on press, as well$/;"	c
+KComposeSeq	KMonad/App/Parser/Types.hs	/^  | KComposeSeq [DefButton]                -- ^ Compose-key sequence$/;"	c
+KComposeSeq	KMonad/Args/Types.hs	/^  | KComposeSeq [DefButton]                -- ^ Compose-key sequence$/;"	c
+KDefAlias	KMonad/App/Parser/Types.hs	/^  | KDefAlias DefAlias$/;"	c
+KDefAlias	KMonad/Args/Types.hs	/^  | KDefAlias DefAlias$/;"	c
+KDefCfg	KMonad/App/Parser/Types.hs	/^  = KDefCfg   DefSettings$/;"	c
+KDefCfg	KMonad/Args/Types.hs	/^  = KDefCfg   DefSettings$/;"	c
+KDefLayer	KMonad/App/Parser/Types.hs	/^  | KDefLayer DefLayer$/;"	c
+KDefLayer	KMonad/Args/Types.hs	/^  | KDefLayer DefLayer$/;"	c
+KDefSrc	KMonad/App/Parser/Types.hs	/^  | KDefSrc   DefSrc$/;"	c
+KDefSrc	KMonad/Args/Types.hs	/^  | KDefSrc   DefSrc$/;"	c
+KDeviceSource	KMonad/App/Parser/Types.hs	/^  = KDeviceSource FilePath$/;"	c
+KDeviceSource	KMonad/Args/Types.hs	/^  = KDeviceSource FilePath$/;"	c
+KEmit	KMonad/App/Parser/Types.hs	/^  | KEmit Keycode                          -- ^ Emit a keycode$/;"	c
+KEmit	KMonad/Args/Types.hs	/^  | KEmit Keycode                          -- ^ Emit a keycode$/;"	c
+KEnv	KMonad/App/Types.hs	/^data KEnv = KEnv$/;"	c
+KEnv	KMonad/App/Types.hs	/^data KEnv = KEnv$/;"	t
+KExpr	KMonad/App/Parser/Types.hs	/^data KExpr$/;"	t
+KExpr	KMonad/Args/Types.hs	/^data KExpr$/;"	t
+KIOKitSource	KMonad/App/Parser/Types.hs	/^  | KIOKitSource (Maybe Text)$/;"	c
+KIOKitSource	KMonad/Args/Types.hs	/^  | KIOKitSource (Maybe Text)$/;"	c
+KKextSink	KMonad/App/Parser/Types.hs	/^  | KKextSink$/;"	c
+KKextSink	KMonad/Args/Types.hs	/^  | KKextSink$/;"	c
+KLayerAdd	KMonad/App/Parser/Types.hs	/^  | KLayerAdd Text                         -- ^ Add a layer when pressed$/;"	c
+KLayerAdd	KMonad/Args/Types.hs	/^  | KLayerAdd Text                         -- ^ Add a layer when pressed$/;"	c
+KLayerDelay	KMonad/App/Parser/Types.hs	/^  | KLayerDelay Int LayerTag               -- ^ Switch to a layer for a period of time$/;"	c
+KLayerDelay	KMonad/Args/Types.hs	/^  | KLayerDelay Int LayerTag               -- ^ Switch to a layer for a period of time$/;"	c
+KLayerNext	KMonad/App/Parser/Types.hs	/^  | KLayerNext LayerTag                    -- ^ Perform next button in different layer$/;"	c
+KLayerNext	KMonad/Args/Types.hs	/^  | KLayerNext LayerTag                    -- ^ Perform next button in different layer$/;"	c
+KLayerRem	KMonad/App/Parser/Types.hs	/^  | KLayerRem Text                         -- ^ Remove top instance of a layer when pressed$/;"	c
+KLayerRem	KMonad/Args/Types.hs	/^  | KLayerRem Text                         -- ^ Remove top instance of a layer when pressed$/;"	c
+KLayerSwitch	KMonad/App/Parser/Types.hs	/^  | KLayerSwitch Text                      -- ^ Switch base-layer when pressed$/;"	c
+KLayerSwitch	KMonad/Args/Types.hs	/^  | KLayerSwitch Text                      -- ^ Switch base-layer when pressed$/;"	c
+KLayerToggle	KMonad/App/Parser/Types.hs	/^  | KLayerToggle Text                      -- ^ Toggle to a layer when held$/;"	c
+KLayerToggle	KMonad/Args/Types.hs	/^  | KLayerToggle Text                      -- ^ Toggle to a layer when held$/;"	c
+KLowLevelHookSource	KMonad/App/Parser/Types.hs	/^  | KLowLevelHookSource$/;"	c
+KLowLevelHookSource	KMonad/Args/Types.hs	/^  | KLowLevelHookSource$/;"	c
+KMonad	KMonad/App.hs	/^module KMonad.App$/;"	m
+KMonad	KMonad/App/Invocation.hs	/^module KMonad.App.Invocation$/;"	m
+KMonad	KMonad/App/Invocation/IO.hs	/^module KMonad.App.Invocation.IO$/;"	m
+KMonad	KMonad/App/Invocation/Parser.hs	/^module KMonad.App.Invocation.Parser$/;"	m
+KMonad	KMonad/App/Invocation/Types.hs	/^module KMonad.App.Invocation.Types$/;"	m
+KMonad	KMonad/App/Main.hs	/^module KMonad.App.Main$/;"	m
+KMonad	KMonad/App/Parser/IO.hs	/^module KMonad.App.Parser.IO$/;"	m
+KMonad	KMonad/App/Parser/TokenJoiner.hs	/^module KMonad.App.Parser.TokenJoiner$/;"	m
+KMonad	KMonad/App/Parser/Tokenizer.hs	/^module KMonad.App.Parser.Tokenizer$/;"	m
+KMonad	KMonad/App/Parser/Types.hs	/^module KMonad.App.Parser.Types$/;"	m
+KMonad	KMonad/App/Types.hs	/^module KMonad.App.Types$/;"	m
+KMonad	KMonad/Args.hs	/^module KMonad.Args$/;"	m
+KMonad	KMonad/Args/Cmd.hs	/^module KMonad.Args.Cmd$/;"	m
+KMonad	KMonad/Args/Joiner.hs	/^module KMonad.Args.Joiner$/;"	m
+KMonad	KMonad/Args/Parser.hs	/^module KMonad.Args.Parser$/;"	m
+KMonad	KMonad/Args/Types.hs	/^module KMonad.Args.Types$/;"	m
+KMonad	KMonad/Keyboard.hs	/^module KMonad.Keyboard$/;"	m
+KMonad	KMonad/Keyboard/ComposeSeq.hs	/^module KMonad.Keyboard.ComposeSeq$/;"	m
+KMonad	KMonad/Keyboard/IO.hs	/^module KMonad.Keyboard.IO$/;"	m
+KMonad	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^module KMonad.Keyboard.IO.Linux.DeviceSource$/;"	m
+KMonad	KMonad/Keyboard/IO/Linux/Types.hs	/^module KMonad.Keyboard.IO.Linux.Types$/;"	m
+KMonad	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^module KMonad.Keyboard.IO.Linux.UinputSink$/;"	m
+KMonad	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^module KMonad.Keyboard.IO.Mac.IOKitSource$/;"	m
+KMonad	KMonad/Keyboard/IO/Mac/KextSink.hs	/^module KMonad.Keyboard.IO.Mac.KextSink$/;"	m
+KMonad	KMonad/Keyboard/IO/Mac/Types.hs	/^module KMonad.Keyboard.IO.Mac.Types$/;"	m
+KMonad	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^module KMonad.Keyboard.IO.Windows.LowLevelHookSource$/;"	m
+KMonad	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^module KMonad.Keyboard.IO.Windows.SendEventSink$/;"	m
+KMonad	KMonad/Keyboard/IO/Windows/Types.hs	/^module KMonad.Keyboard.IO.Windows.Types$/;"	m
+KMonad	KMonad/Keyboard/Keycode.hs	/^module KMonad.Keyboard.Keycode$/;"	m
+KMonad	KMonad/Keyboard/Ops.hs	/^module KMonad.Keyboard.Ops$/;"	m
+KMonad	KMonad/Keyboard/Types.hs	/^module KMonad.Keyboard.Types$/;"	m
+KMonad	KMonad/Model.hs	/^module KMonad.Model$/;"	m
+KMonad	KMonad/Model/Action.hs	/^module KMonad.Model.Action$/;"	m
+KMonad	KMonad/Model/BEnv.hs	/^module KMonad.Model.BEnv$/;"	m
+KMonad	KMonad/Model/Button.hs	/^module KMonad.Model.Button$/;"	m
+KMonad	KMonad/Model/Dispatch.hs	/^module KMonad.Model.Dispatch$/;"	m
+KMonad	KMonad/Model/Hooks.hs	/^module KMonad.Model.Hooks$/;"	m
+KMonad	KMonad/Model/Keymap.hs	/^module KMonad.Model.Keymap$/;"	m
+KMonad	KMonad/Model/Sluice.hs	/^module KMonad.Model.Sluice$/;"	m
+KMonad	KMonad/Prelude.hs	/^module KMonad.Prelude$/;"	m
+KMonad	KMonad/Util.hs	/^module KMonad.Util$/;"	m
+KMonad	KMonad/Util/LayerStack.hs	/^module KMonad.Util.LayerStack$/;"	m
+KMonad	KMonad/Util/MultiMap.hs	/^module KMonad.Util.MultiMap$/;"	m
+KMultiTap	KMonad/App/Parser/Types.hs	/^  | KMultiTap [(Int, DefButton)] DefButton -- ^ Do things depending on tap-count$/;"	c
+KMultiTap	KMonad/Args/Types.hs	/^  | KMultiTap [(Int, DefButton)] DefButton -- ^ Do things depending on tap-count$/;"	c
+KPause	KMonad/App/Parser/Types.hs	/^  | KPause Milliseconds                    -- ^ Pause for a period of time$/;"	c
+KPause	KMonad/Args/Types.hs	/^  | KPause Milliseconds                    -- ^ Pause for a period of time$/;"	c
+KRef	KMonad/App/Parser/Types.hs	/^  = KRef Text                              -- ^ Reference a named button$/;"	c
+KRef	KMonad/Args/Types.hs	/^  = KRef Text                              -- ^ Reference a named button$/;"	c
+KSendEventSink	KMonad/App/Parser/Types.hs	/^  | KSendEventSink$/;"	c
+KSendEventSink	KMonad/Args/Types.hs	/^  | KSendEventSink$/;"	c
+KStickyKey	KMonad/App/Parser/Types.hs	/^  | KStickyKey Int DefButton               -- ^ Act as if a button is pressed for a period of ti/;"	c
+KStickyKey	KMonad/Args/Types.hs	/^  | KStickyKey Int DefButton               -- ^ Act as if a button is pressed for a period of ti/;"	c
+KTapHold	KMonad/App/Parser/Types.hs	/^  | KTapHold Int DefButton DefButton       -- ^ Do 2 things based on behavior and delay$/;"	c
+KTapHold	KMonad/Args/Types.hs	/^  | KTapHold Int DefButton DefButton       -- ^ Do 2 things based on behavior and delay$/;"	c
+KTapHoldNext	KMonad/App/Parser/Types.hs	/^  | KTapHoldNext Int DefButton DefButton   -- ^ Mixture between KTapNext and KTapHold$/;"	c
+KTapHoldNext	KMonad/Args/Types.hs	/^  | KTapHoldNext Int DefButton DefButton   -- ^ Mixture between KTapNext and KTapHold$/;"	c
+KTapHoldNextRelease	KMonad/App/Parser/Types.hs	/^  | KTapHoldNextRelease Int DefButton DefButton$/;"	c
+KTapHoldNextRelease	KMonad/Args/Types.hs	/^  | KTapHoldNextRelease Int DefButton DefButton$/;"	c
+KTapMacro	KMonad/App/Parser/Types.hs	/^  | KTapMacro [DefButton]                  -- ^ Sequence of buttons to tap$/;"	c
+KTapMacro	KMonad/Args/Types.hs	/^  | KTapMacro [DefButton] (Maybe Int)$/;"	c
+KTapNext	KMonad/App/Parser/Types.hs	/^  | KTapNext DefButton DefButton           -- ^ Do 2 things based on behavior$/;"	c
+KTapNext	KMonad/Args/Types.hs	/^  | KTapNext DefButton DefButton           -- ^ Do 2 things based on behavior$/;"	c
+KTapNextRelease	KMonad/App/Parser/Types.hs	/^  | KTapNextRelease DefButton DefButton    -- ^ Do 2 things based on behavior$/;"	c
+KTapNextRelease	KMonad/Args/Types.hs	/^  | KTapNextRelease DefButton DefButton    -- ^ Do 2 things based on behavior$/;"	c
+KTrans	KMonad/App/Parser/Types.hs	/^  | KTrans                                 -- ^ Transparent button that does nothing$/;"	c
+KTrans	KMonad/Args/Types.hs	/^  | KTrans                                 -- ^ Transparent button that does nothing$/;"	c
+KUinputSink	KMonad/App/Parser/Types.hs	/^  = KUinputSink Text (Maybe Text)$/;"	c
+KUinputSink	KMonad/Args/Types.hs	/^  = KUinputSink Text (Maybe Text)$/;"	c
+Key0	KMonad/Keyboard/Keycode.hs	/^  | Key0$/;"	c
+Key1	KMonad/Keyboard/Keycode.hs	/^  | Key1$/;"	c
+Key102nd	KMonad/Keyboard/Keycode.hs	/^  | Key102nd$/;"	c
+Key2	KMonad/Keyboard/Keycode.hs	/^  | Key2$/;"	c
+Key3	KMonad/Keyboard/Keycode.hs	/^  | Key3$/;"	c
+Key4	KMonad/Keyboard/Keycode.hs	/^  | Key4$/;"	c
+Key5	KMonad/Keyboard/Keycode.hs	/^  | Key5$/;"	c
+Key6	KMonad/Keyboard/Keycode.hs	/^  | Key6$/;"	c
+Key7	KMonad/Keyboard/Keycode.hs	/^  | Key7$/;"	c
+Key8	KMonad/Keyboard/Keycode.hs	/^  | Key8$/;"	c
+Key9	KMonad/Keyboard/Keycode.hs	/^  | Key9$/;"	c
+KeyA	KMonad/Keyboard/Keycode.hs	/^  | KeyA$/;"	c
+KeyAgain	KMonad/Keyboard/Keycode.hs	/^  | KeyAgain$/;"	c
+KeyAlterase	KMonad/Keyboard/Keycode.hs	/^  | KeyAlterase$/;"	c
+KeyApostrophe	KMonad/Keyboard/Keycode.hs	/^  | KeyApostrophe$/;"	c
+KeyB	KMonad/Keyboard/Keycode.hs	/^  | KeyB$/;"	c
+KeyBack	KMonad/Keyboard/Keycode.hs	/^  | KeyBack$/;"	c
+KeyBackslash	KMonad/Keyboard/Keycode.hs	/^  | KeyBackslash$/;"	c
+KeyBackspace	KMonad/Keyboard/Keycode.hs	/^  | KeyBackspace$/;"	c
+KeyBassBoost	KMonad/Keyboard/Keycode.hs	/^  | KeyBassBoost$/;"	c
+KeyBattery	KMonad/Keyboard/Keycode.hs	/^  | KeyBattery$/;"	c
+KeyBluetooth	KMonad/Keyboard/Keycode.hs	/^  | KeyBluetooth$/;"	c
+KeyBookmarks	KMonad/Keyboard/Keycode.hs	/^  | KeyBookmarks$/;"	c
+KeyBrightnessCycle	KMonad/Keyboard/Keycode.hs	/^  | KeyBrightnessCycle$/;"	c
+KeyBrightnessDown	KMonad/Keyboard/Keycode.hs	/^  | KeyBrightnessDown$/;"	c
+KeyBrightnessUp	KMonad/Keyboard/Keycode.hs	/^  | KeyBrightnessUp$/;"	c
+KeyBrightnessZero	KMonad/Keyboard/Keycode.hs	/^  | KeyBrightnessZero$/;"	c
+KeyC	KMonad/Keyboard/Keycode.hs	/^  | KeyC$/;"	c
+KeyCalc	KMonad/Keyboard/Keycode.hs	/^  | KeyCalc$/;"	c
+KeyCamera	KMonad/Keyboard/Keycode.hs	/^  | KeyCamera$/;"	c
+KeyCancel	KMonad/Keyboard/Keycode.hs	/^  | KeyCancel$/;"	c
+KeyCapsLock	KMonad/Keyboard/Keycode.hs	/^  | KeyCapsLock$/;"	c
+KeyChat	KMonad/Keyboard/Keycode.hs	/^  | KeyChat$/;"	c
+KeyClose	KMonad/Keyboard/Keycode.hs	/^  | KeyClose$/;"	c
+KeyCloseCd	KMonad/Keyboard/Keycode.hs	/^  | KeyCloseCd$/;"	c
+KeyCoffee	KMonad/Keyboard/Keycode.hs	/^  | KeyCoffee$/;"	c
+KeyComma	KMonad/Keyboard/Keycode.hs	/^  | KeyComma$/;"	c
+KeyCompose	KMonad/Keyboard/Keycode.hs	/^  | KeyCompose$/;"	c
+KeyComputer	KMonad/Keyboard/Keycode.hs	/^  | KeyComputer$/;"	c
+KeyConfig	KMonad/Keyboard/Keycode.hs	/^  | KeyConfig$/;"	c
+KeyConnect	KMonad/Keyboard/Keycode.hs	/^  | KeyConnect$/;"	c
+KeyCopy	KMonad/Keyboard/Keycode.hs	/^  | KeyCopy$/;"	c
+KeyCut	KMonad/Keyboard/Keycode.hs	/^  | KeyCut$/;"	c
+KeyCycleWindows	KMonad/Keyboard/Keycode.hs	/^  | KeyCycleWindows$/;"	c
+KeyD	KMonad/Keyboard/Keycode.hs	/^  | KeyD$/;"	c
+KeyDashboard	KMonad/Keyboard/Keycode.hs	/^  | KeyDashboard$/;"	c
+KeyDelete	KMonad/Keyboard/Keycode.hs	/^  | KeyDelete$/;"	c
+KeyDeleteFile	KMonad/Keyboard/Keycode.hs	/^  | KeyDeleteFile$/;"	c
+KeyDirection	KMonad/Keyboard/Keycode.hs	/^  | KeyDirection$/;"	c
+KeyDisplayOff	KMonad/Keyboard/Keycode.hs	/^  | KeyDisplayOff$/;"	c
+KeyDocuments	KMonad/Keyboard/Keycode.hs	/^  | KeyDocuments$/;"	c
+KeyDot	KMonad/Keyboard/Keycode.hs	/^  | KeyDot$/;"	c
+KeyDown	KMonad/Keyboard/Keycode.hs	/^  | KeyDown$/;"	c
+KeyE	KMonad/Keyboard/Keycode.hs	/^  | KeyE$/;"	c
+KeyEdit	KMonad/Keyboard/Keycode.hs	/^  | KeyEdit$/;"	c
+KeyEjectCd	KMonad/Keyboard/Keycode.hs	/^  | KeyEjectCd$/;"	c
+KeyEjectCloseCd	KMonad/Keyboard/Keycode.hs	/^  | KeyEjectCloseCd$/;"	c
+KeyEmail	KMonad/Keyboard/Keycode.hs	/^  | KeyEmail$/;"	c
+KeyEnd	KMonad/Keyboard/Keycode.hs	/^  | KeyEnd$/;"	c
+KeyEnter	KMonad/Keyboard/Keycode.hs	/^  | KeyEnter$/;"	c
+KeyEqual	KMonad/Keyboard/Keycode.hs	/^  | KeyEqual$/;"	c
+KeyEsc	KMonad/Keyboard/Keycode.hs	/^  | KeyEsc$/;"	c
+KeyEvent	KMonad/Keyboard/Types.hs	/^data KeyEvent = KeyEvent$/;"	c
+KeyEvent	KMonad/Keyboard/Types.hs	/^data KeyEvent = KeyEvent$/;"	t
+KeyEventParser	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^data KeyEventParser = KeyEventParser$/;"	c
+KeyEventParser	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^data KeyEventParser = KeyEventParser$/;"	t
+KeyExit	KMonad/Keyboard/Keycode.hs	/^  | KeyExit$/;"	c
+KeyF	KMonad/Keyboard/Keycode.hs	/^  | KeyF$/;"	c
+KeyF1	KMonad/Keyboard/Keycode.hs	/^  | KeyF1$/;"	c
+KeyF10	KMonad/Keyboard/Keycode.hs	/^  | KeyF10$/;"	c
+KeyF11	KMonad/Keyboard/Keycode.hs	/^  | KeyF11$/;"	c
+KeyF12	KMonad/Keyboard/Keycode.hs	/^  | KeyF12$/;"	c
+KeyF13	KMonad/Keyboard/Keycode.hs	/^  | KeyF13$/;"	c
+KeyF14	KMonad/Keyboard/Keycode.hs	/^  | KeyF14$/;"	c
+KeyF15	KMonad/Keyboard/Keycode.hs	/^  | KeyF15$/;"	c
+KeyF16	KMonad/Keyboard/Keycode.hs	/^  | KeyF16$/;"	c
+KeyF17	KMonad/Keyboard/Keycode.hs	/^  | KeyF17$/;"	c
+KeyF18	KMonad/Keyboard/Keycode.hs	/^  | KeyF18$/;"	c
+KeyF19	KMonad/Keyboard/Keycode.hs	/^  | KeyF19$/;"	c
+KeyF2	KMonad/Keyboard/Keycode.hs	/^  | KeyF2$/;"	c
+KeyF20	KMonad/Keyboard/Keycode.hs	/^  | KeyF20$/;"	c
+KeyF21	KMonad/Keyboard/Keycode.hs	/^  | KeyF21$/;"	c
+KeyF22	KMonad/Keyboard/Keycode.hs	/^  | KeyF22$/;"	c
+KeyF23	KMonad/Keyboard/Keycode.hs	/^  | KeyF23$/;"	c
+KeyF24	KMonad/Keyboard/Keycode.hs	/^  | KeyF24$/;"	c
+KeyF3	KMonad/Keyboard/Keycode.hs	/^  | KeyF3$/;"	c
+KeyF4	KMonad/Keyboard/Keycode.hs	/^  | KeyF4$/;"	c
+KeyF5	KMonad/Keyboard/Keycode.hs	/^  | KeyF5$/;"	c
+KeyF6	KMonad/Keyboard/Keycode.hs	/^  | KeyF6$/;"	c
+KeyF7	KMonad/Keyboard/Keycode.hs	/^  | KeyF7$/;"	c
+KeyF8	KMonad/Keyboard/Keycode.hs	/^  | KeyF8$/;"	c
+KeyF9	KMonad/Keyboard/Keycode.hs	/^  | KeyF9$/;"	c
+KeyFastForward	KMonad/Keyboard/Keycode.hs	/^  | KeyFastForward$/;"	c
+KeyFile	KMonad/Keyboard/Keycode.hs	/^  | KeyFile$/;"	c
+KeyFinance	KMonad/Keyboard/Keycode.hs	/^  | KeyFinance$/;"	c
+KeyFind	KMonad/Keyboard/Keycode.hs	/^  | KeyFind$/;"	c
+KeyForward	KMonad/Keyboard/Keycode.hs	/^  | KeyForward$/;"	c
+KeyForwardMail	KMonad/Keyboard/Keycode.hs	/^  | KeyForwardMail$/;"	c
+KeyFront	KMonad/Keyboard/Keycode.hs	/^  | KeyFront$/;"	c
+KeyG	KMonad/Keyboard/Keycode.hs	/^  | KeyG$/;"	c
+KeyGrave	KMonad/Keyboard/Keycode.hs	/^  | KeyGrave$/;"	c
+KeyH	KMonad/Keyboard/Keycode.hs	/^  | KeyH$/;"	c
+KeyHangeul	KMonad/Keyboard/Keycode.hs	/^  | KeyHangeul$/;"	c
+KeyHanja	KMonad/Keyboard/Keycode.hs	/^  | KeyHanja$/;"	c
+KeyHelp	KMonad/Keyboard/Keycode.hs	/^  | KeyHelp$/;"	c
+KeyHenkan	KMonad/Keyboard/Keycode.hs	/^  | KeyHenkan$/;"	c
+KeyHiragana	KMonad/Keyboard/Keycode.hs	/^  | KeyHiragana$/;"	c
+KeyHome	KMonad/Keyboard/Keycode.hs	/^  | KeyHome$/;"	c
+KeyHomepage	KMonad/Keyboard/Keycode.hs	/^  | KeyHomepage$/;"	c
+KeyHp	KMonad/Keyboard/Keycode.hs	/^  | KeyHp$/;"	c
+KeyI	KMonad/Keyboard/Keycode.hs	/^  | KeyI$/;"	c
+KeyIODecodeError	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  | KeyIODecodeError  String$/;"	c
+KeyInsert	KMonad/Keyboard/Keycode.hs	/^  | KeyInsert$/;"	c
+KeyIso	KMonad/Keyboard/Keycode.hs	/^  | KeyIso$/;"	c
+KeyJ	KMonad/Keyboard/Keycode.hs	/^  | KeyJ$/;"	c
+KeyK	KMonad/Keyboard/Keycode.hs	/^  | KeyK$/;"	c
+KeyKatakana	KMonad/Keyboard/Keycode.hs	/^  | KeyKatakana$/;"	c
+KeyKatakanaHiragana	KMonad/Keyboard/Keycode.hs	/^  | KeyKatakanaHiragana$/;"	c
+KeyKbdIllumDown	KMonad/Keyboard/Keycode.hs	/^  | KeyKbdIllumDown$/;"	c
+KeyKbdIllumToggle	KMonad/Keyboard/Keycode.hs	/^  | KeyKbdIllumToggle$/;"	c
+KeyKbdIllumUp	KMonad/Keyboard/Keycode.hs	/^  | KeyKbdIllumUp$/;"	c
+KeyKp0	KMonad/Keyboard/Keycode.hs	/^  | KeyKp0$/;"	c
+KeyKp1	KMonad/Keyboard/Keycode.hs	/^  | KeyKp1$/;"	c
+KeyKp2	KMonad/Keyboard/Keycode.hs	/^  | KeyKp2$/;"	c
+KeyKp3	KMonad/Keyboard/Keycode.hs	/^  | KeyKp3$/;"	c
+KeyKp4	KMonad/Keyboard/Keycode.hs	/^  | KeyKp4$/;"	c
+KeyKp5	KMonad/Keyboard/Keycode.hs	/^  | KeyKp5$/;"	c
+KeyKp6	KMonad/Keyboard/Keycode.hs	/^  | KeyKp6$/;"	c
+KeyKp7	KMonad/Keyboard/Keycode.hs	/^  | KeyKp7$/;"	c
+KeyKp8	KMonad/Keyboard/Keycode.hs	/^  | KeyKp8$/;"	c
+KeyKp9	KMonad/Keyboard/Keycode.hs	/^  | KeyKp9$/;"	c
+KeyKpAsterisk	KMonad/Keyboard/Keycode.hs	/^  | KeyKpAsterisk$/;"	c
+KeyKpComma	KMonad/Keyboard/Keycode.hs	/^  | KeyKpComma$/;"	c
+KeyKpDot	KMonad/Keyboard/Keycode.hs	/^  | KeyKpDot$/;"	c
+KeyKpEnter	KMonad/Keyboard/Keycode.hs	/^  | KeyKpEnter$/;"	c
+KeyKpEqual	KMonad/Keyboard/Keycode.hs	/^  | KeyKpEqual$/;"	c
+KeyKpLeftParen	KMonad/Keyboard/Keycode.hs	/^  | KeyKpLeftParen$/;"	c
+KeyKpMinus	KMonad/Keyboard/Keycode.hs	/^  | KeyKpMinus$/;"	c
+KeyKpPlus	KMonad/Keyboard/Keycode.hs	/^  | KeyKpPlus$/;"	c
+KeyKpPlusMinus	KMonad/Keyboard/Keycode.hs	/^  | KeyKpPlusMinus$/;"	c
+KeyKpRightParen	KMonad/Keyboard/Keycode.hs	/^  | KeyKpRightParen$/;"	c
+KeyKpSlash	KMonad/Keyboard/Keycode.hs	/^  | KeyKpSlash$/;"	c
+KeyKpjpcomma	KMonad/Keyboard/Keycode.hs	/^  | KeyKpjpcomma$/;"	c
+KeyL	KMonad/Keyboard/Keycode.hs	/^  | KeyL$/;"	c
+KeyLeft	KMonad/Keyboard/Keycode.hs	/^  | KeyLeft$/;"	c
+KeyLeftAlt	KMonad/Keyboard/Keycode.hs	/^  | KeyLeftAlt$/;"	c
+KeyLeftBrace	KMonad/Keyboard/Keycode.hs	/^  | KeyLeftBrace$/;"	c
+KeyLeftCtrl	KMonad/Keyboard/Keycode.hs	/^  | KeyLeftCtrl$/;"	c
+KeyLeftMeta	KMonad/Keyboard/Keycode.hs	/^  | KeyLeftMeta$/;"	c
+KeyLeftShift	KMonad/Keyboard/Keycode.hs	/^  | KeyLeftShift$/;"	c
+KeyLinefeed	KMonad/Keyboard/Keycode.hs	/^  | KeyLinefeed$/;"	c
+KeyM	KMonad/Keyboard/Keycode.hs	/^  | KeyM$/;"	c
+KeyMacro	KMonad/Keyboard/Keycode.hs	/^  | KeyMacro$/;"	c
+KeyMail	KMonad/Keyboard/Keycode.hs	/^  | KeyMail$/;"	c
+KeyMedia	KMonad/Keyboard/Keycode.hs	/^  | KeyMedia$/;"	c
+KeyMenu	KMonad/Keyboard/Keycode.hs	/^  | KeyMenu$/;"	c
+KeyMinus	KMonad/Keyboard/Keycode.hs	/^  | KeyMinus$/;"	c
+KeyMove	KMonad/Keyboard/Keycode.hs	/^  | KeyMove$/;"	c
+KeyMsDos	KMonad/Keyboard/Keycode.hs	/^  | KeyMsDos$/;"	c
+KeyMuhenkan	KMonad/Keyboard/Keycode.hs	/^  | KeyMuhenkan$/;"	c
+KeyMute	KMonad/Keyboard/Keycode.hs	/^  | KeyMute$/;"	c
+KeyN	KMonad/Keyboard/Keycode.hs	/^  | KeyN$/;"	c
+KeyNew	KMonad/Keyboard/Keycode.hs	/^  | KeyNew$/;"	c
+KeyNextSong	KMonad/Keyboard/Keycode.hs	/^  | KeyNextSong$/;"	c
+KeyNumLock	KMonad/Keyboard/Keycode.hs	/^  | KeyNumLock$/;"	c
+KeyO	KMonad/Keyboard/Keycode.hs	/^  | KeyO$/;"	c
+KeyOpen	KMonad/Keyboard/Keycode.hs	/^  | KeyOpen$/;"	c
+KeyP	KMonad/Keyboard/Keycode.hs	/^  | KeyP$/;"	c
+KeyPageDown	KMonad/Keyboard/Keycode.hs	/^  | KeyPageDown$/;"	c
+KeyPageUp	KMonad/Keyboard/Keycode.hs	/^  | KeyPageUp$/;"	c
+KeyPaste	KMonad/Keyboard/Keycode.hs	/^  | KeyPaste$/;"	c
+KeyPause	KMonad/Keyboard/Keycode.hs	/^  | KeyPause$/;"	c
+KeyPauseCd	KMonad/Keyboard/Keycode.hs	/^  | KeyPauseCd$/;"	c
+KeyPhone	KMonad/Keyboard/Keycode.hs	/^  | KeyPhone$/;"	c
+KeyPlay	KMonad/Keyboard/Keycode.hs	/^  | KeyPlay$/;"	c
+KeyPlayCd	KMonad/Keyboard/Keycode.hs	/^  | KeyPlayCd$/;"	c
+KeyPlayPause	KMonad/Keyboard/Keycode.hs	/^  | KeyPlayPause$/;"	c
+KeyPower	KMonad/Keyboard/Keycode.hs	/^  | KeyPower$/;"	c
+KeyPred	KMonad/Keyboard/Types.hs	/^type KeyPred = KeyEvent -> Bool$/;"	t
+KeyPreviousSong	KMonad/Keyboard/Keycode.hs	/^  | KeyPreviousSong$/;"	c
+KeyPrint	KMonad/Keyboard/Keycode.hs	/^  | KeyPrint$/;"	c
+KeyProg1	KMonad/Keyboard/Keycode.hs	/^  | KeyProg1$/;"	c
+KeyProg2	KMonad/Keyboard/Keycode.hs	/^  | KeyProg2$/;"	c
+KeyProg3	KMonad/Keyboard/Keycode.hs	/^  | KeyProg3$/;"	c
+KeyProg4	KMonad/Keyboard/Keycode.hs	/^  | KeyProg4$/;"	c
+KeyProps	KMonad/Keyboard/Keycode.hs	/^  | KeyProps$/;"	c
+KeyQ	KMonad/Keyboard/Keycode.hs	/^  | KeyQ$/;"	c
+KeyQuestion	KMonad/Keyboard/Keycode.hs	/^  | KeyQuestion$/;"	c
+KeyR	KMonad/Keyboard/Keycode.hs	/^  | KeyR$/;"	c
+KeyRecord	KMonad/Keyboard/Keycode.hs	/^  | KeyRecord$/;"	c
+KeyRedo	KMonad/Keyboard/Keycode.hs	/^  | KeyRedo$/;"	c
+KeyRefresh	KMonad/Keyboard/Keycode.hs	/^  | KeyRefresh$/;"	c
+KeyReply	KMonad/Keyboard/Keycode.hs	/^  | KeyReply$/;"	c
+KeyReserved	KMonad/Keyboard/Keycode.hs	/^  = KeyReserved$/;"	c
+KeyRewind	KMonad/Keyboard/Keycode.hs	/^  | KeyRewind$/;"	c
+KeyRight	KMonad/Keyboard/Keycode.hs	/^  | KeyRight$/;"	c
+KeyRightAlt	KMonad/Keyboard/Keycode.hs	/^  | KeyRightAlt$/;"	c
+KeyRightBrace	KMonad/Keyboard/Keycode.hs	/^  | KeyRightBrace$/;"	c
+KeyRightCtrl	KMonad/Keyboard/Keycode.hs	/^  | KeyRightCtrl$/;"	c
+KeyRightMeta	KMonad/Keyboard/Keycode.hs	/^  | KeyRightMeta$/;"	c
+KeyRightShift	KMonad/Keyboard/Keycode.hs	/^  | KeyRightShift$/;"	c
+KeyRo	KMonad/Keyboard/Keycode.hs	/^  | KeyRo$/;"	c
+KeyS	KMonad/Keyboard/Keycode.hs	/^  | KeyS$/;"	c
+KeySave	KMonad/Keyboard/Keycode.hs	/^  | KeySave$/;"	c
+KeyScale	KMonad/Keyboard/Keycode.hs	/^  | KeyScale$/;"	c
+KeyScrollDown	KMonad/Keyboard/Keycode.hs	/^  | KeyScrollDown$/;"	c
+KeyScrollLock	KMonad/Keyboard/Keycode.hs	/^  | KeyScrollLock$/;"	c
+KeyScrollUp	KMonad/Keyboard/Keycode.hs	/^  | KeyScrollUp$/;"	c
+KeySearch	KMonad/Keyboard/Keycode.hs	/^  | KeySearch$/;"	c
+KeySemicolon	KMonad/Keyboard/Keycode.hs	/^  | KeySemicolon$/;"	c
+KeySend	KMonad/Keyboard/Keycode.hs	/^  | KeySend$/;"	c
+KeySendFile	KMonad/Keyboard/Keycode.hs	/^  | KeySendFile$/;"	c
+KeySetup	KMonad/Keyboard/Keycode.hs	/^  | KeySetup$/;"	c
+KeyShop	KMonad/Keyboard/Keycode.hs	/^  | KeyShop$/;"	c
+KeySink	KMonad/Keyboard/IO.hs	/^newtype KeySink = KeySink { emitKeyWith :: KeyEvent -> IO () }$/;"	c
+KeySink	KMonad/Keyboard/IO.hs	/^newtype KeySink = KeySink { emitKeyWith :: KeyEvent -> IO () }$/;"	t
+KeySlash	KMonad/Keyboard/Keycode.hs	/^  | KeySlash$/;"	c
+KeySleep	KMonad/Keyboard/Keycode.hs	/^  | KeySleep$/;"	c
+KeySound	KMonad/Keyboard/Keycode.hs	/^  | KeySound$/;"	c
+KeySource	KMonad/Keyboard/IO.hs	/^newtype KeySource = KeySource { awaitKeyWith :: IO KeyEvent}$/;"	c
+KeySource	KMonad/Keyboard/IO.hs	/^newtype KeySource = KeySource { awaitKeyWith :: IO KeyEvent}$/;"	t
+KeySpace	KMonad/Keyboard/Keycode.hs	/^  | KeySpace$/;"	c
+KeySport	KMonad/Keyboard/Keycode.hs	/^  | KeySport$/;"	c
+KeyStop	KMonad/Keyboard/Keycode.hs	/^  | KeyStop$/;"	c
+KeyStopCd	KMonad/Keyboard/Keycode.hs	/^  | KeyStopCd$/;"	c
+KeySuspend	KMonad/Keyboard/Keycode.hs	/^  | KeySuspend$/;"	c
+KeySwitchVideoMode	KMonad/Keyboard/Keycode.hs	/^  | KeySwitchVideoMode$/;"	c
+KeySysRq	KMonad/Keyboard/Keycode.hs	/^  | KeySysRq$/;"	c
+KeyT	KMonad/Keyboard/Keycode.hs	/^  | KeyT$/;"	c
+KeyTab	KMonad/Keyboard/Keycode.hs	/^  | KeyTab$/;"	c
+KeyU	KMonad/Keyboard/Keycode.hs	/^  | KeyU$/;"	c
+KeyUndo	KMonad/Keyboard/Keycode.hs	/^  | KeyUndo$/;"	c
+KeyUnknown	KMonad/Keyboard/Keycode.hs	/^  | KeyUnknown$/;"	c
+KeyUp	KMonad/Keyboard/Keycode.hs	/^  | KeyUp$/;"	c
+KeyUwb	KMonad/Keyboard/Keycode.hs	/^  | KeyUwb$/;"	c
+KeyV	KMonad/Keyboard/Keycode.hs	/^  | KeyV$/;"	c
+KeyVideoNext	KMonad/Keyboard/Keycode.hs	/^  | KeyVideoNext$/;"	c
+KeyVideoPrev	KMonad/Keyboard/Keycode.hs	/^  | KeyVideoPrev$/;"	c
+KeyVolumeDown	KMonad/Keyboard/Keycode.hs	/^  | KeyVolumeDown$/;"	c
+KeyVolumeUp	KMonad/Keyboard/Keycode.hs	/^  | KeyVolumeUp$/;"	c
+KeyW	KMonad/Keyboard/Keycode.hs	/^  | KeyW$/;"	c
+KeyWakeUp	KMonad/Keyboard/Keycode.hs	/^  | KeyWakeUp$/;"	c
+KeyWimax	KMonad/Keyboard/Keycode.hs	/^  | KeyWimax$/;"	c
+KeyWlan	KMonad/Keyboard/Keycode.hs	/^  | KeyWlan$/;"	c
+KeyWww	KMonad/Keyboard/Keycode.hs	/^  | KeyWww$/;"	c
+KeyX	KMonad/Keyboard/Keycode.hs	/^  | KeyX$/;"	c
+KeyXfer	KMonad/Keyboard/Keycode.hs	/^  | KeyXfer$/;"	c
+KeyY	KMonad/Keyboard/Keycode.hs	/^  | KeyY$/;"	c
+KeyYen	KMonad/Keyboard/Keycode.hs	/^  | KeyYen$/;"	c
+KeyZ	KMonad/Keyboard/Keycode.hs	/^  | KeyZ$/;"	c
+KeyZenkakuHankaku	KMonad/Keyboard/Keycode.hs	/^  | KeyZenkakuHankaku$/;"	c
+Keycode	KMonad/Keyboard/Keycode.hs	/^data Keycode$/;"	t
+Keymap	KMonad/Model/Keymap.hs	/^data Keymap = Keymap$/;"	c
+Keymap	KMonad/Model/Keymap.hs	/^data Keymap = Keymap$/;"	t
+LLHook	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^data LLHook = LLHook$/;"	c
+LLHook	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^data LLHook = LLHook$/;"	t
+LMap	KMonad/Keyboard/Types.hs	/^type LMap a = Ls.LayerStack LayerTag Keycode a$/;"	t
+LNames	KMonad/App/Parser/TokenJoiner.hs	/^type LNames  = [Text]$/;"	t
+LNames	KMonad/Args/Joiner.hs	/^type LNames  = [Text]$/;"	t
+Layer	KMonad/Util/LayerStack.hs	/^newtype Layer k a = Layer { unLayer :: M.HashMap k a}$/;"	c
+Layer	KMonad/Util/LayerStack.hs	/^newtype Layer k a = Layer { unLayer :: M.HashMap k a}$/;"	t
+LayerDoesNotExist	KMonad/Util/LayerStack.hs	/^  = LayerDoesNotExist l   -- ^ Requested use of a non-existing layer$/;"	c
+LayerNotOnStack	KMonad/Util/LayerStack.hs	/^  | LayerNotOnStack   l   -- ^ Requested use of a non-stack layer$/;"	c
+LayerOp	KMonad/Model/Action.hs	/^data LayerOp$/;"	t
+LayerStack	KMonad/Util/LayerStack.hs	/^data LayerStack l k a = LayerStack$/;"	c
+LayerStack	KMonad/Util/LayerStack.hs	/^data LayerStack l k a = LayerStack$/;"	t
+LayerStackError	KMonad/Util/LayerStack.hs	/^data LayerStackError l$/;"	t
+LayerTag	KMonad/Keyboard/Types.hs	/^type LayerTag = Text$/;"	t
+LengthMismatch	KMonad/App/Parser/TokenJoiner.hs	/^  | LengthMismatch   Text Int Int$/;"	c
+LengthMismatch	KMonad/Args/Joiner.hs	/^  | LengthMismatch   Text Int Int$/;"	c
+LinuxKeyEvent	KMonad/Keyboard/IO/Linux/Types.hs	/^newtype LinuxKeyEvent = LinuxKeyEvent (CInt, CInt, CInt, CInt, CInt)$/;"	c
+LinuxKeyEvent	KMonad/Keyboard/IO/Linux/Types.hs	/^newtype LinuxKeyEvent = LinuxKeyEvent (CInt, CInt, CInt, CInt, CInt)$/;"	t
+MacError	KMonad/Keyboard/IO/Mac/Types.hs	/^data MacError$/;"	t
+MacKeyEvent	KMonad/Keyboard/IO/Mac/Types.hs	/^newtype MacKeyEvent = MacKeyEvent (MacSwitch, MacKeycode)$/;"	c
+MacKeyEvent	KMonad/Keyboard/IO/Mac/Types.hs	/^newtype MacKeyEvent = MacKeyEvent (MacSwitch, MacKeycode)$/;"	t
+MacKeycode	KMonad/Keyboard/IO/Mac/Types.hs	/^type MacKeycode = (Word32, Word32) -- ^ Type alias for the Mac keycode$/;"	t
+MacSwitch	KMonad/Keyboard/IO/Mac/Types.hs	/^type MacSwitch  = Word64           -- ^ Type alias for the switch value$/;"	t
+Milliseconds	KMonad/Util.hs	/^newtype Milliseconds = Milliseconds { unMS :: Int }$/;"	c
+Milliseconds	KMonad/Util.hs	/^newtype Milliseconds = Milliseconds { unMS :: Int }$/;"	t
+Missing195	KMonad/Keyboard/Keycode.hs	/^  | Missing195$/;"	c
+Missing196	KMonad/Keyboard/Keycode.hs	/^  | Missing196$/;"	c
+Missing197	KMonad/Keyboard/Keycode.hs	/^  | Missing197$/;"	c
+Missing198	KMonad/Keyboard/Keycode.hs	/^  | Missing198$/;"	c
+Missing199	KMonad/Keyboard/Keycode.hs	/^  | Missing199$/;"	c
+Missing247	KMonad/Keyboard/Keycode.hs	/^  | Missing247$/;"	c
+Missing248	KMonad/Keyboard/Keycode.hs	/^  | Missing248$/;"	c
+Missing249	KMonad/Keyboard/Keycode.hs	/^  | Missing249$/;"	c
+Missing250	KMonad/Keyboard/Keycode.hs	/^  | Missing250$/;"	c
+Missing251	KMonad/Keyboard/Keycode.hs	/^  | Missing251$/;"	c
+Missing252	KMonad/Keyboard/Keycode.hs	/^  | Missing252$/;"	c
+Missing253	KMonad/Keyboard/Keycode.hs	/^  | Missing253$/;"	c
+Missing254	KMonad/Keyboard/Keycode.hs	/^  | Missing254$/;"	c
+Missing255	KMonad/Keyboard/Keycode.hs	/^  | Missing255$/;"	c
+Missing84	KMonad/Keyboard/Keycode.hs	/^  | Missing84$/;"	c
+MissingAlias	KMonad/App/Parser/TokenJoiner.hs	/^  | MissingAlias     Text$/;"	c
+MissingAlias	KMonad/Args/Joiner.hs	/^  | MissingAlias     Text$/;"	c
+MissingBlock	KMonad/App/Parser/TokenJoiner.hs	/^  | MissingBlock     Text$/;"	c
+MissingBlock	KMonad/Args/Joiner.hs	/^  | MissingBlock     Text$/;"	c
+MissingLayer	KMonad/App/Parser/TokenJoiner.hs	/^  | MissingLayer     Text$/;"	c
+MissingLayer	KMonad/Args/Joiner.hs	/^  | MissingLayer     Text$/;"	c
+MissingSetting	KMonad/App/Parser/TokenJoiner.hs	/^  | MissingSetting   Text$/;"	c
+MissingSetting	KMonad/Args/Joiner.hs	/^  | MissingSetting   Text$/;"	c
+MultiMap	KMonad/Util/MultiMap.hs	/^newtype MultiMap k v = MultiMap { _unMM :: M.HashMap k (S.HashSet v) }$/;"	c
+MultiMap	KMonad/Util/MultiMap.hs	/^newtype MultiMap k v = MultiMap { _unMM :: M.HashMap k (S.HashSet v) }$/;"	t
+NestedTrans	KMonad/App/Parser/TokenJoiner.hs	/^  | NestedTrans$/;"	c
+NestedTrans	KMonad/Args/Joiner.hs	/^  | NestedTrans$/;"	c
+NoCatch	KMonad/Model/Action.hs	/^data Catch = Catch | NoCatch deriving (Show, Eq)$/;"	c
+NoMacKeycodeFrom	KMonad/Keyboard/IO/Mac/Types.hs	/^  | NoMacKeycodeFrom MacKeycode -- ^ Error translating from 'MacKeycode'$/;"	c
+NoMacKeycodeTo	KMonad/Keyboard/IO/Mac/Types.hs	/^  = NoMacKeycodeTo   Keycode    -- ^ Error translating to 'MacKeycode'$/;"	c
+NoWinKeycodeFrom	KMonad/Keyboard/IO/Windows/Types.hs	/^  | NoWinKeycodeFrom WinKeycode -- ^ Error translating from 'WinKeycode'$/;"	c
+NoWinKeycodeTo	KMonad/Keyboard/IO/Windows/Types.hs	/^  = NoWinKeycodeTo   Keycode    -- ^ Error translating to 'WinKeycode'$/;"	c
+None	KMonad/App/Parser/TokenJoiner.hs	/^  = None$/;"	c
+None	KMonad/Args/Joiner.hs	/^  = None$/;"	c
+OToken	KMonad/App/Parser/Types.hs	/^data OToken$/;"	t
+OToken	KMonad/Args/Types.hs	/^data OToken$/;"	t
+OutputHook	KMonad/Model/Action.hs	/^  | OutputHook -- ^ Install the hook just before emitting a 'KeyEvent'$/;"	c
+PErrors	KMonad/App/Parser/Types.hs	/^newtype PErrors = PErrors (ParseErrorBundle Text Void)$/;"	c
+PErrors	KMonad/App/Parser/Types.hs	/^newtype PErrors = PErrors (ParseErrorBundle Text Void)$/;"	t
+PErrors	KMonad/Args/Types.hs	/^newtype PErrors = PErrors (ParseErrorBundle Text Void)$/;"	c
+PErrors	KMonad/Args/Types.hs	/^newtype PErrors = PErrors (ParseErrorBundle Text Void)$/;"	t
+Parser	KMonad/App/Parser/Types.hs	/^type Parser = Parsec Void Text$/;"	t
+Parser	KMonad/Args/Types.hs	/^type Parser = Parsec Void Text$/;"	t
+PopLayer	KMonad/Model/Action.hs	/^  | PopLayer     LayerTag -- ^ Remove the first occurence of a layer$/;"	c
+Press	KMonad/Keyboard/Types.hs	/^  = Press$/;"	c
+PushLayer	KMonad/Model/Action.hs	/^  = PushLayer    LayerTag -- ^ Add a layer to the top of the stack$/;"	c
+Release	KMonad/Keyboard/Types.hs	/^  | Release$/;"	c
+SAllowCmd	KMonad/App/Parser/Types.hs	/^  | SAllowCmd    Bool$/;"	c
+SAllowCmd	KMonad/Args/Types.hs	/^  | SAllowCmd    Bool$/;"	c
+SCmpSeq	KMonad/App/Parser/Types.hs	/^  | SCmpSeq      DefButton$/;"	c
+SCmpSeq	KMonad/Args/Types.hs	/^  | SCmpSeq      DefButton$/;"	c
+SCmpSeqDelay	KMonad/Args/Types.hs	/^  | SCmpSeqDelay Int$/;"	c
+SFallThrough	KMonad/App/Parser/Types.hs	/^  | SFallThrough Bool$/;"	c
+SFallThrough	KMonad/Args/Types.hs	/^  | SFallThrough Bool$/;"	c
+SIToken	KMonad/App/Parser/Types.hs	/^  = SIToken      IToken$/;"	c
+SIToken	KMonad/Args/Types.hs	/^  = SIToken      IToken$/;"	c
+SInitStr	KMonad/App/Parser/Types.hs	/^  | SInitStr     Text$/;"	c
+SInitStr	KMonad/Args/Types.hs	/^  | SInitStr     Text$/;"	c
+SKSink	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^data SKSink = SKSink$/;"	c
+SKSink	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^data SKSink = SKSink$/;"	t
+SOToken	KMonad/App/Parser/Types.hs	/^  | SOToken      OToken$/;"	c
+SOToken	KMonad/Args/Types.hs	/^  | SOToken      OToken$/;"	c
+SetBaseLayer	KMonad/Model/Action.hs	/^  | SetBaseLayer LayerTag -- ^ Change the base-layer$/;"	c
+SingletonError	KMonad/App/Parser/TokenJoiner.hs	/^data SingletonError$/;"	t
+SingletonError	KMonad/Args/Joiner.hs	/^data SingletonError$/;"	t
+SinkEncodeError	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  | SinkEncodeError         SinkId LinuxKeyEvent -- ^ Could not decode event$/;"	c
+SinkId	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^type SinkId = String$/;"	t
+Sluice	KMonad/Model/Sluice.hs	/^data Sluice = Sluice$/;"	c
+Sluice	KMonad/Model/Sluice.hs	/^data Sluice = Sluice$/;"	t
+Store	KMonad/Model/Hooks.hs	/^type Store = M.HashMap Unique Entry$/;"	t
+Switch	KMonad/Keyboard/Types.hs	/^data Switch$/;"	t
+Timeout	KMonad/Model/Action.hs	/^data Timeout m = Timeout$/;"	c
+Timeout	KMonad/Model/Action.hs	/^data Timeout m = Timeout$/;"	t
+Trigger	KMonad/Model/Action.hs	/^data Trigger = Trigger$/;"	c
+Trigger	KMonad/Model/Action.hs	/^data Trigger = Trigger$/;"	t
+UinputCfg	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^data UinputCfg = UinputCfg$/;"	c
+UinputCfg	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^data UinputCfg = UinputCfg$/;"	t
+UinputRegistrationError	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  = UinputRegistrationError SinkId               -- ^ Could not register device$/;"	c
+UinputReleaseError	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  | UinputReleaseError      SinkId               -- ^ Could not release device$/;"	c
+UinputSink	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^data UinputSink = UinputSink$/;"	c
+UinputSink	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^data UinputSink = UinputSink$/;"	t
+UinputSinkError	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^data UinputSinkError$/;"	t
+WinError	KMonad/Keyboard/IO/Windows/Types.hs	/^data WinError$/;"	t
+WinKeyEvent	KMonad/Keyboard/IO/Windows/Types.hs	/^newtype WinKeyEvent = WinKeyEvent (WinSwitch, WinKeycode)$/;"	c
+WinKeyEvent	KMonad/Keyboard/IO/Windows/Types.hs	/^newtype WinKeyEvent = WinKeyEvent (WinSwitch, WinKeycode)$/;"	t
+WinKeycode	KMonad/Keyboard/IO/Windows/Types.hs	/^type WinKeycode = Word32 -- ^ Type alias for the windows encoded keycode$/;"	t
+WinSwitch	KMonad/Keyboard/IO/Windows/Types.hs	/^type WinSwitch  = Word8  -- ^ Type alias for the switch value$/;"	t
+_WinSwitch	KMonad/Keyboard/IO/Windows/Types.hs	/^_WinSwitch = iso to' from'$/;"	f
+_action	KMonad/Model/Action.hs	/^  , _action :: m ()         -- ^ Action to perform upon timeout$/;"	f
+_allow	KMonad/App/Parser/Types.hs	/^  , _allow :: Bool                              -- ^ Whether to allow shell commands$/;"	f
+_allow	KMonad/Args/Types.hs	/^  , _allow :: Bool                              -- ^ Whether to allow shell commands$/;"	f
+_allowCmd	KMonad/App/Types.hs	/^  , _allowCmd     :: Bool              -- ^ Whether shell-commands are allowed$/;"	f
+_baseL	KMonad/Model/Keymap.hs	/^  , _baseL :: IORef LayerTag$/;"	f
+_beButton	KMonad/Model/BEnv.hs	/^  { _beButton   :: !Button        -- ^ The configuration for this button$/;"	f
+_binding	KMonad/Model/BEnv.hs	/^  , _binding    :: !Keycode       -- ^ The 'Keycode' to which this button is bound$/;"	f
+_blockBuf	KMonad/Model/Sluice.hs	/^  , _blockBuf :: IORef [KeyEvent] -- ^ Internal buffer to store events while closed$/;"	f
+_blocked	KMonad/Model/Sluice.hs	/^  , _blocked  :: IORef Int        -- ^ How many locks have been applied to the sluice$/;"	f
+_buffer	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^  { _buffer :: !(Ptr MacKeyEvent)$/;"	f
+_buffer	KMonad/Keyboard/IO/Mac/KextSink.hs	/^  { _buffer :: Ptr MacKeyEvent -- ^ The pointer we write events to$/;"	f
+_buffer	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^  , _buffer :: !(Ptr WinKeyEvent) -- ^ Buffer used to communicate with process$/;"	f
+_buffer	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^  { _buffer :: Ptr WinKeyEvent -- ^ The pointer we write events to$/;"	f
+_buttons	KMonad/App/Parser/Types.hs	/^  , _buttons   :: [DefButton] -- ^ A list of button tokens$/;"	f
+_buttons	KMonad/Args/Types.hs	/^  , _buttons   :: [DefButton] -- ^ A list of button tokens$/;"	f
+_cfg	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  { _cfg :: !DeviceSourceCfg -- ^ Configuration settings$/;"	f
+_cfg	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  { _cfg     :: UinputCfg$/;"	f
+_cfgFile	KMonad/App/Invocation/Types.hs	/^  { _cfgFile   :: FilePath -- ^ Which file to read the config from$/;"	f
+_cfgFile	KMonad/Args/Cmd.hs	/^  { _cfgFile   :: FilePath     -- ^ Which file to read the config from$/;"	f
+_cmdAllow	KMonad/App/Invocation/Types.hs	/^  , _cmdAllow  :: DefSetting       -- ^ Allow execution of arbitrary shell-commands?$/;"	f
+_cmdAllow	KMonad/Args/Cmd.hs	/^  , _cmdAllow  :: DefSetting       -- ^ Allow execution of arbitrary shell-commands?$/;"	f
+_cmpKey	KMonad/App/Parser/TokenJoiner.hs	/^  { _cmpKey  :: Button  -- ^ How to prefix compose-sequences$/;"	f
+_cmpKey	KMonad/Args/Joiner.hs	/^  { _cmpKey  :: Button  -- ^ How to prefix compose-sequences$/;"	f
+_cmpSeq	KMonad/App/Invocation/Types.hs	/^  , _cmpSeq    :: Maybe DefSetting -- ^ Key to use for compose-key sequences$/;"	f
+_cmpSeq	KMonad/Args/Cmd.hs	/^  , _cmpSeq    :: Maybe DefSetting -- ^ Key to use for compose-key sequences$/;"	f
+_delay	KMonad/Model/Action.hs	/^  { _delay  :: Milliseconds -- ^ Delay before timeout action is triggered$/;"	f
+_dispatch	KMonad/App/Types.hs	/^  , _dispatch   :: Dp.Dispatch$/;"	f
+_dryRun	KMonad/App/Invocation/Types.hs	/^  , _dryRun    :: Bool     -- ^ Flag to indicate we are only test-parsing$/;"	f
+_dryRun	KMonad/Args/Cmd.hs	/^  , _dryRun    :: Bool         -- ^ Flag to indicate we are only test-parsing$/;"	f
+_eHook	KMonad/Model/Hooks.hs	/^  , _eHook :: Hook IO$/;"	f
+_elapsed	KMonad/Model/Action.hs	/^  { _elapsed :: Milliseconds -- ^ Time elapsed since hook was registered$/;"	f
+_event	KMonad/Model/Action.hs	/^  , _event   :: KeyEvent     -- ^ The key event triggering this call$/;"	f
+_eventSrc	KMonad/Model/Dispatch.hs	/^  { _eventSrc :: IO KeyEvent            -- ^ How to read 1 event$/;"	f
+_eventSrc	KMonad/Model/Hooks.hs	/^  { _eventSrc   :: IO KeyEvent   -- ^ Where we get our events from$/;"	f
+_eventSrc	KMonad/Model/Sluice.hs	/^  { _eventSrc :: IO KeyEvent      -- ^ Where we get our 'KeyEvent's from$/;"	f
+_fallThrgh	KMonad/App/Invocation/Types.hs	/^  , _fallThrgh :: DefSetting       -- ^ Re-emit unhandled events?$/;"	f
+_fallThrgh	KMonad/Args/Cmd.hs	/^  , _fallThrgh :: DefSetting       -- ^ Re-emit unhandled events?$/;"	f
+_fallThrough	KMonad/App/Types.hs	/^  , _fallThrough  :: Bool              -- ^ Whether uncaught events should be emitted or not$/;"	f
+_fd	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  , _fd  :: !Fd              -- ^ Posix filedescriptor to the device file$/;"	f
+_firstLayer	KMonad/App/Types.hs	/^  , _firstLayer   :: LayerTag          -- ^ Active layer when KMonad starts$/;"	f
+_flt	KMonad/App/Parser/Types.hs	/^  , _flt   :: Bool                              -- ^ How to deal with unhandled events$/;"	f
+_flt	KMonad/Args/Types.hs	/^  , _flt   :: Bool                              -- ^ How to deal with unhandled events$/;"	f
+_fstL	KMonad/App/Parser/Types.hs	/^  , _fstL  :: LayerTag                          -- ^ Name of initial layer$/;"	f
+_fstL	KMonad/Args/Types.hs	/^  , _fstL  :: LayerTag                          -- ^ Name of initial layer$/;"	f
+_hTimeout	KMonad/Model/Action.hs	/^  { _hTimeout :: Maybe (Timeout m)  -- ^ Optional timeout machinery$/;"	f
+_hdl	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  , _hdl :: !Handle          -- ^ Haskell handle to the device file$/;"	f
+_hooks	KMonad/Model/Hooks.hs	/^  , _hooks      :: TVar Store    -- ^ Store of hooks$/;"	f
+_iToken	KMonad/App/Invocation/Types.hs	/^  , _iToken    :: Maybe DefSetting -- ^ How to capture the input$/;"	f
+_iToken	KMonad/Args/Cmd.hs	/^  , _iToken    :: Maybe DefSetting -- ^ How to capture the input$/;"	f
+_inHooks	KMonad/App/Types.hs	/^  , _inHooks    :: Hs.Hooks$/;"	f
+_initStr	KMonad/App/Invocation/Types.hs	/^  , _initStr   :: Maybe DefSetting -- ^ TODO: What does this do?$/;"	f
+_initStr	KMonad/Args/Cmd.hs	/^  , _initStr   :: Maybe DefSetting -- ^ TODO: What does this do?$/;"	f
+_injectTmr	KMonad/Model/Hooks.hs	/^  , _injectTmr  :: TMVar Unique  -- ^ Used to signal timeouts$/;"	f
+_items	KMonad/Util/LayerStack.hs	/^  , _items :: !(M.HashMap (l, k) a) -- ^ The map of all the bindings$/;"	f
+_kAppEnv	KMonad/App/Types.hs	/^  { _kAppEnv :: AppEnv -- ^ The app environment containing all the components$/;"	f
+_kBEnv	KMonad/App/Types.hs	/^  , _kBEnv   :: BEnv   -- ^ The environment describing the currently active button$/;"	f
+_keAppCfg	KMonad/App/Types.hs	/^    _keAppCfg   :: AppCfg$/;"	f
+_keLogFunc	KMonad/App/Types.hs	/^  , _keLogFunc  :: LogFunc$/;"	f
+_kes	KMonad/App/Parser/TokenJoiner.hs	/^  , _kes     :: [KExpr] -- ^ The source expresions we operate on$/;"	f
+_kes	KMonad/Args/Joiner.hs	/^  , _kes     :: [KExpr] -- ^ The source expresions we operate on$/;"	f
+_keyH	KMonad/Model/Action.hs	/^  , _keyH     :: Trigger -> m Catch -- ^ The function to call on the next 'KeyEvent'$/;"	f
+_keySink	KMonad/App/Types.hs	/^  , _keySink    :: KeySink$/;"	f
+_keySinkDev	KMonad/App/Types.hs	/^  { _keySinkDev   :: Acquire KeySink   -- ^ How to open a 'KeySink'$/;"	f
+_keySource	KMonad/App/Types.hs	/^  , _keySource  :: KeySource$/;"	f
+_keySourceDev	KMonad/App/Types.hs	/^  , _keySourceDev :: Acquire KeySource -- ^ How to open a 'KeySource'$/;"	f
+_keyboardName	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  , _keyboardName   :: !String$/;"	f
+_keycode	KMonad/Keyboard/Types.hs	/^  , _keycode :: Keycode -- ^ The 'Keycode' mapped to this 'KeyEvent'$/;"	f
+_keymap	KMonad/App/Types.hs	/^  , _keymap     :: Km.Keymap$/;"	f
+_keymapCfg	KMonad/App/Types.hs	/^  , _keymapCfg    :: LMap Button       -- ^ The map defining the 'Button' layout$/;"	f
+_km	KMonad/App/Parser/Types.hs	/^  , _km    :: LMap Button                       -- ^ An 'LMap' of 'Button' actions$/;"	f
+_km	KMonad/Args/Types.hs	/^  , _km    :: LMap Button                       -- ^ An 'LMap' of 'Button' actions$/;"	f
+_lastSwitch	KMonad/Model/BEnv.hs	/^  , _lastSwitch :: !(MVar Switch) -- ^ State to keep track of last manipulation$/;"	f
+_layerName	KMonad/App/Parser/Types.hs	/^  { _layerName :: Text        -- ^ A unique name used to refer to this layer$/;"	f
+_layerName	KMonad/Args/Types.hs	/^  { _layerName :: Text        -- ^ A unique name used to refer to this layer$/;"	f
+_logLvl	KMonad/App/Invocation/Types.hs	/^  , _logLvl    :: LogLevel -- ^ Level of logging to use$/;"	f
+_logLvl	KMonad/Args/Cmd.hs	/^  , _logLvl    :: LogLevel     -- ^ Level of logging to use$/;"	f
+_maps	KMonad/Util/LayerStack.hs	/^  , _maps  :: !(S.HashSet l)        -- ^ A set of all 'Layer' names$/;"	f
+_nbytes	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  { _nbytes :: !Int$/;"	f
+_oToken	KMonad/App/Invocation/Types.hs	/^  , _oToken    :: Maybe DefSetting -- ^ How to emit the output$/;"	f
+_oToken	KMonad/Args/Cmd.hs	/^  , _oToken    :: Maybe DefSetting -- ^ How to emit the output$/;"	f
+_outHooks	KMonad/App/Types.hs	/^  , _outHooks   :: Hs.Hooks$/;"	f
+_outVar	KMonad/App/Types.hs	/^  , _outVar     :: TMVar KeyEvent$/;"	f
+_parser	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  , _parser  :: !KeyEventParser  -- ^ The method used to decode events$/;"	f
+_postInit	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  , _postInit       :: !(Maybe String)$/;"	f
+_pressAction	KMonad/Model/Button.hs	/^  { _pressAction   :: !Action -- ^ Action to take when pressed$/;"	f
+_productCode	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  , _productCode    :: !CInt$/;"	f
+_productVersion	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  , _productVersion :: !CInt$/;"	f
+_prs	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  , _prs    :: !(B.ByteString -> Either String LinuxKeyEvent)$/;"	f
+_pth	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^  { _pth     :: !FilePath        -- ^ Path to the event-file$/;"	f
+_readProc	KMonad/Model/Dispatch.hs	/^  , _readProc :: TMVar (Async KeyEvent) -- ^ Store for reading process$/;"	f
+_releaseAction	KMonad/Model/Button.hs	/^  , _releaseAction :: !Action -- ^ Action to take when released$/;"	f
+_rerunBuf	KMonad/Model/Dispatch.hs	/^  , _rerunBuf :: TVar (Seq KeyEvent)    -- ^ Buffer for rerunning events$/;"	f
+_sluice	KMonad/App/Types.hs	/^  , _sluice     :: Sl.Sluice$/;"	f
+_snk	KMonad/App/Parser/Types.hs	/^  , _snk   :: LogFunc -> IO (Acquire KeySink)   -- ^ How to construct the out keybboard$/;"	f
+_snk	KMonad/Args/Types.hs	/^  , _snk   :: LogFunc -> IO (Acquire KeySink)   -- ^ How to construct the out keybboard$/;"	f
+_src	KMonad/App/Parser/Types.hs	/^  { _src   :: LogFunc -> IO (Acquire KeySource) -- ^ How to grab the source keyboard$/;"	f
+_src	KMonad/Args/Types.hs	/^  { _src   :: LogFunc -> IO (Acquire KeySource) -- ^ How to grab the source keyboard$/;"	f
+_st	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  , _st      :: MVar Fd$/;"	f
+_stack	KMonad/Model/Keymap.hs	/^  { _stack :: IORef (LMap BEnv)$/;"	f
+_stack	KMonad/Util/LayerStack.hs	/^  { _stack :: ![l]                  -- ^ The current stack of layers$/;"	f
+_startDelay	KMonad/App/Types.hs	/^  , _startDelay   :: Milliseconds      -- ^ How long to wait before acquiring the input keyboard$/;"	f
+_strtDel	KMonad/Args/Cmd.hs	/^  , _strtDel   :: Milliseconds -- ^ How long to wait before acquiring the input keyboard$/;"	f
+_switch	KMonad/Keyboard/Types.hs	/^  { _switch  :: Switch  -- ^ Whether the 'KeyEvent' was a 'Press' or 'Release'$/;"	f
+_thread	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^  { _thread :: !(Async Word8)        -- ^ The thread-id of the listen-process$/;"	f
+_time	KMonad/Model/Hooks.hs	/^  { _time  :: SystemTime$/;"	f
+_unMM	KMonad/Util/MultiMap.hs	/^newtype MultiMap k v = MultiMap { _unMM :: M.HashMap k (S.HashSet v) }$/;"	f
+_vendorCode	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^  { _vendorCode     :: !CInt$/;"	f
+acquire_uinput_keysink	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^acquire_uinput_keysink (Fd h) c = liftIO $ do$/;"	f
+after	KMonad/Model/Action.hs	/^after d a = do$/;"	f
+aliases	KMonad/Keyboard/Keycode.hs	/^aliases = Q.mkMultiMap$/;"	f
+around	KMonad/Model/Button.hs	/^around outer inner = Button$/;"	f
+aroundNext	KMonad/Model/Button.hs	/^aroundNext b = onPress $ await isPress $ \\e -> do$/;"	f
+aroundNextSingle	KMonad/Model/Button.hs	/^aroundNextSingle b = onPress $ await isPress $ \\_ -> do$/;"	f
+atKey	KMonad/Util/LayerStack.hs	/^atKey c = folding $ \\m -> m ^.. stack . folded . to (getK m) . folded$/;"	f
+await	KMonad/Model/Action.hs	/^await p a = hookF InputHook $ \\e -> if p e$/;"	f
+awaitKey	KMonad/Keyboard/IO.hs	/^awaitKey src = do$/;"	f
+awaitKeyWith	KMonad/Keyboard/IO.hs	/^newtype KeySource = KeySource { awaitKeyWith :: IO KeyEvent}$/;"	f
+awaitMy	KMonad/Model/Action.hs	/^awaitMy s a = matchMy s >>= flip await (const a)$/;"	f
+block	KMonad/Model/Sluice.hs	/^block s = do$/;"	f
+bool	KMonad/App/Parser/Tokenizer.hs	/^bool = symbol "true" *> pure True$/;"	f
+bool	KMonad/Args/Parser.hs	/^bool = symbol "true" *> pure True$/;"	f
+buttonNames	KMonad/App/Parser/Tokenizer.hs	/^buttonNames = shiftedNames <> escp <> util$/;"	f
+buttonNames	KMonad/Args/Parser.hs	/^buttonNames = shiftedNames <> escp <> util$/;"	f
+buttonP	KMonad/App/Parser/Tokenizer.hs	/^buttonP = (lexeme . choice . map try \$$/;"	f
+buttonP	KMonad/Args/Parser.hs	/^buttonP = (lexeme . choice . map try \$$/;"	f
+cancelHook	KMonad/Model/Hooks.hs	/^cancelHook hs tag = do$/;"	f
+class	KMonad/Model/Action.hs	/^class Monad m => MonadKIO m where$/;"	f
+class	KMonad/Model/Action.hs	/^class MonadKIO m => MonadK m where$/;"	f
+cmdAllowP	KMonad/App/Invocation/Parser.hs	/^cmdAllowP = SAllowCmd <$> switch$/;"	f
+cmdAllowP	KMonad/Args/Cmd.hs	/^cmdAllowP = SAllowCmd <$> switch$/;"	f
+cmdButton	KMonad/Model/Button.hs	/^cmdButton pr mbR = mkButton (shellCmd pr) (maybe (pure ()) shellCmd mbR)$/;"	f
+cmdP	KMonad/Args/Cmd.hs	/^cmdP =$/;"	f
+cmpSeqP	KMonad/App/Invocation/Parser.hs	/^cmpSeqP = optional $ SCmpSeq <$> option$/;"	f
+cmpSeqP	KMonad/Args/Cmd.hs	/^cmpSeqP = optional $ SCmpSeq <$> option$/;"	f
+composeSeqP	KMonad/App/Parser/Tokenizer.hs	/^composeSeqP = do$/;"	f
+composeSeqP	KMonad/Args/Parser.hs	/^composeSeqP = do$/;"	f
+configP	KMonad/App/Parser/Tokenizer.hs	/^configP = sc *> exprsP <* eof$/;"	f
+configP	KMonad/Args/Parser.hs	/^configP = sc *> exprsP <* eof$/;"	f
+deadkeySeqP	KMonad/App/Parser/Tokenizer.hs	/^deadkeySeqP = do$/;"	f
+deadkeySeqP	KMonad/Args/Parser.hs	/^deadkeySeqP = do$/;"	f
+debugReport	KMonad/Model/Keymap.hs	/^debugReport h hdr = do$/;"	f
+decode64	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^decode64 bs = (linuxKeyEvent . fliptup) <$> result$/;"	f
+defEventParser	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^defEventParser = KeyEventParser 24 decode64$/;"	f
+defJCfg	KMonad/App/Parser/TokenJoiner.hs	/^defJCfg = JCfg$/;"	f
+defJCfg	KMonad/Args/Joiner.hs	/^defJCfg = JCfg$/;"	f
+defUinputCfg	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^defUinputCfg = UinputCfg$/;"	f
+defaliasP	KMonad/App/Parser/Tokenizer.hs	/^defaliasP = many $ (,) <$> lexeme word <*> buttonP$/;"	f
+defaliasP	KMonad/Args/Parser.hs	/^defaliasP = many $ (,) <$> lexeme word <*> buttonP$/;"	f
+defcfgP	KMonad/App/Parser/Tokenizer.hs	/^defcfgP = some (lexeme settingP)$/;"	f
+defcfgP	KMonad/Args/Parser.hs	/^defcfgP = some (lexeme settingP)$/;"	f
+deflayerP	KMonad/App/Parser/Tokenizer.hs	/^deflayerP = DefLayer <$> lexeme word <*> many (lexeme buttonP)$/;"	f
+deflayerP	KMonad/Args/Parser.hs	/^deflayerP = DefLayer <$> lexeme word <*> many (lexeme buttonP)$/;"	f
+defsrcP	KMonad/App/Parser/Tokenizer.hs	/^defsrcP = many $ lexeme keycodeP$/;"	f
+defsrcP	KMonad/Args/Parser.hs	/^defsrcP = many $ lexeme keycodeP$/;"	f
+derefP	KMonad/App/Parser/Tokenizer.hs	/^derefP = prefix (char '@') *> word$/;"	f
+derefP	KMonad/Args/Parser.hs	/^derefP = prefix (char '@') *> word$/;"	f
+deviceSource	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^deviceSource pr pt = mkKeySource (lsOpen pr pt) lsClose lsRead$/;"	f
+deviceSource64	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^deviceSource64 = deviceSource defEventParser$/;"	f
+dryrunP	KMonad/App/Invocation/Parser.hs	/^dryrunP = switch$/;"	f
+dryrunP	KMonad/Args/Cmd.hs	/^dryrunP = switch$/;"	f
+emitB	KMonad/Model/Button.hs	/^emitB c = mkButton$/;"	f
+emitKey	KMonad/Keyboard/IO.hs	/^emitKey snk e = do$/;"	f
+emitKeyWith	KMonad/Keyboard/IO.hs	/^newtype KeySink = KeySink { emitKeyWith :: KeyEvent -> IO () }$/;"	f
+exprP	KMonad/App/Parser/Tokenizer.hs	/^exprP = paren . choice \$$/;"	f
+exprP	KMonad/Args/Parser.hs	/^exprP = paren . choice \$$/;"	f
+exprsP	KMonad/App/Parser/Tokenizer.hs	/^exprsP = lexeme . many $ lexeme exprP$/;"	f
+exprsP	KMonad/Args/Parser.hs	/^exprsP = lexeme . many $ lexeme exprP$/;"	f
+extract	KMonad/App/Parser/TokenJoiner.hs	/^extract p = catMaybes . map (preview p)$/;"	f
+extract	KMonad/Args/Joiner.hs	/^extract p = catMaybes . map (preview p)$/;"	f
+fallThrghP	KMonad/App/Invocation/Parser.hs	/^fallThrghP = SFallThrough <$> switch$/;"	f
+fallThrghP	KMonad/Args/Cmd.hs	/^fallThrghP = SFallThrough <$> switch$/;"	f
+fi	KMonad/Keyboard/IO/Linux/Types.hs	/^fi = fromIntegral$/;"	f
+fileP	KMonad/App/Invocation/Parser.hs	/^fileP = strArgument$/;"	f
+fileP	KMonad/Args/Cmd.hs	/^fileP = strArgument$/;"	f
+fromLinuxKeyEvent	KMonad/Keyboard/IO/Linux/Types.hs	/^fromLinuxKeyEvent (LinuxKeyEvent (_, _, typ, c, val))$/;"	f
+fromMacKeyEvent	KMonad/Keyboard/IO/Mac/Types.hs	/^fromMacKeyEvent (MacKeyEvent (s, (p, u)))$/;"	f
+fromMacKeycode	KMonad/Keyboard/IO/Mac/Types.hs	/^fromMacKeycode = flip M.lookup kcMap$/;"	f
+fromMacSwitch	KMonad/Keyboard/IO/Mac/Types.hs	/^fromMacSwitch s = case s of$/;"	f
+fromNamed	KMonad/App/Parser/Tokenizer.hs	/^fromNamed = choice . map mkOne . srt$/;"	f
+fromNamed	KMonad/Args/Parser.hs	/^fromNamed = choice . map mkOne . srt$/;"	f
+fromSingletons	KMonad/Util/MultiMap.hs	/^fromSingletons = mkMultiMap . map (over _2 (:[])) . toList$/;"	f
+fromWinKeyEvent	KMonad/Keyboard/IO/Windows/Types.hs	/^fromWinKeyEvent (WinKeyEvent (s, c)) = case fromWinKeycode c of$/;"	f
+fromWinKeycode	KMonad/Keyboard/IO/Windows/Types.hs	/^fromWinKeycode = flip M.lookup kcMap$/;"	f
+getAllow	KMonad/App/Parser/TokenJoiner.hs	/^getAllow = do$/;"	f
+getAllow	KMonad/Args/Joiner.hs	/^getAllow = do$/;"	f
+getCmd	KMonad/Args/Cmd.hs	/^getCmd = customExecParser (prefs showHelpOnEmpty) $ info (cmdP <**> helper)$/;"	f
+getCmpSeqDelay	KMonad/Args/Joiner.hs	/^getCmpSeqDelay = do$/;"	f
+getFT	KMonad/App/Parser/TokenJoiner.hs	/^getFT = do$/;"	f
+getFT	KMonad/Args/Joiner.hs	/^getFT = do$/;"	f
+getI	KMonad/App/Parser/TokenJoiner.hs	/^getI = do$/;"	f
+getI	KMonad/Args/Joiner.hs	/^getI = do$/;"	f
+getInvoc	KMonad/App/Invocation/IO.hs	/^getInvoc = customExecParser (prefs showHelpOnEmpty) $ info (invocP <**> helper)$/;"	f
+getO	KMonad/App/Parser/TokenJoiner.hs	/^getO = do$/;"	f
+getO	KMonad/Args/Joiner.hs	/^getO = do$/;"	f
+getOverride	KMonad/App/Parser/TokenJoiner.hs	/^getOverride = do$/;"	f
+getOverride	KMonad/Args/Joiner.hs	/^getOverride = do$/;"	f
+hookF	KMonad/Model/Action.hs	/^hookF l f = register l . Hook Nothing $ \\t -> f (t^.event)$/;"	f
+iTokenP	KMonad/App/Invocation/Parser.hs	/^iTokenP = optional $ SIToken <$> option (tokenParser itokens)$/;"	f
+iTokenP	KMonad/Args/Cmd.hs	/^iTokenP = optional $ SIToken <$> option (tokenParser itokens)$/;"	f
+inLayer	KMonad/Util/LayerStack.hs	/^inLayer l c = folding $ \\m -> m ^? items . ix (l, c)$/;"	f
+initAppEnv	KMonad/App/Main.hs	/^initAppEnv cfg = do$/;"	f
+initBEnv	KMonad/Model/BEnv.hs	/^initBEnv b c = BEnv b c <$> newMVar Release$/;"	f
+initStrP	KMonad/App/Invocation/Parser.hs	/^initStrP = optional $ SInitStr <$> strOption$/;"	f
+initStrP	KMonad/Args/Cmd.hs	/^initStrP = optional $ SInitStr <$> strOption$/;"	f
+instance	KMonad/Util/MultiMap.hs	/^type instance Index   (MultiMap k v) = k$/;"	t
+instance	KMonad/Util/MultiMap.hs	/^type instance IxValue (MultiMap k v) = S.HashSet v$/;"	t
+invocP	KMonad/App/Invocation/Parser.hs	/^invocP = Invoc$/;"	f
+ioHook	KMonad/Model/Hooks.hs	/^ioHook h = withRunInIO $ \\u -> do$/;"	f
+ioctl_keyboard	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^ioctl_keyboard (Fd h) b = fromIntegral <$>$/;"	f
+iokitClose	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^iokitClose b = do$/;"	f
+iokitOpen	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^iokitOpen m = do$/;"	f
+iokitRead	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^iokitRead b = do$/;"	f
+iokitSource	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^iokitSource name = mkKeySource (iokitOpen name) iokitClose iokitRead$/;"	f
+isKeycode	KMonad/Keyboard/Ops.hs	/^isKeycode c = (== c) . view keycode$/;"	f
+isPress	KMonad/Keyboard/Ops.hs	/^isPress = (== Press) . view switch$/;"	f
+isPressOf	KMonad/Keyboard/Ops.hs	/^isPressOf = (==) . mkPress$/;"	f
+isRelease	KMonad/Keyboard/Ops.hs	/^isRelease = not . isPress$/;"	f
+isReleaseOf	KMonad/Keyboard/Ops.hs	/^isReleaseOf = (==) . mkRelease$/;"	f
+itemed	KMonad/Util/MultiMap.hs	/^itemed = folding $ \\m -> m ^@.. unMM . ifolded <. folded$/;"	f
+itokenP	KMonad/App/Parser/Tokenizer.hs	/^itokenP = choice $ map (try . uncurry statement) itokens$/;"	f
+itokenP	KMonad/Args/Parser.hs	/^itokenP = choice $ map (try . uncurry statement) itokens$/;"	f
+itokens	KMonad/App/Parser/Tokenizer.hs	/^itokens =$/;"	f
+itokens	KMonad/Args/Parser.hs	/^itokens =$/;"	f
+joinAliases	KMonad/App/Parser/TokenJoiner.hs	/^joinAliases ns als = foldM f M.empty $ concat als$/;"	f
+joinAliases	KMonad/Args/Joiner.hs	/^joinAliases ns als = foldM f M.empty $ concat als$/;"	f
+joinButton	KMonad/App/Parser/TokenJoiner.hs	/^joinButton ns als =$/;"	f
+joinButton	KMonad/Args/Joiner.hs	/^joinButton ns als =$/;"	f
+joinCLI	KMonad/Args.hs	/^joinCLI cmd = traverse._KDefCfg %~ insertCliOption cliList$/;"	f
+joinConfig	KMonad/App/Parser/TokenJoiner.hs	/^joinConfig = getOverride >>= \\cfg -> (local (const cfg) joinConfig')$/;"	f
+joinConfig	KMonad/Args/Joiner.hs	/^joinConfig = getOverride >>= \\cfg -> (local (const cfg) joinConfig')$/;"	f
+joinConfig'	KMonad/App/Parser/TokenJoiner.hs	/^joinConfig' = do$/;"	f
+joinConfig'	KMonad/Args/Joiner.hs	/^joinConfig' = do$/;"	f
+joinConfigIO	KMonad/App/Parser/TokenJoiner.hs	/^joinConfigIO es = case runJ joinConfig $ defJCfg es of$/;"	f
+joinConfigIO	KMonad/Args/Joiner.hs	/^joinConfigIO es = case runJ joinConfig $ defJCfg es of$/;"	f
+joinKeymap	KMonad/App/Parser/TokenJoiner.hs	/^joinKeymap _   _   []  = throwError $ MissingBlock "deflayer"$/;"	f
+joinKeymap	KMonad/App/Parser/TokenJoiner.hs	/^joinKeymap src als lys = do$/;"	f
+joinKeymap	KMonad/Args/Joiner.hs	/^joinKeymap _   _   []  = throwError $ MissingBlock "deflayer"$/;"	f
+joinKeymap	KMonad/Args/Joiner.hs	/^joinKeymap src als lys = do$/;"	f
+joinLayer	KMonad/App/Parser/TokenJoiner.hs	/^joinLayer als ns src DefLayer{_layerName=n, _buttons=bs} = do$/;"	f
+joinLayer	KMonad/Args/Joiner.hs	/^joinLayer als ns src DefLayer{_layerName=n, _buttons=bs} = do$/;"	f
+k	KMonad/Util/LayerStack.hs	/^  , _items :: !(M.HashMap (l, k) a) -- ^ The map of all the bindings$/;"	f
+kcAll	KMonad/Keyboard/Keycode.hs	/^kcAll = S.fromList $ [minBound .. maxBound]$/;"	f
+kcMap	KMonad/Keyboard/IO/Mac/Types.hs	/^kcMap = M.fromList \$$/;"	f
+kcMap	KMonad/Keyboard/IO/Windows/Types.hs	/^kcMap = M.fromList \$$/;"	f
+kcNotMissing	KMonad/Keyboard/Keycode.hs	/^kcNotMissing = S.fromList $ kcAll ^.. folded . filtered (T.isPrefixOf "Key" . tshow)$/;"	f
+kextSink	KMonad/Keyboard/IO/Mac/KextSink.hs	/^kextSink = mkKeySink skOpen skClose skSend$/;"	f
+keyNames	KMonad/Keyboard/Keycode.hs	/^keyNames = mconcat$/;"	f
+keycodeP	KMonad/App/Parser/Tokenizer.hs	/^keycodeP = fromNamed (Q.reverse keyNames ^.. Q.itemed) <?> "keycode"$/;"	f
+keycodeP	KMonad/Args/Parser.hs	/^keycodeP = fromNamed (Q.reverse keyNames ^.. Q.itemed) <?> "keycode"$/;"	f
+keywordButtons	KMonad/App/Parser/Tokenizer.hs	/^keywordButtons =$/;"	f
+keywordButtons	KMonad/Args/Parser.hs	/^keywordButtons =$/;"	f
+keywordP	KMonad/Args/Parser.hs	/^keywordP kw p = lexeme (string (":" <> kw)) *> lexeme p$/;"	f
+launch	KMonad/Util.hs	/^launch n = ContT . withLaunch n$/;"	f
+launch_	KMonad/Util.hs	/^launch_ n a = ContT $ \\next -> withLaunch_ n a (next ())$/;"	f
+layerAdd	KMonad/Model/Button.hs	/^layerAdd t = onPress (layerOp $ PushLayer t)$/;"	f
+layerDelay	KMonad/Model/Button.hs	/^layerDelay d t = onPress $ do$/;"	f
+layerNext	KMonad/Model/Button.hs	/^layerNext t = onPress $ do$/;"	f
+layerOp	KMonad/Model/Keymap.hs	/^layerOp h o = let km = h^.stack in case o of$/;"	f
+layerRem	KMonad/Model/Button.hs	/^layerRem t = onPress (layerOp $ PopLayer t)$/;"	f
+layerSwitch	KMonad/Model/Button.hs	/^layerSwitch t = onPress (layerOp $ SetBaseLayer t)$/;"	f
+layerToggle	KMonad/Model/Button.hs	/^layerToggle t = mkButton$/;"	f
+levelP	KMonad/App/Invocation/Parser.hs	/^levelP = option f$/;"	f
+levelP	KMonad/Args/Cmd.hs	/^levelP = option f$/;"	f
+lexeme	KMonad/App/Parser/Tokenizer.hs	/^lexeme = L.lexeme sc$/;"	f
+lexeme	KMonad/Args/Parser.hs	/^lexeme = L.lexeme sc$/;"	f
+linuxKeyEvent	KMonad/Keyboard/IO/Linux/Types.hs	/^  :: (Integral a, Integral b, Integral c, Integral d, Integral e)$/;"	f
+linuxKeyEvent	KMonad/Keyboard/IO/Linux/Types.hs	/^linuxKeyEvent (a, b, c, d, e) = LinuxKeyEvent (f a, f b, f c, f d, f e)$/;"	f
+llClose	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^llClose ll = do$/;"	f
+llHook	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^llHook = mkKeySource llOpen llClose llRead$/;"	f
+llOpen	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^llOpen = do$/;"	f
+llRead	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^llRead ll = do$/;"	f
+loadConfig	KMonad/App/Parser/IO.hs	/^loadConfig pth = do$/;"	f
+loadConfig	KMonad/Args.hs	/^loadConfig cmd = do$/;"	f
+loadTokens	KMonad/App/Parser/Tokenizer.hs	/^loadTokens pth = parseTokens <$> readFileUtf8 pth >>= \\case$/;"	f
+loadTokens	KMonad/Args/Parser.hs	/^loadTokens pth = parseTokens <$> readFileUtf8 pth >>= \\case$/;"	f
+logRethrow	KMonad/Util.hs	/^logRethrow t e = do$/;"	f
+lookupKey	KMonad/Model/Keymap.hs	/^lookupKey h c = do$/;"	f
+loop	KMonad/App/Main.hs	/^loop = forever $ view sluice >>= Sl.pull >>= \\case$/;"	f
+lsClose	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^lsClose src = do$/;"	f
+lsOpen	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^lsOpen pr pt = do$/;"	f
+lsRead	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^lsRead src = do$/;"	f
+main	KMonad/App/Main.hs	/^main = getCmd >>= runCmd$/;"	f
+makeClassy	KMonad/App/Invocation/Types.hs	/^makeClassy ''Invoc$/;"	f
+makeClassy	KMonad/App/Parser/Types.hs	/^makeClassy ''CfgToken$/;"	f
+makeClassy	KMonad/App/Types.hs	/^makeClassy ''AppCfg$/;"	f
+makeClassy	KMonad/App/Types.hs	/^makeClassy ''AppEnv$/;"	f
+makeClassy	KMonad/App/Types.hs	/^makeClassy ''KEnv$/;"	f
+makeClassy	KMonad/Args/Cmd.hs	/^makeClassy ''Cmd$/;"	f
+makeClassy	KMonad/Args/Types.hs	/^makeClassy ''CfgToken$/;"	f
+makeClassy	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^makeClassy ''DeviceFile$/;"	f
+makeClassy	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^makeClassy ''DeviceSourceCfg$/;"	f
+makeClassy	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^makeClassy ''KeyEventParser$/;"	f
+makeClassy	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^makeClassy ''UinputCfg$/;"	f
+makeClassy	KMonad/Keyboard/IO/Mac/KextSink.hs	/^makeClassy ''EvBuf$/;"	f
+makeClassy	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^makeClassy ''SKSink$/;"	f
+makeClassy	KMonad/Keyboard/Types.hs	/^makeClassy ''KeyEvent$/;"	f
+makeClassy	KMonad/Model/Action.hs	/^makeClassy ''Hook$/;"	f
+makeClassy	KMonad/Model/Action.hs	/^makeClassy ''Timeout$/;"	f
+makeClassy	KMonad/Model/Action.hs	/^makeClassy ''Trigger$/;"	f
+makeClassy	KMonad/Model/BEnv.hs	/^makeClassy ''BEnv$/;"	f
+makeClassy	KMonad/Model/Button.hs	/^makeClassy ''Button$/;"	f
+makeClassy	KMonad/Model/Keymap.hs	/^makeClassy ''Keymap$/;"	f
+makeClassyPrisms	KMonad/App/Parser/Types.hs	/^makeClassyPrisms ''DefSetting$/;"	f
+makeClassyPrisms	KMonad/App/Parser/Types.hs	/^makeClassyPrisms ''KExpr$/;"	f
+makeClassyPrisms	KMonad/Args/Types.hs	/^makeClassyPrisms ''DefSetting$/;"	f
+makeClassyPrisms	KMonad/Args/Types.hs	/^makeClassyPrisms ''KExpr$/;"	f
+makeClassyPrisms	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^makeClassyPrisms ''DeviceSourceError$/;"	f
+makeClassyPrisms	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^makeClassyPrisms ''UinputSinkError$/;"	f
+makeClassyPrisms	KMonad/Util/LayerStack.hs	/^makeClassyPrisms ''LayerStackError$/;"	f
+makeLenses	KMonad/App/Parser/TokenJoiner.hs	/^makeLenses ''JCfg$/;"	f
+makeLenses	KMonad/Args/Joiner.hs	/^makeLenses ''JCfg$/;"	f
+makeLenses	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^makeLenses ''UinputSink$/;"	f
+makeLenses	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^makeLenses ''EvBuf$/;"	f
+makeLenses	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^makeLenses ''LLHook$/;"	f
+makeLenses	KMonad/Model/Dispatch.hs	/^makeLenses ''Dispatch$/;"	f
+makeLenses	KMonad/Model/Hooks.hs	/^makeLenses ''Entry$/;"	f
+makeLenses	KMonad/Model/Hooks.hs	/^makeLenses ''Hooks$/;"	f
+makeLenses	KMonad/Model/Sluice.hs	/^makeLenses ''Sluice$/;"	f
+makeLenses	KMonad/Util/LayerStack.hs	/^makeLenses ''LayerStack$/;"	f
+makeLenses	KMonad/Util/MultiMap.hs	/^makeLenses ''MultiMap$/;"	f
+matchMy	KMonad/Model/Action.hs	/^matchMy s = (==) <$> my s$/;"	f
+megaReadM	KMonad/App/Invocation/Parser.hs	/^megaReadM p = eitherReader (mapLeft show . M.parse p "" . fromString)$/;"	f
+megaReadM	KMonad/Args/Cmd.hs	/^megaReadM p = eitherReader (mapLeft show . M.parse p "" . fromString)$/;"	f
+mkButton	KMonad/Model/Button.hs	/^mkButton a b = Button (Action a) (Action b)$/;"	f
+mkDispatch	KMonad/Model/Dispatch.hs	/^mkDispatch = lift . mkDispatch'$/;"	f
+mkDispatch'	KMonad/Model/Dispatch.hs	/^mkDispatch' s = withRunInIO $ \\u -> do$/;"	f
+mkHooks	KMonad/Model/Hooks.hs	/^mkHooks = lift . mkHooks'$/;"	f
+mkHooks'	KMonad/Model/Hooks.hs	/^mkHooks' s = withRunInIO $ \\u -> do$/;"	f
+mkKeyEvent	KMonad/Keyboard/Types.hs	/^mkKeyEvent = KeyEvent$/;"	f
+mkKeySink	KMonad/Keyboard/IO.hs	/^mkKeySink o c w = do$/;"	f
+mkKeySource	KMonad/Keyboard/IO.hs	/^mkKeySource o c r = do$/;"	f
+mkKeymap	KMonad/Model/Keymap.hs	/^mkKeymap n = lift . mkKeymap' n$/;"	f
+mkKeymap'	KMonad/Model/Keymap.hs	/^mkKeymap' n m = do$/;"	f
+mkLayer	KMonad/Util/LayerStack.hs	/^mkLayer = Layer . M.fromList . toList$/;"	f
+mkLayerStack	KMonad/Util/LayerStack.hs	/^mkLayerStack nestMaps = let$/;"	f
+mkMultiMap	KMonad/Util/MultiMap.hs	/^mkMultiMap = foldMap$/;"	f
+mkPress	KMonad/Keyboard/Ops.hs	/^mkPress = mkKeyEvent Press$/;"	f
+mkRelease	KMonad/Keyboard/Ops.hs	/^mkRelease = mkKeyEvent Release$/;"	f
+mkSluice	KMonad/Model/Sluice.hs	/^mkSluice = lift . mkSluice'$/;"	f
+mkSluice'	KMonad/Model/Sluice.hs	/^mkSluice' s = withRunInIO $ \\u -> do$/;"	f
+mkWinKeyEvent	KMonad/Keyboard/IO/Windows/Types.hs	/^mkWinKeyEvent s e = WinKeyEvent (s, e)$/;"	f
+modded	KMonad/Model/Button.hs	/^modded modder = around (emitB modder)$/;"	f
+moddedP	KMonad/App/Parser/Tokenizer.hs	/^moddedP = KAround <$> prfx <*> buttonP$/;"	f
+moddedP	KMonad/Args/Parser.hs	/^moddedP = KAround <$> prfx <*> buttonP$/;"	f
+multiTap	KMonad/Model/Button.hs	/^multiTap l bs = onPress $ go bs$/;"	f
+my	KMonad/Model/Action.hs	/^my s = mkKeyEvent s <$> myBinding$/;"	f
+nameKC	KMonad/Keyboard/Keycode.hs	/^nameKC f = Q.mkMultiMap . map go . toList$/;"	f
+noKeywordButtons	KMonad/App/Parser/Tokenizer.hs	/^noKeywordButtons =$/;"	f
+noKeywordButtons	KMonad/Args/Parser.hs	/^noKeywordButtons =$/;"	f
+numP	KMonad/App/Parser/Tokenizer.hs	/^numP = L.decimal$/;"	f
+numP	KMonad/Args/Parser.hs	/^numP = L.decimal$/;"	f
+oTokenP	KMonad/App/Invocation/Parser.hs	/^oTokenP = optional $ SOToken <$> option (tokenParser otokens)$/;"	f
+oTokenP	KMonad/Args/Cmd.hs	/^oTokenP = optional $ SOToken <$> option (tokenParser otokens)$/;"	f
+onErr	KMonad/Util.hs	/^onErr a err = a >>= \\ret -> when (ret == -1) $ throwIO err$/;"	f
+onPress	KMonad/Model/Button.hs	/^onPress p = mkButton p $ pure ()$/;"	f
+oneBlock	KMonad/App/Parser/TokenJoiner.hs	/^oneBlock t l = onlyOne . extract l <$> view kes >>= \\case$/;"	f
+oneBlock	KMonad/Args/Joiner.hs	/^oneBlock t l = onlyOne . extract l <$> view kes >>= \\case$/;"	f
+onlyOne	KMonad/App/Parser/TokenJoiner.hs	/^onlyOne xs = case uncons xs of$/;"	f
+onlyOne	KMonad/Args/Joiner.hs	/^onlyOne xs = case uncons xs of$/;"	f
+otokenP	KMonad/App/Parser/Tokenizer.hs	/^otokenP = choice $ map (try . uncurry statement) otokens$/;"	f
+otokenP	KMonad/Args/Parser.hs	/^otokenP = choice $ map (try . uncurry statement) otokens$/;"	f
+otokens	KMonad/App/Parser/Tokenizer.hs	/^otokens =$/;"	f
+otokens	KMonad/Args/Parser.hs	/^otokens =$/;"	f
+paren	KMonad/App/Parser/Tokenizer.hs	/^paren = between (symbol "(") (symbol ")")$/;"	f
+paren	KMonad/Args/Parser.hs	/^paren = between (symbol "(") (symbol ")")$/;"	f
+parseTokens	KMonad/App/Parser/Tokenizer.hs	/^parseTokens t = case runParser configP "" t  of$/;"	f
+parseTokens	KMonad/Args/Parser.hs	/^parseTokens t = case runParser configP "" t  of$/;"	f
+pass	KMonad/Model/Button.hs	/^pass = onPress $ pure ()$/;"	f
+pauseP	KMonad/App/Parser/Tokenizer.hs	/^pauseP = KPause . fromIntegral <$> (char 'P' *> numP)$/;"	f
+pauseP	KMonad/Args/Parser.hs	/^pauseP = KPause . fromIntegral <$> (char 'P' *> numP)$/;"	f
+pickInput	KMonad/App/Parser/TokenJoiner.hs	/^pickInput (KDeviceSource _)   = throwError $ InvalidOS "DeviceSource"$/;"	f
+pickInput	KMonad/App/Parser/TokenJoiner.hs	/^pickInput (KDeviceSource f)   = pure $ runLF (deviceSource64 f)$/;"	f
+pickInput	KMonad/App/Parser/TokenJoiner.hs	/^pickInput (KIOKitSource _)    = throwError $ InvalidOS "IOKitSource"$/;"	f
+pickInput	KMonad/App/Parser/TokenJoiner.hs	/^pickInput (KIOKitSource name) = pure $ runLF (iokitSource (T.unpack <$> name))$/;"	f
+pickInput	KMonad/App/Parser/TokenJoiner.hs	/^pickInput KLowLevelHookSource = pure $ runLF llHook$/;"	f
+pickInput	KMonad/App/Parser/TokenJoiner.hs	/^pickInput KLowLevelHookSource = throwError $ InvalidOS "LowLevelHookSource"$/;"	f
+pickInput	KMonad/Args/Joiner.hs	/^pickInput (KDeviceSource _)   = throwError $ InvalidOS "DeviceSource"$/;"	f
+pickInput	KMonad/Args/Joiner.hs	/^pickInput (KDeviceSource f)   = pure $ runLF (deviceSource64 f)$/;"	f
+pickInput	KMonad/Args/Joiner.hs	/^pickInput (KIOKitSource _)    = throwError $ InvalidOS "IOKitSource"$/;"	f
+pickInput	KMonad/Args/Joiner.hs	/^pickInput (KIOKitSource name) = pure $ runLF (iokitSource (T.unpack <$> name))$/;"	f
+pickInput	KMonad/Args/Joiner.hs	/^pickInput KLowLevelHookSource = pure $ runLF llHook$/;"	f
+pickInput	KMonad/Args/Joiner.hs	/^pickInput KLowLevelHookSource = throwError $ InvalidOS "LowLevelHookSource"$/;"	f
+pickOutput	KMonad/App/Parser/TokenJoiner.hs	/^pickOutput (KUinputSink _ _)    = throwError $ InvalidOS "UinputSink"$/;"	f
+pickOutput	KMonad/App/Parser/TokenJoiner.hs	/^pickOutput (KUinputSink _ _) = throwError $ InvalidOS "UinputSink"$/;"	f
+pickOutput	KMonad/App/Parser/TokenJoiner.hs	/^pickOutput (KUinputSink t init) = pure $ runLF (uinputSink cfg)$/;"	f
+pickOutput	KMonad/App/Parser/TokenJoiner.hs	/^pickOutput KKextSink            = pure $ runLF kextSink$/;"	f
+pickOutput	KMonad/App/Parser/TokenJoiner.hs	/^pickOutput KKextSink            = throwError $ InvalidOS "KextSink"$/;"	f
+pickOutput	KMonad/App/Parser/TokenJoiner.hs	/^pickOutput KKextSink         = throwError $ InvalidOS "KextSink"$/;"	f
+pickOutput	KMonad/App/Parser/TokenJoiner.hs	/^pickOutput KSendEventSink       = throwError $ InvalidOS "SendEventSink"$/;"	f
+pickOutput	KMonad/App/Parser/TokenJoiner.hs	/^pickOutput KSendEventSink    = pure $ runLF sendEventKeySink$/;"	f
+pickOutput	KMonad/Args/Joiner.hs	/^pickOutput (KUinputSink _ _)    = throwError $ InvalidOS "UinputSink"$/;"	f
+pickOutput	KMonad/Args/Joiner.hs	/^pickOutput (KUinputSink _ _) = throwError $ InvalidOS "UinputSink"$/;"	f
+pickOutput	KMonad/Args/Joiner.hs	/^pickOutput (KUinputSink t init) = pure $ runLF (uinputSink cfg)$/;"	f
+pickOutput	KMonad/Args/Joiner.hs	/^pickOutput KKextSink            = pure $ runLF kextSink$/;"	f
+pickOutput	KMonad/Args/Joiner.hs	/^pickOutput KKextSink            = throwError $ InvalidOS "KextSink"$/;"	f
+pickOutput	KMonad/Args/Joiner.hs	/^pickOutput KKextSink         = throwError $ InvalidOS "KextSink"$/;"	f
+pickOutput	KMonad/Args/Joiner.hs	/^pickOutput KSendEventSink       = throwError $ InvalidOS "SendEventSink"$/;"	f
+pickOutput	KMonad/Args/Joiner.hs	/^pickOutput KSendEventSink    = pure $ runLF sendEventKeySink$/;"	f
+popLayer	KMonad/Util/LayerStack.hs	/^popLayer n keymap = if$/;"	f
+prefix	KMonad/App/Parser/Tokenizer.hs	/^prefix p = try $ p <* notFollowedBy (void spaceChar <|> eof)$/;"	f
+prefix	KMonad/Args/Parser.hs	/^prefix p = try $ p <* notFollowedBy (void spaceChar <|> eof)$/;"	f
+press	KMonad/Model/Button.hs	/^press b = do$/;"	f
+pressKey	KMonad/App/Main.hs	/^pressKey c =$/;"	f
+pull	KMonad/Model/Dispatch.hs	/^pull d = do$/;"	f
+pull	KMonad/Model/Hooks.hs	/^pull h = step h >>= maybe (pull h) pure$/;"	f
+pull	KMonad/Model/Sluice.hs	/^pull s = step s >>= maybe (pull s) pure$/;"	f
+pushLayer	KMonad/Util/LayerStack.hs	/^pushLayer n keymap = if n `elem` keymap^.maps$/;"	f
+register	KMonad/Model/Hooks.hs	/^register hs h = do$/;"	f
+release_uinput_keysink	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^release_uinput_keysink (Fd h) = liftIO $ c_release_uinput_keysink h$/;"	f
+rerun	KMonad/Model/Dispatch.hs	/^rerun d es = atomically $ modifyTVar (d^.rerunBuf) (>< Seq.fromList es)$/;"	f
+reverse	KMonad/Util/MultiMap.hs	/^reverse m = mkMultiMap $ m ^.. itemed . swapped . to (over _2 (:[]))$/;"	f
+rmTapMacroP	KMonad/App/Parser/Tokenizer.hs	/^rmTapMacroP = KTapMacro <$> (char '#' *> paren (some buttonP))$/;"	f
+rmTapMacroP	KMonad/Args/Parser.hs	/^rmTapMacroP =$/;"	f
+runAction	KMonad/Model/Action.hs	/^newtype Action = Action { runAction :: AnyK ()}$/;"	f
+runBEnv	KMonad/Model/BEnv.hs	/^runBEnv b a =$/;"	f
+runCmd	KMonad/App/Main.hs	/^runCmd c = do$/;"	f
+runEntry	KMonad/Model/Hooks.hs	/^runEntry t e v = liftIO $ do$/;"	f
+runHooks	KMonad/Model/Hooks.hs	/^runHooks hs e = do$/;"	f
+runJ	KMonad/App/Parser/TokenJoiner.hs	/^runJ j = runReader (runExceptT $ unJ j)$/;"	f
+runJ	KMonad/Args/Joiner.hs	/^runJ j = runReader (runExceptT $ unJ j)$/;"	f
+runLF	KMonad/App/Parser/TokenJoiner.hs	/^runLF = flip runRIO$/;"	f
+runLF	KMonad/Args/Joiner.hs	/^runLF = flip runRIO$/;"	f
+sc	KMonad/App/Parser/Tokenizer.hs	/^sc = L.space$/;"	f
+sc	KMonad/Args/Parser.hs	/^sc = L.space$/;"	f
+sendEventKeySink	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^sendEventKeySink = mkKeySink skOpen skClose skSend$/;"	f
+send_event	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^send_event u (Fd h) e@(LinuxKeyEvent (s', ns', typ, c, val)) = do$/;"	f
+settingP	KMonad/App/Parser/Tokenizer.hs	/^settingP = let f s p = symbol s *> p in$/;"	f
+settingP	KMonad/Args/Parser.hs	/^settingP = let f s p = symbol s *> p in$/;"	f
+shiftedNames	KMonad/App/Parser/Tokenizer.hs	/^shiftedNames = let f = second $ \\kc -> KAround (KEmit KeyLeftShift) (KEmit kc) in$/;"	f
+shiftedNames	KMonad/Args/Parser.hs	/^shiftedNames = let f = second $ \\kc -> KAround (KEmit KeyLeftShift) (KEmit kc) in$/;"	f
+skClose	KMonad/Keyboard/IO/Mac/KextSink.hs	/^skClose sk = do$/;"	f
+skClose	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^skClose sk = do$/;"	f
+skOpen	KMonad/Keyboard/IO/Mac/KextSink.hs	/^skOpen = do$/;"	f
+skOpen	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^skOpen = do$/;"	f
+skSend	KMonad/Keyboard/IO/Mac/KextSink.hs	/^skSend sk e = either throwIO go $ toMacKeyEvent e$/;"	f
+skSend	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^skSend sk e = either throwIO go $ toWinKeyEvent e$/;"	f
+ssComposed	KMonad/Keyboard/ComposeSeq.hs	/^ssComposed =$/;"	f
+startApp	KMonad/App/Main.hs	/^startApp c = do$/;"	f
+startDelayP	KMonad/Args/Cmd.hs	/^startDelayP = option (fromIntegral <$> megaReadM numP)$/;"	f
+statement	KMonad/App/Parser/Tokenizer.hs	/^statement s = paren . (symbol s *>)$/;"	f
+statement	KMonad/Args/Parser.hs	/^statement s = paren . (symbol s *>)$/;"	f
+step	KMonad/Model/Hooks.hs	/^step h = do$/;"	f
+step	KMonad/Model/Sluice.hs	/^step s = do$/;"	f
+stickyKey	KMonad/Model/Button.hs	/^stickyKey ms b = onPress $ go$/;"	f
+symbol	KMonad/App/Parser/Tokenizer.hs	/^symbol = void . L.symbol sc$/;"	f
+symbol	KMonad/Args/Parser.hs	/^symbol = void . L.symbol sc$/;"	f
+sync	KMonad/Keyboard/IO/Linux/Types.hs	/^sync (MkSystemTime s ns) = LinuxKeyEvent (fi s, fi ns, 0, 0, 0)$/;"	f
+tDiff	KMonad/Util.hs	/^tDiff a b = let$/;"	f
+tHookF	KMonad/Model/Action.hs	/^tHookF l d a f = register l $ Hook (Just $ Timeout d a) f$/;"	f
+tap	KMonad/Model/Button.hs	/^tap b = do$/;"	f
+tapHold	KMonad/Model/Button.hs	/^tapHold ms t h = onPress $ withinHeld ms (matchMy Release)$/;"	f
+tapHoldNext	KMonad/Model/Button.hs	/^tapHoldNext ms t h = onPress $ within ms (pure $ const True) (press h) $ \\tr -> do$/;"	f
+tapHoldNextRelease	KMonad/Model/Button.hs	/^tapHoldNextRelease ms t h = onPress $ do$/;"	f
+tapMacro	KMonad/Model/Button.hs	/^tapMacro bs = onPress $ go bs$/;"	f
+tapNext	KMonad/Model/Button.hs	/^tapNext t h = onPress $ hookF InputHook $ \\e -> do$/;"	f
+tapNextRelease	KMonad/Model/Button.hs	/^tapNextRelease t h = onPress $ do$/;"	f
+tapOn	KMonad/Model/Button.hs	/^tapOn Press   b = mkButton (tap b)   (pure ())$/;"	f
+tapOn	KMonad/Model/Button.hs	/^tapOn Release b = mkButton (pure ()) (tap b)$/;"	f
+terminated	KMonad/App/Parser/Tokenizer.hs	/^terminated p = try $ p <* lookAhead (void spaceChar <|> eof <|> void terminatorP)$/;"	f
+terminated	KMonad/Args/Parser.hs	/^terminated p = try $ p <* lookAhead (void spaceChar <|> eof <|> void terminatorP)$/;"	f
+terminatorP	KMonad/App/Parser/Tokenizer.hs	/^terminatorP = satisfy (`elem` terminators)$/;"	f
+terminatorP	KMonad/Args/Parser.hs	/^terminatorP = satisfy (`elem` terminators)$/;"	f
+terminators	KMonad/App/Parser/Tokenizer.hs	/^terminators = ")\\""$/;"	f
+terminators	KMonad/Args/Parser.hs	/^terminators = ")\\""$/;"	f
+textP	KMonad/App/Parser/Tokenizer.hs	/^textP = do$/;"	f
+textP	KMonad/Args/Parser.hs	/^textP = do$/;"	f
+toLinuxKeyEvent	KMonad/Keyboard/IO/Linux/Types.hs	/^toLinuxKeyEvent e (MkSystemTime s ns)$/;"	f
+toMacKeyEvent	KMonad/Keyboard/IO/Mac/Types.hs	/^toMacKeyEvent e = case toMacKeycode $ e^.keycode of$/;"	f
+toMacKeycode	KMonad/Keyboard/IO/Mac/Types.hs	/^toMacKeycode = flip M.lookup revMap$/;"	f
+toMacSwitch	KMonad/Keyboard/IO/Mac/Types.hs	/^toMacSwitch s = if s == Press then 1 else 0$/;"	f
+toWinKeyEvent	KMonad/Keyboard/IO/Windows/Types.hs	/^toWinKeyEvent e = case toWinKeycode $ e^.keycode of$/;"	f
+toWinKeycode	KMonad/Keyboard/IO/Windows/Types.hs	/^toWinKeycode = flip M.lookup revMap$/;"	f
+tokenParser	KMonad/App/Invocation/Parser.hs	/^tokenParser = megaReadM . choice . map (try . uncurry ((*>) . symbol))$/;"	f
+tokenParser	KMonad/Args/Cmd.hs	/^tokenParser = megaReadM . choice . map (try . uncurry ((*>) . symbol))$/;"	f
+uinputSink	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^uinputSink c = mkKeySink (usOpen c) usClose usWrite$/;"	f
+unLayer	KMonad/Util/LayerStack.hs	/^newtype Layer k a = Layer { unLayer :: M.HashMap k a}$/;"	f
+unMS	KMonad/Util.hs	/^newtype Milliseconds = Milliseconds { unMS :: Int }$/;"	f
+unblock	KMonad/Model/Sluice.hs	/^unblock s = do$/;"	f
+unnest	KMonad/App/Parser/TokenJoiner.hs	/^unnest = join . fmap (maybe (throwError NestedTrans) (pure . id))$/;"	f
+unnest	KMonad/Args/Joiner.hs	/^unnest = join . fmap (maybe (throwError NestedTrans) (pure . id))$/;"	f
+usClose	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^usClose snk = withMVar (snk^.st) $ \\h -> finally (release h) (close h)$/;"	f
+usOpen	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^usOpen c = do$/;"	f
+usWrite	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^usWrite u e = withMVar (u^.st) $ \\fd -> do$/;"	f
+using	KMonad/Util.hs	/^using dat = ContT $ (\\next -> with dat $ \\a -> next a)$/;"	f
+whenDone	KMonad/Model/Action.hs	/^whenDone = after 0$/;"	f
+where	KMonad/App.hs	/^$/;"	f
+where	KMonad/App/Invocation.hs	/^$/;"	f
+where	KMonad/App/Invocation/IO.hs	/^$/;"	f
+where	KMonad/App/Invocation/Parser.hs	/^$/;"	f
+where	KMonad/App/Invocation/Types.hs	/^$/;"	f
+where	KMonad/App/Main.hs	/^$/;"	f
+where	KMonad/App/Parser/IO.hs	/^$/;"	f
+where	KMonad/App/Parser/TokenJoiner.hs	/^$/;"	f
+where	KMonad/App/Parser/Tokenizer.hs	/^$/;"	f
+where	KMonad/App/Types.hs	/^$/;"	f
+where	KMonad/Args.hs	/^$/;"	f
+where	KMonad/Args/Cmd.hs	/^$/;"	f
+where	KMonad/Args/Joiner.hs	/^$/;"	f
+where	KMonad/Args/Parser.hs	/^$/;"	f
+where	KMonad/Keyboard.hs	/^$/;"	f
+where	KMonad/Keyboard/ComposeSeq.hs	/^$/;"	f
+where	KMonad/Keyboard/IO.hs	/^$/;"	f
+where	KMonad/Keyboard/IO/Linux/DeviceSource.hs	/^$/;"	f
+where	KMonad/Keyboard/IO/Linux/Types.hs	/^$/;"	f
+where	KMonad/Keyboard/IO/Linux/UinputSink.hs	/^$/;"	f
+where	KMonad/Keyboard/IO/Mac/IOKitSource.hs	/^$/;"	f
+where	KMonad/Keyboard/IO/Mac/KextSink.hs	/^$/;"	f
+where	KMonad/Keyboard/IO/Mac/Types.hs	/^$/;"	f
+where	KMonad/Keyboard/IO/Windows/LowLevelHookSource.hs	/^$/;"	f
+where	KMonad/Keyboard/IO/Windows/SendEventSink.hs	/^$/;"	f
+where	KMonad/Keyboard/IO/Windows/Types.hs	/^$/;"	f
+where	KMonad/Keyboard/Keycode.hs	/^$/;"	f
+where	KMonad/Keyboard/Ops.hs	/^$/;"	f
+where	KMonad/Keyboard/Types.hs	/^$/;"	f
+where	KMonad/Model.hs	/^$/;"	f
+where	KMonad/Model/Action.hs	/^$/;"	f
+where	KMonad/Model/BEnv.hs	/^$/;"	f
+where	KMonad/Model/Button.hs	/^$/;"	f
+where	KMonad/Model/Dispatch.hs	/^$/;"	f
+where	KMonad/Model/Hooks.hs	/^$/;"	f
+where	KMonad/Model/Keymap.hs	/^$/;"	f
+where	KMonad/Model/Sluice.hs	/^$/;"	f
+where	KMonad/Prelude.hs	/^$/;"	f
+where	KMonad/Util.hs	/^$/;"	f
+where	KMonad/Util/LayerStack.hs	/^$/;"	f
+where	KMonad/Util/MultiMap.hs	/^$/;"	f
+withLaunch	KMonad/Util.hs	/^withLaunch n a f = do$/;"	f
+withLaunch_	KMonad/Util.hs	/^withLaunch_ n a f = withLaunch n a (const f)$/;"	f
+within	KMonad/Model/Action.hs	/^within d p a f = do$/;"	f
+withinHeld	KMonad/Model/Action.hs	/^withinHeld d p a f = do$/;"	f
+word	KMonad/App/Parser/Tokenizer.hs	/^word = T.pack <$> some (satisfy wordChar)$/;"	f
+word	KMonad/Args/Parser.hs	/^word = T.pack <$> some (satisfy wordChar)$/;"	f
