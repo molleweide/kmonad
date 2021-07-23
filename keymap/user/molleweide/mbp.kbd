@@ -61,9 +61,10 @@ homerow lmet > spacebar tab (h)
 
   ;; fn (around (layer-toggle spacelayer) fn)
   OFF (layer-switch off)
-  FUN (layer-toggle layerfn)
+  FUN (layer-toggle FUNCTION)
   NUM (layer-toggle layersym)
-  Lspace (layer-toggle layerspace)
+  TEST (layer-toggle TESTING)
+  SPC (layer-toggle layerspace)
 
   ;; KEY MAPS
   ;;    TOP ROW
@@ -77,7 +78,7 @@ homerow lmet > spacebar tab (h)
   b06 u
   b07 (tap-hold-next-release 500 i @NUM)
   b08 o
-  b09 p
+  b09  (tap-hold-next-release 500 p @TEST)
 
   ;; HOME ROW
   a (tap-hold-next-release 500 a lctl)
@@ -108,7 +109,7 @@ homerow lmet > spacebar tab (h)
   ;; THUMBS
   ;; tl3 (tap-hold-next-release 500 tab lmet)
   tl2 (tap-hold-next-release 500 tab lmet)
-  spc (tap-hold-next-release 500 spc @Lspace)
+  spc (tap-hold-next-release 500 spc @SPC)
   tr2 (tap-hold-next-release 500 ret lmet)
   ;; tr3 (tap-hold-next-release 500 tab lmet)
 )
@@ -118,8 +119,8 @@ homerow lmet > spacebar tab (h)
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
   XX   @a   @s   @d   @f   @b14      @b15 @j   @k   @l   @;   XX   XX
-  XX   @b20 @b21 @b22 @b23 @b24 XX   _    _    _    @b28 @b29 XX   XX
-  XX   XX   esc 2           @spc           @tr2 esc  XX   XX   XX
+  XX   @b20 @b21 @b22 @b23 @b24 XX   @b25 @b26 @b27 @b28 @b29 XX   XX
+  XX   XX   esc  @tl2      @spc           @tr2 esc  XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
@@ -191,7 +192,22 @@ homerow lmet > spacebar tab (h)
 ;;--------------------------------------------------------------- |#
 
 ;; i need to shift out grid..
-(deflayer layerfn
+(deflayer FUNCTION
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   f9   f10  f11  f12  _         _    f21  f22  f23  f24  XX   XX   XX
+  XX   f5   f6   f7   f8   _         _    f17  f18  f19  f20  XX   XX
+  XX   f1   f2   f3   f4   _    @bz  _    f13  f14  f15  f16  XX   XX
+  XX   XX   _    esc            _              esc  _    XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;;
+;; MEDIA LAYER
+;;
+;;--------------------------------------------------------------- |#
+
+(deflayer layermedia
   _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
@@ -200,6 +216,20 @@ homerow lmet > spacebar tab (h)
   XX   XX   _    esc            _              esc  _    XX   XX   XX
 )
 
+;;#| ---------------------------------------------------------------
+;;
+;; TESTING...
+;;
+;;--------------------------------------------------------------- |#
+
+(deflayer TESTING
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
+  XX   _    f5   f6   f7   f8        f17  f18  f19  f20  _    XX   XX
+  XX   _    f1   f2   f3   f4   @bz  f13  f14  f15  f16  _    XX   XX
+  XX   XX   _    esc            _              esc  _    XX   XX   XX
+)
 ;;#| ---------------------------------------------------------------
 ;;
 ;; UTILS
