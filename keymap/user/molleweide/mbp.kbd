@@ -69,13 +69,13 @@ homerow lmet > spacebar tab (h)
   ;;    TOP ROW
   b00 q
   b01 w
-  b02 (tap-hold-next-release 500 e @Lnum)
+  b02 (tap-hold-next-release 500 e @NUM)
   b03 r
   b04 t
 
   b05 y
   b06 u
-  b07 (tap-hold-next-release 500 i @Lnum)
+  b07 (tap-hold-next-release 500 i @NUM)
   b08 o
   b09 p
 
@@ -100,7 +100,7 @@ homerow lmet > spacebar tab (h)
   b26 m
   b27 ,
   b28 (tap-hold-next-release 500 . @NUM)
-  b29 (tap-hold-next-release 500 x @FUN)
+  b29 (tap-hold-next-release 500 / @FUN)
 
   ;; THUMBS
   ;; tl3 (tap-hold-next-release 500 tab lmet)
@@ -147,8 +147,8 @@ homerow lmet > spacebar tab (h)
   ;; KEY MAPS
   ;; TOP ROW
   s00 !
-  s11 w
-  s1T (tap-hold-next-release 500 e @Lnum)
+  s11 @
+  s12 { 
   s13 r
   s14 t
 
