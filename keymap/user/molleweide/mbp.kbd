@@ -30,11 +30,6 @@
 - always get back to base layer !!!
 - todo macros layer
 
-;; NOT WORKING
-
-homerow alt > spacebar left arrow (h)
-homerow lmet > spacebar tab (h)
-
   -------------------------------------------------------------------------- |#
 
 (defsrc
@@ -62,9 +57,9 @@ homerow lmet > spacebar tab (h)
   ;; fn (around (layer-toggle spacelayer) fn)
   ;;OFF (layer-switch off)
   FUN (layer-toggle FUNCTION)
-  NUM (layer-toggle layersym)
+  NUM (layer-toggle SYMBOLS)
   TEST (layer-toggle TEST)
-  SPC (layer-toggle layerspace)
+  SPC (layer-toggle SPACEBAR)
 
   ;; KEY MAPS
   ;;    TOP ROW
@@ -161,7 +156,7 @@ homerow lmet > spacebar tab (h)
   sy4 (tap-hold-next-release 500 4 lsft)
 )
 
-(deflayer layersym
+(deflayer SYMBOLS
   _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @s00 @    {    }    \         *    7    8    9    &    XX   XX   XX
@@ -176,7 +171,7 @@ homerow lmet > spacebar tab (h)
 ;;
 ;;--------------------------------------------------------------- |#
 
-(deflayer layerspace
+(deflayer SPACEBAR
   _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   _    _    ret  _    _         _    _    ret  _    _    XX   XX   XX
