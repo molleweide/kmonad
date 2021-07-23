@@ -113,9 +113,9 @@ homerow lmet > spacebar tab (h)
 (deflayer base ;; rename to base qwerty
   _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   @b00 @b01 @b02 _    _         _    _    @b07  _    _    XX   XX   XX
-  XX   @a   @s   @d   @f   _         _    @j   @k   @l   @;   XX   XX
-  XX   @b20 @b21 c    v    b    XX   _    _    _    @b28 @b29 XX   XX
+  XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
+  XX   @a   @s   @d   @f   @b14      _    @j   @k   @l   @;   XX   XX
+  XX   @b20 @b21 @b22 @b23 @b24 XX   _    _    _    @b28 @b29 XX   XX
   XX   XX   esc 2           @spc           @tr2 esc  XX   XX   XX
 )
 
