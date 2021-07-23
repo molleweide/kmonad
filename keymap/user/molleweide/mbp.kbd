@@ -228,7 +228,7 @@ homerow lmet > spacebar tab (h)
   t01 mute
   t02 vold
   t03 volu
-  t04 XX
+  t04 mctl
 
   t05 XX
   t06 XX
@@ -243,7 +243,6 @@ homerow lmet > spacebar tab (h)
   t13 brup
   t14 lp
 
-  ;;  mctl bldn blup prev pp
   t15 XX
   t16 XX
   t17 XX
@@ -251,10 +250,10 @@ homerow lmet > spacebar tab (h)
   t19 XX
 
   ;; TEST | BOTTOM ROW
-  t20 XX
-  t21 XX
-  t22 XX
-  t23 XX 
+  t20 prev
+  t21 pp
+  t22 bldn
+  t23 blup
   t24 XX 
 
   t25 XX
