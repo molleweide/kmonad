@@ -84,6 +84,9 @@ homerow lmet > spacebar tab (h)
   s (tap-hold-next-release 500 s lsft)
   d (tap-hold-next-release 500 d lalt)
   f (tap-hold-next-release 500 f lmet)
+  b14 g
+
+  b15 h
   j (tap-hold-next-release 500 j lmet)
   k (tap-hold-next-release 500 k lalt)
   l (tap-hold-next-release 500 l lsft)
@@ -114,7 +117,7 @@ homerow lmet > spacebar tab (h)
   _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
-  XX   @a   @s   @d   @f   @b14      _    @j   @k   @l   @;   XX   XX
+  XX   @a   @s   @d   @f   @b14      @b15 @j   @k   @l   @;   XX   XX
   XX   @b20 @b21 @b22 @b23 @b24 XX   _    _    _    @b28 @b29 XX   XX
   XX   XX   esc 2           @spc           @tr2 esc  XX   XX   XX
 )
