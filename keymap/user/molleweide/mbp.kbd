@@ -60,10 +60,10 @@ homerow lmet > spacebar tab (h)
   ;; LAYER MAPS
 
   ;; fn (around (layer-toggle spacelayer) fn)
-  OFF (layer-switch off)
+  ;;OFF (layer-switch off)
   FUN (layer-toggle FUNCTION)
   NUM (layer-toggle layersym)
-  TEST (layer-toggle TESTING)
+  TEST (layer-toggle TEST)
   SPC (layer-toggle layerspace)
 
   ;; KEY MAPS
@@ -78,7 +78,7 @@ homerow lmet > spacebar tab (h)
   b06 u
   b07 (tap-hold-next-release 500 i @NUM)
   b08 o
-  b09  (tap-hold-next-release 500 p @TEST)
+  b09 (tap-hold-next-release 500 p @TEST)
 
   ;; HOME ROW
   a (tap-hold-next-release 500 a lctl)
@@ -120,7 +120,7 @@ homerow lmet > spacebar tab (h)
   XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
   XX   @a   @s   @d   @f   @b14      @b15 @j   @k   @l   @;   XX   XX
   XX   @b20 @b21 @b22 @b23 @b24 XX   @b25 @b26 @b27 @b28 @b29 XX   XX
-  XX   XX   esc  @tl2      @spc           @tr2 esc  XX   XX   XX
+  XX   XX   esc  @tl2           @spc           @tr2 esc  XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
@@ -222,13 +222,55 @@ homerow lmet > spacebar tab (h)
 ;;
 ;;--------------------------------------------------------------- |#
 
-(deflayer TESTING
-  _    _    _    _    _    _    _    _    _    _    _    _    _
+(defalias
+  ;; TEST | TOP ROW
+  t00 next
+  t01 mute
+  t02 vold
+  t03 volu
+  t04 XX
+
+  t05 XX
+  t06 XX
+  t07 XX
+  t08 XX
+  t09 XX
+
+  ;; TEST | HOME ROW
+  t10 XX
+  t11 XX
+  t12 brdn
+  t13 brup
+  t14 lp
+
+  ;;  mctl bldn blup prev pp
+  t15 XX
+  t16 XX
+  t17 XX
+  t18 XX
+  t19 XX
+
+  ;; TEST | BOTTOM ROW
+  t20 XX
+  t21 XX
+  t22 XX
+  t23 XX 
+  t24 XX 
+
+  t25 XX
+  t26 XX
+  t27 XX
+  t28 XX
+  t29 XX
+)
+
+(deflayer TEST
+  _    _    _    _    _    _    _    _    _    _    _    _    _    
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
-  XX   _    f5   f6   f7   f8        f17  f18  f19  f20  _    XX   XX
-  XX   _    f1   f2   f3   f4   @bz  f13  f14  f15  f16  _    XX   XX
-  XX   XX   _    esc            _              esc  _    XX   XX   XX
+  XX   @t00 @t01 @t02 @t03 @t04      @t05 @t06 @t07 @t08 @t09 XX   XX   XX
+  XX   @t10 @t11 @t12 @t13 @t14      @t15 @t16 @t17 @t18 @t19 XX   XX
+  XX   @t20 @t21 @t22 @t23 @t24 XX   @t25 @t26 @t27 @t28 @t29 XX   XX
+  XX   XX   _    _              _              _    _    XX   XX   XX
 )
 ;;#| ---------------------------------------------------------------
 ;;
@@ -236,13 +278,13 @@ homerow lmet > spacebar tab (h)
 ;;
 ;;--------------------------------------------------------------- |#
 
-(defalias on (layer-switch base))
-
-(deflayer off
-  _    _    _    _    _    _    _    _    _    _    _    _    _
-       _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  @on  _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    @on            _              @on  _    _    _    _
-)
+;;(defalias on (layer-switch base))
+;;
+;;(deflayer off
+;;  _    _    _    _    _    _    _    _    _    _    _    _    _
+;;       _    _    _    _    _    _    _    _    _    _    _    _    _
+;;  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;  @on  _    _    _    _    _    _    _    _    _    _    _    _
+;;  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;  _    _    _    @on            _              @on  _    _    _    _
+;;)
