@@ -253,9 +253,9 @@
   t13 brup
   t14 lp
 
-  t15 XX
-  t16 XX
-  t17 XX
+  t15 pp
+  t16 vold
+  t17 volu
   t18 XX
   t19 XX
 
@@ -264,11 +264,11 @@
   t21 pp
   t22 bldn
   t23 blup
-  t24 XX 
+  t24 mctl 
 
-  t25 XX
-  t26 XX
-  t27 XX
+  t25 lp  
+  t26 mctl
+  t27 pp
   t28 XX
   t29 XX
 
