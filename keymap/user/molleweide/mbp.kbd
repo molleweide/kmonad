@@ -19,12 +19,8 @@
 
 ;; TODO
 
-- mv sym layer to index finger bottom
-    this could be super nice actually
-- double tap space to send esc ?? use hold layer to be able to send multiple spacebars??
-- spacelayer > make NOT permissive
-- if press `paragraph` key >> restart kmo ?! hmm??
-    hacky way to get around crash
+- spacebar q >> disable keyboard
+
 - mouse keys https://github.com/david-janssen/kmonad/issues/150'
 - clean MIDI layer
 - always get back to base layer !!!
@@ -43,23 +39,31 @@
 
 ;;#| ---------------------------------------------------------------
 ;;
+;; LAYER BUTTON ALIASES
+;;
+;;--------------------------------------------------------------- |#
+
+(defalias
+  ;; LAYER MAPS
+
+  BZ  (layer-switch base)
+
+  ;; fn (around (layer-toggle spacelayer) fn)
+  OFF (layer-switch DISABLE_KEYBOARD)
+  FUN (layer-toggle FUNCTION_KEYS)
+  NUM (layer-toggle SYMBOLS)
+  OSK (layer-toggle OS_KEYS)
+  PNT (layer-toggle POINTER_KEYS)
+  SPC (layer-toggle SPACEBAR)
+)
+
+;;#| ---------------------------------------------------------------
+;;
 ;; BASE LAYER | QWERTY
 ;;
 ;;--------------------------------------------------------------- |#
 
 (defalias
-
-  ;; back to base layer (base)
-  bz  (layer-switch base)
-
-  ;; LAYER MAPS
-
-  ;; fn (around (layer-toggle spacelayer) fn)
-  ;;OFF (layer-switch off)
-  FUN (layer-toggle FUNCTION)
-  NUM (layer-toggle SYMBOLS)
-  TEST (layer-toggle TEST)
-  SPC (layer-toggle SPACEBAR)
 
   ;; KEY MAPS
   ;;    TOP ROW
@@ -73,16 +77,16 @@
   b06 u
   b07 (tap-hold-next-release 500 i @NUM)
   b08 o
-  b09 (tap-hold-next-release 500 p @TEST)
+  b09 (tap-hold-next-release 500 p @OSK)
 
   ;; HOME ROW
   a (tap-hold-next-release 500 a lctl)
   s (tap-hold-next-release 500 s lsft)
   d (tap-hold-next-release 500 d lalt)
   f (tap-hold-next-release 500 f lmet)
-  b14 (tap-hold-next-release 500 g @TEST)
+  b14 (tap-hold-next-release 500 g @OSK)
 
-  b15 (tap-hold-next-release 500 h @TEST)
+  b15 (tap-hold-next-release 500 h @OSK)
   j (tap-hold-next-release 500 j lmet)
   k (tap-hold-next-release 500 k lalt)
   l (tap-hold-next-release 500 l lsft)
@@ -92,11 +96,11 @@
   b20 (tap-hold-next-release 500 z @FUN)
   b21 (tap-hold-next-release 500 x @NUM)
   b22 c
-  b23 (tap-hold-next-release 500 v @TEST) 
+  b23 (tap-hold-next-release 500 v @OSK) 
   b24 b 
 
   b25 n
-  b26 (tap-hold-next-release 500 m @TEST)
+  b26 (tap-hold-next-release 500 m @OSK)
   b27 ,
   b28 (tap-hold-next-release 500 . @NUM)
   b29 (tap-hold-next-release 500 / @FUN)
@@ -161,7 +165,7 @@
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @s00 @    {    }    \         *    7    8    9    &    XX   XX   XX
   XX   #    $    \(   @syP `         0    @sy4 5    6    =    XX   XX
-  XX   ^    %    [    ]    ~    @bz  '    1    2    3    -    XX   XX
+  XX   ^    %    [    ]    ~    @BZ  '    1    2    3    -    XX   XX
   XX   XX   _    lctl           lsft           lctl _    _    XX   XX
 )
 
@@ -172,7 +176,6 @@
 ;;--------------------------------------------------------------- |#
 
 (defalias
-  ;; TEST | TOP ROW
   l00 XX
   l01 XX
   l02 ret
@@ -185,7 +188,6 @@
   l08 XX
   l09 XX
 
-  ;; TEST | HOME ROW
   l10 +
   l11 tab
   l12 bspc
@@ -198,7 +200,6 @@
   l18 rght
   l19 &
 
-  ;; TEST | BOTTOM ROW
   l20 XX
   l21 XX
   l22 \_
@@ -211,7 +212,6 @@
   l28 XX
   l29 XX
 
-  ;; TEST | THUMBS
   l40 XX
   l41 tab
   l42 spc
@@ -230,17 +230,28 @@
 
 ;;#| ---------------------------------------------------------------
 ;;
+;; ARROW NAV LAYER
+;; 
+;; layer dedicated to handling all kinds of arrow keys edge
+;; cases where no vim programs apply or work. i put arrow keys
+;; on right hand and all modifiers in left hand so that you
+;; can perform all kinds of arrow modifier key commands here.
+;;
+;;--------------------------------------------------------------- |#
+
+;;#| ---------------------------------------------------------------
+;;
 ;; FN LAYER
 ;;
 ;;--------------------------------------------------------------- |#
 
 ;; i need to shift out grid..
-(deflayer FUNCTION
+(deflayer FUNCTION_KEYS
   _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   f9   f10  f11  f12  XX        XX   f21  f22  f23  f24  XX   XX   XX
   XX   f5   f6   f7   f8   XX        XX   f17  f18  f19  f20  XX   XX
-  XX   f1   f2   f3   f4   XX   @bz  XX   f13  f14  f15  f16  XX   XX
+  XX   f1   f2   f3   f4   XX   @BZ  XX   f13  f14  f15  f16  XX   XX
   XX   XX   _    esc            _              esc  _    XX   XX   XX
 )
 
@@ -250,22 +261,22 @@
 ;;
 ;;--------------------------------------------------------------- |#
 
-(deflayer layerpointer
+(deflayer POINTER_KEYS
   _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
   XX   _    f5   f6   f7   f8        f17  f18  f19  f20  _    XX   XX
-  XX   _    f1   f2   f3   f4   @bz  f13  f14  f15  f16  _    XX   XX
+  XX   _    f1   f2   f3   f4   @BZ  f13  f14  f15  f16  _    XX   XX
   XX   XX   _    esc            _              esc  _    XX   XX   XX
 )
 ;;#| ---------------------------------------------------------------
 ;;
-;; TESTING... rename this layer macos keys???
+;; OSKING... rename this layer macos keys???
 ;;
 ;;--------------------------------------------------------------- |#
 
 (defalias
-  ;; TEST | TOP ROW
+  ;; OSK | TOP ROW
   t00 next
   t01 mute
   t02 vold
@@ -277,7 +288,7 @@
   t08 XX
   t09 XX
 
-  ;; TEST | HOME ROW
+  ;; OSK | HOME ROW
   t10 XX
   t11 XX
   t12 brdn
@@ -289,7 +300,7 @@
   t18 XX
   t19 XX
 
-  ;; TEST | BOTTOM ROW
+  ;; OSK | BOTTOM ROW
   t20 prev
   t21 pp
   t22 bldn
@@ -301,7 +312,7 @@
   t28 XX
   t29 XX
 
-  ;; TEST | THUMBS
+  ;; OSK | THUMBS
   t40 XX
   t41 tab
   t42 spc
@@ -310,7 +321,7 @@
   t45 XX
 )
 
-(deflayer TEST
+(deflayer OS_KEYS
   _    _    _    _    _    _    _    _    _    _    _    _    _    
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @t00 @t01 @t02 @t03 @t04      @t05 @t06 @t07 @t08 @t09 XX   XX   XX
@@ -320,17 +331,17 @@
 )
 ;;#| ---------------------------------------------------------------
 ;;
-;; UTILS
+;; DISABLE KEYBOARD LAYER
 ;;
 ;;--------------------------------------------------------------- |#
 
-;;(defalias on (layer-switch base))
-;;
-;;(deflayer off
-;;  _    _    _    _    _    _    _    _    _    _    _    _    _
-;;       _    _    _    _    _    _    _    _    _    _    _    _    _
-;;  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-;;  @on  _    _    _    _    _    _    _    _    _    _    _    _
-;;  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-;;  _    _    _    @on            _              @on  _    _    _    _
-;;)
+;; (defalias on (layer-switch base))
+
+(deflayer DISABLE_KEYBOARD
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
+       XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   @BZ            @BZ           @B  XX   XX   XX   XX
+)
