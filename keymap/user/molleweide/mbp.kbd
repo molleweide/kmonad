@@ -176,7 +176,7 @@
 ;;--------------------------------------------------------------- |#
 
 (defalias
-  l00 XX
+  l00 @OFF
   l01 XX
   l02 ret
   l03 "
@@ -343,5 +343,5 @@
   XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
   XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
   XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
-  XX   XX   XX   @BZ            @BZ           @B  XX   XX   XX   XX
+  XX   XX   XX   @BZ            @BZ           @BZ XX   XX   XX   XX
 )
