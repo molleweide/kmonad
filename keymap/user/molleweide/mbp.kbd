@@ -171,13 +171,61 @@
 ;;
 ;;--------------------------------------------------------------- |#
 
+(defalias
+  ;; TEST | TOP ROW
+  l00 XX
+  l01 XX
+  l02 ret
+  l03 "
+  l04 |
+
+  l05 XX
+  l06 XX
+  l07 ret
+  l08 XX
+  l09 XX
+
+  ;; TEST | HOME ROW
+  l10 +
+  l11 tab
+  l12 bspc
+  l13 esc
+  l14 \_
+
+  l15 left
+  l16 down
+  l17 up
+  l18 rght
+  l19 &
+
+  ;; TEST | BOTTOM ROW
+  l20 XX
+  l21 XX
+  l22 \_
+  l23 ret
+  l24 -
+
+  l25 -
+  l26 ret
+  l27 \_
+  l28 XX
+  l29 XX
+
+  ;; TEST | THUMBS
+  l40 XX
+  l41 tab
+  l42 spc
+  l43 XX  ;; second double space...
+  l44 ret
+  l45 XX
+)
 (deflayer SPACEBAR
-  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   _    _    ret  _    _         _    _    ret  _    _    XX   XX   XX
-  XX   _    tab  bspc esc  _         left down up   rght _    XX   XX
-  XX   _    _    _    ret  _    @bz  _    ret  _    _    _    XX   XX
-  XX   XX   _    esc            _              esc  _    _    XX   XX
+  XX   @l00 @l01 @l02 @l03 @l04      @l05 @l06 @l07 @l08 @l09 XX   XX   XX
+  XX   @l10 @l11 @l12 @l13 @l14      @l15 @l16 @l17 @l18 @l19 XX   XX
+  XX   @l20 @l21 @l22 @l23 @l24 XX   @l25 @l26 @l27 @l28 @l29 XX   XX
+  XX   XX   @l40 @l41           @l42           @l44 @l45 XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
@@ -190,27 +238,11 @@
 (deflayer FUNCTION
   _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   f9   f10  f11  f12  _         _    f21  f22  f23  f24  XX   XX   XX
-  XX   f5   f6   f7   f8   _         _    f17  f18  f19  f20  XX   XX
-  XX   f1   f2   f3   f4   _    @bz  _    f13  f14  f15  f16  XX   XX
+  XX   f9   f10  f11  f12  XX        XX   f21  f22  f23  f24  XX   XX   XX
+  XX   f5   f6   f7   f8   XX        XX   f17  f18  f19  f20  XX   XX
+  XX   f1   f2   f3   f4   XX   @bz  XX   f13  f14  f15  f16  XX   XX
   XX   XX   _    esc            _              esc  _    XX   XX   XX
 )
-
-;;#| ---------------------------------------------------------------
-;;
-;; MEDIA LAYER
-;;
-;;--------------------------------------------------------------- |#
-
-(deflayer layermedia
-  _    _    _    _    _    _    _    _    _    _    _    _    _
-       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
-  XX   _    f5   f6   f7   f8        f17  f18  f19  f20  _    XX   XX
-  XX   _    f1   f2   f3   f4   @bz  f13  f14  f15  f16  _    XX   XX
-  XX   XX   _    esc            _              esc  _    XX   XX   XX
-)
-
 
 ;;#| ---------------------------------------------------------------
 ;;
@@ -228,7 +260,7 @@
 )
 ;;#| ---------------------------------------------------------------
 ;;
-;; TESTING...
+;; TESTING... rename this layer macos keys???
 ;;
 ;;--------------------------------------------------------------- |#
 
@@ -239,8 +271,7 @@
   t02 vold
   t03 volu
   t04 mctl
-
-  t05 XX
+  t05 XX ;;-------------
   t06 XX
   t07 XX
   t08 XX
@@ -252,8 +283,7 @@
   t12 brdn
   t13 brup
   t14 lp
-
-  t15 pp
+  t15 pp ;;-------------
   t16 vold
   t17 volu
   t18 XX
@@ -265,13 +295,11 @@
   t22 bldn
   t23 blup
   t24 mctl 
-
-  t25 lp  
+  t25 lp  ;; ----------
   t26 mctl
   t27 pp
   t28 XX
   t29 XX
-
 
   ;; TEST | THUMBS
   t40 XX
