@@ -51,7 +51,7 @@
   ;; fn (around (layer-toggle spacelayer) fn)
   OFF (layer-switch DISABLE_KEYBOARD)
   FUN (layer-toggle FUNCTION_KEYS)
-  NUM (layer-toggle SYMBOLS)
+  NUM (layer-toggle SYMBOLS_NUMPAD)
   OSK (layer-toggle OS_KEYS)
   PNT (layer-toggle POINTER_KEYS)
   SPC (layer-toggle SPACEBAR)
@@ -141,7 +141,7 @@
 
 ;;#| ---------------------------------------------------------------
 ;;
-;; SYMBOLS LAYER
+;; SYMBOLS_NUMPAD LAYER
 ;;
 ;;--------------------------------------------------------------- |#
 
@@ -160,7 +160,7 @@
   sy4 (tap-hold-next-release 500 4 lsft)
 )
 
-(deflayer SYMBOLS
+(deflayer SYMBOLS_NUMPAD
   _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @s00 @    {    }    \         *    7    8    9    &    XX   XX   XX
@@ -177,7 +177,7 @@
 
 (defalias
   l00 @OFF
-  l01 XX
+  l01 %
   l02 ret
   l03 "
   l04 |
@@ -185,8 +185,8 @@
   l05 '
   l06 \_
   l07 ret
-  l08 XX
-  l09 XX
+  l08 '
+  l09 "
 
   l10 +
   l11 tab
@@ -200,8 +200,8 @@
   l18 rght
   l19 &
 
-  l20 XX
-  l21 XX
+  l20 &
+  l21 *
   l22 \_
   l23 ret
   l24 -
@@ -209,15 +209,15 @@
   l25 -
   l26 ret
   l27 \_
-  l28 XX
-  l29 XX
+  l28 *
+  l29 &
 
-  l40 XX
+  l40 ~
   l41 tab
   l42 spc
   l43 XX  ;; second double space...
   l44 ret
-  l45 XX
+  l45 `
 )
 (deflayer SPACEBAR
   _    _    _    _    _    _    _    _    _    _    _    _    _    
@@ -257,21 +257,7 @@
 
 ;;#| ---------------------------------------------------------------
 ;;
-;; POINTER LAYER
-;;
-;;--------------------------------------------------------------- |#
-
-(deflayer POINTER_KEYS
-  _    _    _    _    _    _    _    _    _    _    _    _    _
-       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
-  XX   _    f5   f6   f7   f8        f17  f18  f19  f20  _    XX   XX
-  XX   _    f1   f2   f3   f4   @BZ  f13  f14  f15  f16  _    XX   XX
-  XX   XX   _    esc            _              esc  _    XX   XX   XX
-)
-;;#| ---------------------------------------------------------------
-;;
-;; OSKING... rename this layer macos keys???
+;; OS KEYS LAYER
 ;;
 ;;--------------------------------------------------------------- |#
 
@@ -331,11 +317,24 @@
 )
 ;;#| ---------------------------------------------------------------
 ;;
-;; DISABLE KEYBOARD LAYER
+;; POINTER LAYER
 ;;
 ;;--------------------------------------------------------------- |#
 
-;; (defalias on (layer-switch base))
+(deflayer POINTER_KEYS
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
+  XX   _    f5   f6   f7   f8        f17  f18  f19  f20  _    XX   XX
+  XX   _    f1   f2   f3   f4   @BZ  f13  f14  f15  f16  _    XX   XX
+  XX   XX   _    esc            _              esc  _    XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;;
+;; DISABLE KEYBOARD LAYER
+;;
+;;--------------------------------------------------------------- |#
 
 (deflayer DISABLE_KEYBOARD
   XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
