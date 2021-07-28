@@ -23,8 +23,12 @@
 
 - mouse keys https://github.com/david-janssen/kmonad/issues/150'
 - clean MIDI layer
-- always get back to base layer !!!
 - todo macros layer
+
+;; IDEA: 
+;;  on disable layer and tutorials layer
+;;  hold down key A and double tap key B to unlock the layer
+;;  and go back to base layer
 
   -------------------------------------------------------------------------- |#
 
@@ -339,13 +343,37 @@
 ;;  for the tutorial etc and other testing purposes
 ;;--------------------------------------------------------------- |#
 
+(defalias
+
+  C- (around lctl X)
+  A- (around lalt X)
+  M- (around lmet X)
+  S- (around lsft X)
+  ;; ssc (around
+  ;;      (sticky-key 500 lmet)
+  ;;      (sticky-key 500 lsft)
+  ;;      (sticky-key 500 lalt))
+  mc1 #(K M o n a d)
+
+  u10 XX
+  u11 C-c
+  u12 M-c
+  u13 C-spc  ;; ctrl + space
+  u14 (around spc v) ;; first space and then v
+
+  u15 @mc1
+  u16 #(M-spc P100 a P100 b P100 c P100  e P100  f P100 g)
+  u17 XX
+  u18 XX
+  u19 XX
+)
 (deflayer TUTORIAL_TESTING_LAYER
-  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
-       XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
-  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
-  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
-  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
-  XX   XX   @BZ  XX             XX            XX   @BZ  XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   @u10 @u11 @u12 @u13 @u14      @u15 @u16 @u17 @u18 @u19 XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   @BZ  XX             XX             XX   @BZ  XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
