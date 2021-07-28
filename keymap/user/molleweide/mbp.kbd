@@ -50,7 +50,8 @@
 (defalias
   ;; LAYER MAPS
 
-  BZ  (layer-switch base)
+  BQ  (layer-switch BASE_LAYER_QWERTY)
+  BC  (layer-switch BASE_LAYER_COLEMAKDH)
 
   ;; fn (around (layer-toggle spacelayer) fn)
   OFF (layer-switch DISABLE_KEYBOARD)
@@ -68,42 +69,34 @@
 ;;
 ;;--------------------------------------------------------------- |#
 
-(defalias
-
-  ;; KEY MAPS
-  ;;    TOP ROW
+(defalias ;; KEY MAPS QWERTY
   b00 q
   b01 w
   b02 (tap-hold-next-release 500 e @NUM)
   b03 r
   b04 t
-
   b05 y
   b06 u
   b07 (tap-hold-next-release 500 i @NUM)
   b08 o
   b09 (tap-hold-next-release 500 p @OSK)
 
-  ;; HOME ROW
-  a (tap-hold-next-release 500 a lctl)
-  s (tap-hold-next-release 500 s lsft)
-  d (tap-hold-next-release 500 d lalt)
-  f (tap-hold-next-release 500 f lmet)
+  b10 (tap-hold-next-release 500 a lctl)
+  b11 (tap-hold-next-release 500 s lsft)
+  b12 (tap-hold-next-release 500 d lalt)
+  b13 (tap-hold-next-release 500 f lmet)
   b14 (tap-hold-next-release 500 g @OSK)
-
   b15 (tap-hold-next-release 500 h @OSK)
-  j (tap-hold-next-release 500 j lmet)
-  k (tap-hold-next-release 500 k lalt)
-  l (tap-hold-next-release 500 l lsft)
-  ; (tap-hold-next-release 500 ; lctl)
+  b16 (tap-hold-next-release 500 j lmet)
+  b17 (tap-hold-next-release 500 k lalt)
+  b18 (tap-hold-next-release 500 l lsft)
+  b19 (tap-hold-next-release 500 ; lctl)
 
-  ;; BOTTOM ROW
   b20 (tap-hold-next-release 500 z @FUN)
   b21 (tap-hold-next-release 500 x @NUM)
   b22 c
   b23 (tap-hold-next-release 500 v @OSK) 
   b24 b 
-
   b25 n
   b26 (tap-hold-next-release 500 m @OSK)
   b27 ,
@@ -118,11 +111,11 @@
   ;; tr3 (tap-hold-next-release 500 tab lmet)
 )
 
-(deflayer base ;; rename to base qwerty
+(deflayer BASE_LAYER_QWERTY
   _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
-  XX   @a   @s   @d   @f   @b14      @b15 @j   @k   @l   @;   XX   XX
+  XX   @b10 @b11 @b12 @b13 @b14      @b15 @b16 @b17 @b18 @b19 XX   XX
   XX   @b20 @b21 @b22 @b23 @b24 XX   @b25 @b26 @b27 @b28 @b29 XX   XX
   XX   XX   esc  @tl2           @spc           @tr2 esc  XX   XX   XX
 )
@@ -133,16 +126,48 @@
 ;; 
 ;;--------------------------------------------------------------- |#
 
-;; (deflayer base_colemak
-;;   _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
-;;        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-;;   XX   _    _    @lnT _    _         _    _    @rnT _    _    XX   XX   XX
-;;   XX   @a   @s   @d   @f   _         _    @j   @k   @l   @;   XX   XX
-;;   XX   z    @lnu c    v    b    XX   _    _    _    @rnu _    XX   XX
-;;   XX   XX   @num @tb            @spc           @rt  @num XX   XX   XX
-;; )
+(defalias ;; KEY MAPS COLEMAKDH
+  c00 q
+  c01 w
+  c02 (tap-hold-next-release 500 f @NUM)
+  c03 p
+  c04 b
+  c05 j
+  c06 l
+  c07 (tap-hold-next-release 500 u @NUM)
+  c08 y
+  c09 (tap-hold-next-release 500 ; @OSK)
 
+  c10 (tap-hold-next-release 500 a lctl)
+  c11 (tap-hold-next-release 500 r lsft)
+  c12 (tap-hold-next-release 500 s lalt)
+  c13 (tap-hold-next-release 500 t lmet)
+  c14 (tap-hold-next-release 500 g @OSK)
+  c15 (tap-hold-next-release 500 k @OSK)
+  c16 (tap-hold-next-release 500 n lmet)
+  c17 (tap-hold-next-release 500 e lalt)
+  c18 (tap-hold-next-release 500 i lsft)
+  c19 (tap-hold-next-release 500 o lctl)
 
+  c20 (tap-hold-next-release 500 z @FUN)
+  c21 (tap-hold-next-release 500 x @NUM)
+  c22 c
+  c23 (tap-hold-next-release 500 d @OSK) 
+  c24 v 
+  c25 m
+  c26 (tap-hold-next-release 500 h @OSK)
+  c27 ,
+  c28 (tap-hold-next-release 500 . @NUM)
+  c29 (tap-hold-next-release 500 / @FUN)
+)
+(deflayer BASE_LAYER_COLEMAKDH
+  _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
+  XX   @b10 @b11 @b12 @b13 @b14      @b15 @b16 @b17 @b18 @b19 XX   XX
+  XX   @b20 @b21 @b22 @b23 @b24 XX   @b25 @b26 @b27 @b28 @b29 XX   XX
+  XX   XX   esc  @tl2           @spc           @tr2 esc  XX   XX   XX
+)
 
 ;;#| ---------------------------------------------------------------
 ;;
@@ -170,7 +195,7 @@
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @s00 @    {    }    \         *    7    8    9    &    XX   XX   XX
   XX   #    $    \(   @syP `         0    @sy4 5    6    =    XX   XX
-  XX   ^    %    [    ]    ~    @BZ  '    1    2    3    -    XX   XX
+  XX   ^    %    [    ]    ~    @BQ  '    1    2    3    -    XX   XX
   XX   XX   _    lctl           lsft           lctl _    _    XX   XX
 )
 
@@ -256,7 +281,7 @@
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   f9   f10  f11  f12  @TUT      @TUT f21  f22  f23  f24  XX   XX   XX
   XX   f5   f6   f7   f8   XX        XX   f17  f18  f19  f20  XX   XX
-  XX   f1   f2   f3   f4   XX   @BZ  XX   f13  f14  f15  f16  XX   XX
+  XX   f1   f2   f3   f4   XX   @BQ  XX   f13  f14  f15  f16  XX   XX
   XX   XX   _    esc            _              esc  _    XX   XX   XX
 )
 
@@ -332,7 +357,7 @@
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
   XX   _    f5   f6   f7   f8        f17  f18  f19  f20  _    XX   XX
-  XX   _    f1   f2   f3   f4   @BZ  f13  f14  f15  f16  _    XX   XX
+  XX   _    f1   f2   f3   f4   @BQ  f13  f14  f15  f16  _    XX   XX
   XX   XX   _    esc            _              esc  _    XX   XX   XX
 )
 
@@ -365,15 +390,24 @@
   u16 #(M-spc P100 a P100 b P100 c P100  e P100  f P100 g)
   u17 XX
   u18 XX
-  u19 XX
+  u19 (layer-delay 3000 TUTORIAL_TESTING_SECONDARY)
 )
 (deflayer TUTORIAL_TESTING_LAYER
   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX        XX   XX   XX   XX   XX   XX   XX   XX
   XX   @u10 @u11 @u12 @u13 @u14      @u15 @u16 @u17 @u18 @u19 XX   XX
   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   XX   @BZ  XX             XX             XX   @BZ  XX   XX   XX
+  XX   XX   @BQ  XX             XX             XX   @BQ  XX   XX   XX
+)
+
+(deflayer TUTORIAL_TESTING_SECONDARY
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX        XX   XX   a    XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX        XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   @BQ  XX             XX             XX   @BQ  XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
@@ -385,8 +419,8 @@
 (deflayer DISABLE_KEYBOARD
   XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
        XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX        XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX        XX   XX  XX   XX   XX   XX   XX
   XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
-  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
-  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
-  XX   XX   @BZ  XX             XX            XX   @BZ  XX   XX   XX
+  XX   XX   @BQ  XX             XX            XX   @BQ  XX   XX   XX
 )
