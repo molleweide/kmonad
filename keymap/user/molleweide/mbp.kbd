@@ -19,8 +19,6 @@
 
 ;; TODO
 
-- spacebar q >> disable keyboard
-
 - mouse keys https://github.com/david-janssen/kmonad/issues/150'
 - clean MIDI layer
 - todo macros layer
@@ -49,21 +47,20 @@
 
 (defalias ;; LAYERS
 
-  BQ  (layer-switch BASE_LAYER_QWERTY)
-  BC  (layer-switch BASE_LAYER_COLEMAKDH)
+ ;; switch keys
+  BQ  (layer-switch BASE_LAYER_QWERTY) ;; switch
+  BC  (layer-switch BASE_LAYER_COLEMAKDH) ;; switch
+  TUT (layer-switch TUTORIAL_TESTING_LAYER)
+  OFF (layer-switch DISABLE_KEYBOARD)
+  RTR (layer-switch ROUTER) ;; switch
 
+  ;; toggle keys
   NUM (layer-toggle SYMBOLS_NUMPAD)
   SPC (layer-toggle SPACEBAR)
   FUN (layer-toggle FUNCTION_KEYS)
-  
-  RTR (layer-toggle ROUTER)
-
   OSK (layer-toggle OS_KEYS)
-
   PNT (layer-toggle POINTER_KEYS)
 
-  TUT (layer-switch TUTORIAL_TESTING_LAYER)
-  OFF (layer-switch DISABLE_KEYBOARD)
 )
 
 ;;#| ---------------------------------------------------------------
@@ -169,7 +166,7 @@
   XX   @c00 @c01 @c02 @c03 @c04      @c05 @c06 @c07 @c08 @c09 XX   XX   XX
   XX   @c10 @c11 @c12 @c13 @c14      @c15 @c16 @c17 @c18 @c19 XX   XX
   XX   @c20 @c21 @c22 @c23 @c24 XX   @c25 @c26 @c27 @c28 @c29 XX   XX
-  XX   XX   esc  @tl2           @spc           @tr2 esc  XX   XX   XX
+  XX   XX   @BQ  @tl2           @spc           @tr2 @BQ  XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
@@ -283,7 +280,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   f9   f10  f11  f12  @TUT      @TUT f21  f22  f23  f24  XX   XX   XX
-  XX   f5   f6   f7   f8   XX        XX   f17  f18  f19  f20  XX   XX
+  XX   f5   f6   f7   f8   @RTR      @RTR f17  f18  f19  f20  XX   XX
   XX   f1   f2   f3   f4   XX   @BQ  XX   f13  f14  f15  f16  XX   XX
   XX   XX   _    esc            _              esc  _    XX   XX   XX
 )
@@ -360,7 +357,7 @@
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
   XX   _    f5   f6   f7   f8        f17  f18  f19  f20  _    XX   XX
-  XX   _    f1   f2   f3   f4   @BQ  f13  f14  f15  f16  _    XX   XX
+  XX   _    f1   f2   f3   f4   XX   f13  f14  f15  f16  _    XX   XX
   XX   XX   _    esc            _              esc  _    XX   XX   XX
 )
 
@@ -373,8 +370,8 @@
 (deflayer ROUTER
   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   XX   XX   XX   XX   @BQ       @BC  XX   a    XX   XX   XX   XX   XX
-  XX   XX   XX   XX   XX   XX        XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX        XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   @BQ  XX        XX   @BC  XX   XX   XX   XX   XX
   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   XX   @BQ  XX             XX             XX   @BQ  XX   XX   XX
 )
