@@ -55,6 +55,7 @@
   OSK (layer-toggle OS_KEYS)
   PNT (layer-toggle POINTER_KEYS)
   SPC (layer-toggle SPACEBAR)
+  TUT (layer-switch TUTORIAL_TESTING_LAYER)
 )
 
 ;;#| ---------------------------------------------------------------
@@ -249,7 +250,7 @@
 (deflayer FUNCTION_KEYS
   _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   f9   f10  f11  f12  XX        XX   f21  f22  f23  f24  XX   XX   XX
+  XX   f9   f10  f11  f12  @TUT      @TUT f21  f22  f23  f24  XX   XX   XX
   XX   f5   f6   f7   f8   XX        XX   f17  f18  f19  f20  XX   XX
   XX   f1   f2   f3   f4   XX   @BZ  XX   f13  f14  f15  f16  XX   XX
   XX   XX   _    esc            _              esc  _    XX   XX   XX
@@ -315,6 +316,7 @@
   XX   @t20 @t21 @t22 @t23 @t24 XX   @t25 @t26 @t27 @t28 @t29 XX   XX
   XX   XX   @t40 @t41           @t42           @t44 @t45 XX   XX   XX
 )
+
 ;;#| ---------------------------------------------------------------
 ;;
 ;; POINTER LAYER
@@ -332,6 +334,22 @@
 
 ;;#| ---------------------------------------------------------------
 ;;
+;; TUTORIAL_TESTING_LAYER LAYER
+;;
+;;  for the tutorial etc and other testing purposes
+;;--------------------------------------------------------------- |#
+
+(deflayer TUTORIAL_TESTING_LAYER
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
+       XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   @BZ  XX             XX            XX   @BZ  XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;;
 ;; DISABLE KEYBOARD LAYER
 ;;
 ;;--------------------------------------------------------------- |#
@@ -342,5 +360,5 @@
   XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
   XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
   XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
-  XX   XX   XX   @BZ            @BZ           @BZ XX   XX   XX   XX
+  XX   XX   @BZ  XX             XX            XX   @BZ  XX   XX   XX
 )
