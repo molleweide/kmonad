@@ -47,20 +47,23 @@
 ;;
 ;;--------------------------------------------------------------- |#
 
-(defalias
-  ;; LAYER MAPS
+(defalias ;; LAYERS
 
   BQ  (layer-switch BASE_LAYER_QWERTY)
   BC  (layer-switch BASE_LAYER_COLEMAKDH)
 
-  ;; fn (around (layer-toggle spacelayer) fn)
-  OFF (layer-switch DISABLE_KEYBOARD)
-  FUN (layer-toggle FUNCTION_KEYS)
   NUM (layer-toggle SYMBOLS_NUMPAD)
-  OSK (layer-toggle OS_KEYS)
-  PNT (layer-toggle POINTER_KEYS)
   SPC (layer-toggle SPACEBAR)
+  FUN (layer-toggle FUNCTION_KEYS)
+  
+  RTR (layer-toggle ROUTER)
+
+  OSK (layer-toggle OS_KEYS)
+
+  PNT (layer-toggle POINTER_KEYS)
+
   TUT (layer-switch TUTORIAL_TESTING_LAYER)
+  OFF (layer-switch DISABLE_KEYBOARD)
 )
 
 ;;#| ---------------------------------------------------------------
@@ -112,7 +115,7 @@
 )
 
 (deflayer BASE_LAYER_QWERTY
-  _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
+  _    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX  
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
   XX   @b10 @b11 @b12 @b13 @b14      @b15 @b16 @b17 @b18 @b19 XX   XX
@@ -161,11 +164,11 @@
   c29 (tap-hold-next-release 500 / @FUN)
 )
 (deflayer BASE_LAYER_COLEMAKDH
-  _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
+  _    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX  
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
-  XX   @b10 @b11 @b12 @b13 @b14      @b15 @b16 @b17 @b18 @b19 XX   XX
-  XX   @b20 @b21 @b22 @b23 @b24 XX   @b25 @b26 @b27 @b28 @b29 XX   XX
+  XX   @c00 @c01 @c02 @c03 @c04      @c05 @c06 @c07 @c08 @c09 XX   XX   XX
+  XX   @c10 @c11 @c12 @c13 @c14      @c15 @c16 @c17 @c18 @c19 XX   XX
+  XX   @c20 @c21 @c22 @c23 @c24 XX   @c25 @c26 @c27 @c28 @c29 XX   XX
   XX   XX   esc  @tl2           @spc           @tr2 esc  XX   XX   XX
 )
 
@@ -363,9 +366,25 @@
 
 ;;#| ---------------------------------------------------------------
 ;;
+;; ROUTER
+;;
+;;--------------------------------------------------------------- |#
+
+(deflayer ROUTER
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   @BQ       @BC  XX   a    XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX        XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   @BQ  XX             XX             XX   @BQ  XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;;
 ;; TUTORIAL_TESTING_LAYER LAYER
 ;;
 ;;  for the tutorial etc and other testing purposes
+;;
 ;;--------------------------------------------------------------- |#
 
 (defalias
