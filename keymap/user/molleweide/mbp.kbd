@@ -8,12 +8,12 @@
 
 ;; APPLE MACBOOK KEYBOARD
 
-;; (deflayer starter
+;; (deflayer starter_5_by_3_layout
 ;;   _    _    _    _    _    _    _    _    _    _    _    _    _
 ;;        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
 ;;   XX   q    _    _    _    t         y    _    _    _    p    XX   XX   XX
 ;;   XX   _    _    _    _    _         _    _    _    _    _    XX   XX
-;;   XX   z    _    _    _    b    _    n    _    _    _    /    XX   XX
+;;   XX   z    _    _    _    b    XX   n    _    _    _    /    XX   XX
 ;;   XX   XX   _    tab            spc            ret  _    XX   XX   XX
 ;; )
 

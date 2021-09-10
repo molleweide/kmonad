@@ -1,0 +1,346 @@
+(defcfg
+  input (iokit-name "Apple Internal Keyboard / Trackpad")
+  output (kext)
+  fallthrough true
+)
+
+#| --------------------------------------------------------------------------
+
+;; APPLE MACBOOK KEYBOARD
+
+;; (deflayer starter
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _
+;;        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+;;   XX   q    _    _    _    t         y    _    _    _    p    XX   XX   XX
+;;   XX   _    _    _    _    _         _    _    _    _    _    XX   XX
+;;   XX   z    _    _    _    b    _    n    _    _    _    /    XX   XX
+;;   XX   XX   _    tab            spc            ret  _    XX   XX   XX
+;; )
+
+;; TODO
+
+- spacebar q >> disable keyboard
+
+- mouse keys https://github.com/david-janssen/kmonad/issues/150'
+- clean MIDI layer
+- always get back to base layer !!!
+- todo macros layer
+
+  -------------------------------------------------------------------------- |#
+
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+       1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft grv  z    x    c    v    b    n    m    ,    .    /    rsft up
+  fn   lctl lalt lmet           spc            rmet ralt left down rght
+)
+
+;;#| ---------------------------------------------------------------
+;;
+;; LAYER BUTTON ALIASES
+;;
+;;--------------------------------------------------------------- |#
+
+(defalias
+  ;; LAYER MAPS
+
+  BZ  (layer-switch base)
+
+  ;; fn (around (layer-toggle spacelayer) fn)
+  OFF (layer-switch DISABLE_KEYBOARD)
+  FUN (layer-toggle FUNCTION_KEYS)
+  NUM (layer-toggle SYMBOLS_NUMPAD)
+  OSK (layer-toggle OS_KEYS)
+  PNT (layer-toggle POINTER_KEYS)
+  SPC (layer-toggle SPACEBAR)
+)
+
+;;#| ---------------------------------------------------------------
+;;
+;; BASE LAYER | QWERTY
+;;
+;;--------------------------------------------------------------- |#
+
+(defalias
+
+  ;; KEY MAPS
+  ;;    TOP ROW
+  b00 q
+  b01 w
+  b02 (tap-hold-next-release 500 e @NUM)
+  b03 r
+  b04 t
+
+  b05 y
+  b06 u
+  b07 (tap-hold-next-release 500 i @NUM)
+  b08 o
+  b09 (tap-hold-next-release 500 p @OSK)
+
+  ;; HOME ROW
+  a (tap-hold-next-release 500 a lctl)
+  s (tap-hold-next-release 500 s lsft)
+  d (tap-hold-next-release 500 d lalt)
+  f (tap-hold-next-release 500 f lmet)
+  b14 (tap-hold-next-release 500 g @OSK)
+
+  b15 (tap-hold-next-release 500 h @OSK)
+  j (tap-hold-next-release 500 j lmet)
+  k (tap-hold-next-release 500 k lalt)
+  l (tap-hold-next-release 500 l lsft)
+  ; (tap-hold-next-release 500 ; lctl)
+
+  ;; BOTTOM ROW
+  b20 (tap-hold-next-release 500 z @FUN)
+  b21 (tap-hold-next-release 500 x @NUM)
+  b22 c
+  b23 (tap-hold-next-release 500 v @OSK) 
+  b24 b 
+
+  b25 n
+  b26 (tap-hold-next-release 500 m @OSK)
+  b27 ,
+  b28 (tap-hold-next-release 500 . @NUM)
+  b29 (tap-hold-next-release 500 / @FUN)
+
+  ;; THUMBS
+  ;; tl3 (tap-hold-next-release 500 tab lmet)
+  tl2 (tap-hold-next-release 500 tab lmet)
+  spc (tap-hold-next-release 500 spc @SPC)
+  tr2 (tap-hold-next-release 500 ret lmet)
+  ;; tr3 (tap-hold-next-release 500 tab lmet)
+)
+
+(deflayer base ;; rename to base qwerty
+  _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
+  XX   @a   @s   @d   @f   @b14      @b15 @j   @k   @l   @;   XX   XX
+  XX   @b20 @b21 @b22 @b23 @b24 XX   @b25 @b26 @b27 @b28 @b29 XX   XX
+  XX   XX   esc  @tl2           @spc           @tr2 esc  XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;;
+;; BASE LAYER | COLEMAKDH
+;; 
+;;--------------------------------------------------------------- |#
+
+;; (deflayer base_colemak
+;;   _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
+;;        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+;;   XX   _    _    @lnT _    _         _    _    @rnT _    _    XX   XX   XX
+;;   XX   @a   @s   @d   @f   _         _    @j   @k   @l   @;   XX   XX
+;;   XX   z    @lnu c    v    b    XX   _    _    _    @rnu _    XX   XX
+;;   XX   XX   @num @tb            @spc           @rt  @num XX   XX   XX
+;; )
+
+
+
+;;#| ---------------------------------------------------------------
+;;
+;; SYMBOLS_NUMPAD LAYER
+;;
+;;--------------------------------------------------------------- |#
+
+(defalias
+
+  ;; KEY MAPS
+  ;; TOP ROW
+  s00 !
+  s11 @
+  s12 { 
+  s13 r
+  s14 t
+
+  ;; HOME ROW
+  syP (tap-hold-next-release 500 \) lsft)
+  sy4 (tap-hold-next-release 500 4 lsft)
+)
+
+(deflayer SYMBOLS_NUMPAD
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   @s00 @    {    }    \         *    7    8    9    &    XX   XX   XX
+  XX   #    $    \(   @syP `         0    @sy4 5    6    =    XX   XX
+  XX   ^    %    [    ]    ~    @BZ  '    1    2    3    -    XX   XX
+  XX   XX   _    lctl           lsft           lctl _    _    XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;;
+;; SPACEBAR LAYER
+;;
+;;--------------------------------------------------------------- |#
+
+(defalias
+  l00 @OFF
+  l01 %
+  l02 ret
+  l03 "
+  l04 |
+
+  l05 '
+  l06 \_
+  l07 ret
+  l08 '
+  l09 "
+
+  l10 +
+  l11 tab
+  l12 bspc
+  l13 esc
+  l14 \_
+
+  l15 left
+  l16 down
+  l17 up
+  l18 rght
+  l19 &
+
+  l20 &
+  l21 *
+  l22 \_
+  l23 ret
+  l24 -
+
+  l25 -
+  l26 ret
+  l27 \_
+  l28 *
+  l29 &
+
+  l40 ~
+  l41 tab
+  l42 spc
+  l43 XX  ;; second double space...
+  l44 ret
+  l45 `
+)
+(deflayer SPACEBAR
+  _    _    _    _    _    _    _    _    _    _    _    _    _    
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   @l00 @l01 @l02 @l03 @l04      @l05 @l06 @l07 @l08 @l09 XX   XX   XX
+  XX   @l10 @l11 @l12 @l13 @l14      @l15 @l16 @l17 @l18 @l19 XX   XX
+  XX   @l20 @l21 @l22 @l23 @l24 XX   @l25 @l26 @l27 @l28 @l29 XX   XX
+  XX   XX   @l40 @l41           @l42           @l44 @l45 XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;;
+;; ARROW NAV LAYER
+;; 
+;; layer dedicated to handling all kinds of arrow keys edge
+;; cases where no vim programs apply or work. i put arrow keys
+;; on right hand and all modifiers in left hand so that you
+;; can perform all kinds of arrow modifier key commands here.
+;;
+;;--------------------------------------------------------------- |#
+
+;;#| ---------------------------------------------------------------
+;;
+;; FN LAYER
+;;
+;;--------------------------------------------------------------- |#
+
+;; i need to shift out grid..
+(deflayer FUNCTION_KEYS
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   f9   f10  f11  f12  XX        XX   f21  f22  f23  f24  XX   XX   XX
+  XX   f5   f6   f7   f8   XX        XX   f17  f18  f19  f20  XX   XX
+  XX   f1   f2   f3   f4   XX   @BZ  XX   f13  f14  f15  f16  XX   XX
+  XX   XX   _    esc            _              esc  _    XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;;
+;; OS KEYS LAYER
+;;
+;;--------------------------------------------------------------- |#
+
+(defalias
+  ;; OSK | TOP ROW
+  t00 next
+  t01 mute
+  t02 vold
+  t03 volu
+  t04 mctl
+  t05 XX ;;-------------
+  t06 XX
+  t07 XX
+  t08 XX
+  t09 XX
+
+  ;; OSK | HOME ROW
+  t10 XX
+  t11 XX
+  t12 brdn
+  t13 brup
+  t14 lp
+  t15 pp ;;-------------
+  t16 vold
+  t17 volu
+  t18 XX
+  t19 XX
+
+  ;; OSK | BOTTOM ROW
+  t20 prev
+  t21 pp
+  t22 bldn
+  t23 blup
+  t24 mctl 
+  t25 lp  ;; ----------
+  t26 mctl
+  t27 pp
+  t28 XX
+  t29 XX
+
+  ;; OSK | THUMBS
+  t40 XX
+  t41 tab
+  t42 spc
+  t43 XX  ;; second double space...
+  t44 ret
+  t45 XX
+)
+
+(deflayer OS_KEYS
+  _    _    _    _    _    _    _    _    _    _    _    _    _    
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   @t00 @t01 @t02 @t03 @t04      @t05 @t06 @t07 @t08 @t09 XX   XX   XX
+  XX   @t10 @t11 @t12 @t13 @t14      @t15 @t16 @t17 @t18 @t19 XX   XX
+  XX   @t20 @t21 @t22 @t23 @t24 XX   @t25 @t26 @t27 @t28 @t29 XX   XX
+  XX   XX   @t40 @t41           @t42           @t44 @t45 XX   XX   XX
+)
+;;#| ---------------------------------------------------------------
+;;
+;; POINTER LAYER
+;;
+;;--------------------------------------------------------------- |#
+
+(deflayer POINTER_KEYS
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   _    f9   f10  f11  f12       f21  f22  f23  f24  _    XX   XX   XX
+  XX   _    f5   f6   f7   f8        f17  f18  f19  f20  _    XX   XX
+  XX   _    f1   f2   f3   f4   @BZ  f13  f14  f15  f16  _    XX   XX
+  XX   XX   _    esc            _              esc  _    XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;;
+;; DISABLE KEYBOARD LAYER
+;;
+;;--------------------------------------------------------------- |#
+
+(deflayer DISABLE_KEYBOARD
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
+       XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX   XX   XX   XX   XX
+  XX   XX   XX   @BZ            @BZ           @BZ XX   XX   XX   XX
+)

@@ -1,0 +1,16 @@
+@document.meta
+	title: NEED_HELP
+	description:
+	author: hjalmarjakobsson
+	categories:
+	created: 2021-08-13
+	version: 0.1
+@end
+
+https://downloads.haskell.org/~ghc/6.10.1/docs/html/libraries/base/doc-index.html
+
+* I cannot find meaning of these
+  - <*>
+  - <**>
+  - <$>
+  - <>
