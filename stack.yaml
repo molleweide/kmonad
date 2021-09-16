@@ -1,4 +1,6 @@
 resolver: lts-18.9
+compiler: ghc-8.10.5
+# compiler-check: newer-minor
 packages:
 - .
 extra-deps:
