@@ -10,4 +10,5 @@
 /template/testing.kbd
 .stack-work
 /bin/
+/node_modules
 result
