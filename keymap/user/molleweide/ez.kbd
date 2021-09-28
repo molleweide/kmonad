@@ -1,0 +1,102 @@
+(defcfg
+  input (iokit-name "Ergodox EZ")
+  output (kext)
+  fallthrough true
+)
+
+#| --------------------------------------------------------------------------
+;; ERGODOX EZ
+  -------------------------------------------------------------------------- |#
+
+  ;; _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
+(defsrc
+  esc  1    2    3    4    5    mute mute 6    7    8    9    0    bspc
+  -    q    w    e    r    t    mute mute y    u    i    o    p    \
+  esc  a    s    d    f    g              h    j    k    l    ;    '
+  lsft z    x    c    v    b    mute mute n    m    ,    .    /    lsft
+  lctl lalt lmet tab  spc                      spc  ret  lmet lalt lctl
+                           mute mute mute mute
+                                mute mute
+                      mute mute mute mute mute mute
+)
+
+;;#| ---------------------------------------------------------------
+;; BASE LAYER
+;;--------------------------------------------------------------- |#
+
+(defalias
+
+  ;; back to base layer (base)
+  bz  (layer-switch base)
+
+  ;; fn (around (layer-toggle function) fn)
+  num (layer-toggle symbols)
+  Lspace (layer-toggle layerspace)
+
+  ;; TOP ROW
+  lnT (tap-hold-next-release 500 e @num)
+  rnT (tap-hold-next-release 500 i @num)
+
+  ;; HOME ROW
+  a (tap-hold-next-release 500 a lctl)
+  s (tap-hold-next-release 500 s lsft)
+  d (tap-hold-next-release 500 d lalt)
+  f (tap-hold-next-release 500 f lmet)
+  j (tap-hold-next-release 500 j lmet)
+  k (tap-hold-next-release 500 k lalt)
+  l (tap-hold-next-release 500 l lsft)
+  ; (tap-hold-next-release 500 ; lctl)
+
+  ;; BOTTOM ROW
+  lnu (tap-hold-next-release 500 x @num)
+  rnu (tap-hold-next-release 500 . @num)
+
+  ;; THUMBS
+  tb  (tap-hold-next-release 500 tab lmet)
+  spc (tap-hold-next-release 500 spc @Lspace)
+  rt  (tap-hold-next-release 500 ret lmet)
+)
+
+(deflayer base
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   _    _    @lnT _    _    XX   XX   _    _    @rnT _    _    XX
+  XX   @a   @s   @d   @f   _              _    @j   @k   @l   @;   XX
+  XX   _    @lnu _    _    _    XX   XX   _    _    _    @rnu _    XX
+  XX   XX   XX   @tb  @spc                     @spc @rt  XX   XX   XX
+                           XX   XX   XX   XX
+                                XX   XX
+                      XX   XX   XX   XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;; SYMBOLS LAYER
+;;--------------------------------------------------------------- |#
+
+(defalias
+  syP (tap-hold-next-release 500 \) lsft)
+  sy4 (tap-hold-next-release 500 4 lsft)
+)
+(deflayer symbols
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   @bz
+  XX   !    @    {    }    \    XX   XX   *    7    8    9    &    XX
+  XX   #    $    \(   @syP `              0    @sy4 5    6    =    XX
+  XX   ^    %    [    ]    ~    XX   XX   '    1    2    3    -    XX
+  XX   XX   XX   lctl lsft                     lsft lctl XX   XX   XX
+                           XX   XX   XX   XX
+                                XX   XX
+                      XX   XX   XX   XX   XX   XX
+)
+
+;;#| ---------------------------------------------------------------
+;; SPACEBAR LAYER
+;;--------------------------------------------------------------- |#
+(deflayer layerspace
+  XX   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  @bz
+  XX   _    _    ret  _    _    XX   XX   _    _    ret  _    _    XX
+  XX   _    tab  bspc esc  _              left down up   rght _    XX
+  XX   _    _    _    ret  _    XX   XX   _    ret  _    _    _    XX
+  XX   XX   XX   esc  _                        _    esc  XX   XX   XX
+                           XX   XX   XX   XX
+                                XX   XX
+                      XX   XX   XX   XX   XX   XX
+)

@@ -1,7 +1,9 @@
 resolver: lts-18.9
-compiler: ghc-8.10.5
 # compiler-check: newer-minor
+# resolver: nightly-2015-09-21
+# resolver: ghc-8.10.4
 packages:
 - .
 extra-deps:
 pvp-bounds: both
+arch: x86_64
