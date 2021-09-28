@@ -1,0 +1,29 @@
+{
+  "name": "kmonad",
+  "version": "1.0.0",
+  "description": "kmonad",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "molleweide",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-run-command": "0.0.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-hanssen/kmonad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/david-hanssen/kmonad/issues"
+  },
+  "homepage": "https://github.com/david-hanssen/kmonad#readme",
+  "directories": {
+    "doc": "doc"
+  },
+  "keywords": [
+    "keymapper"
+  ]
+}
