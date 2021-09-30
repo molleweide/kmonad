@@ -4,11 +4,17 @@
   fallthrough true
 )
 
-#| --------------------------------------------------------------------------
-;; ERGODOX EZ
-  -------------------------------------------------------------------------- |#
+;; (deflayer base
+;;   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+;;   XX   _    _    _    _    _    XX   XX   _    _    _    _    _    XX
+;;   XX   _    _    _    _    _              _    _    _    _    _    XX
+;;   XX   _    _    _    _    _    XX   XX   _    _    _    _    _    XX
+;;   XX   XX   XX   _    _                        _    _    XX   XX   XX
+;;                            XX   XX   XX   XX
+;;                                 XX   XX
+;;                       XX   XX   XX   XX   XX   XX
+;; )
 
-  ;; _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu
 (defsrc
   esc  1    2    3    4    5    mute mute 6    7    8    9    0    bspc
   -    q    w    e    r    t    mute mute y    u    i    o    p    \
