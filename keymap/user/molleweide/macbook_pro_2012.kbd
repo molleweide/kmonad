@@ -4,35 +4,17 @@
   fallthrough true
 )
 
-#| --------------------------------------------------------------------------
 
-;; APPLE MACBOOK KEYBOARD
+;; MACBOOK PRO INTEL
 
-;; (deflayer starter
+;; (deflayer starter_5_by_3_layout
 ;;   _    _    _    _    _    _    _    _    _    _    _    _    _
 ;;        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
 ;;   XX   q    _    _    _    t         y    _    _    _    p    XX   XX   XX
 ;;   XX   _    _    _    _    _         _    _    _    _    _    XX   XX
-;;   XX   z    _    _    _    b    _    n    _    _    _    /    XX   XX
+;;   XX   z    _    _    _    b    XX   n    _    _    _    /    XX   XX
 ;;   XX   XX   _    tab            spc            ret  _    XX   XX   XX
 ;; )
-
-;; TODO
-
-- capslock layer?
-- mouse keys https://github.com/david-janssen/kmonad/issues/150'
-- clean MIDI layer
-- todo macros layer
-- https://kennetchaz.github.io/symmetric-typing/soul.html
-    symmetric layout >> suppose to be improvement on colemak.
-        soul layout is suppose to be the best one.
-
-;; IDEA: 
-;;  on disable layer and tutorials layer
-;;  hold down key A and double tap key B to unlock the layer
-;;  and go back to base layer
-
-  -------------------------------------------------------------------------- |#
 
 (defsrc
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
@@ -109,8 +91,8 @@
   b20 (tap-hold-next-release 500 z @FUN)
   b21 (tap-hold-next-release 500 x @OSK)
   b22 c
-  b23 (tap-hold-next-release 500 v @NUM) 
-  b24 b 
+  b23 (tap-hold-next-release 500 v @NUM)
+  b24 b
   b25 n
   b26 (tap-hold-next-release 500 m @NUM)
   b27 ,
@@ -127,7 +109,7 @@
 )
 
 (deflayer BASE_LAYER_QWERTY
-  _    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX  
+  _    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @b00 @b01 @b02 @b03 @b04      @b05 @b06 @b07 @b08 @b09 XX   XX   XX
   XX   @b10 @b11 @b12 @b13 @b14      @b15 @b16 @b17 @b18 @b19 XX   XX
@@ -138,7 +120,7 @@
 ;;#| ---------------------------------------------------------------
 ;;
 ;; BASE LAYER | COLEMAKDH
-;; 
+;;
 ;;--------------------------------------------------------------- |#
 
 (defalias ;; KEY MAPS COLEMAKDH
@@ -165,15 +147,15 @@
   c20 (tap-hold-next-release 500 z @FUN)
   c21 (tap-hold-next-release 500 x @NUM)
   c22 c
-  c23 (tap-hold-next-release 500 d @OSK) 
-  c24 v 
+  c23 (tap-hold-next-release 500 d @OSK)
+  c24 v
   c25 m
   c26 (tap-hold-next-release 500 h @OSK)
   c27 ,
   c28 (tap-hold-next-release 500 . @NUM)
   c29 (tap-hold-next-release 500 / @FUN))
 (deflayer BASE_LAYER_COLEMAKDH
-  _    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX  
+  _    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @c00 @c01 @c02 @c03 @c04      @c05 @c06 @c07 @c08 @c09 XX   XX   XX
   XX   @c10 @c11 @c12 @c13 @c14      @c15 @c16 @c17 @c18 @c19 XX   XX
@@ -184,7 +166,7 @@
 ;;#| ---------------------------------------------------------------
 ;;
 ;; BASE LAYER | SOUL LAYOUT | https://kennetchaz.github.io/symmetric-typing/soul.html
-;; 
+;;
 ;;--------------------------------------------------------------- |#
 (defalias
   z00 q
@@ -210,15 +192,15 @@
   z20 (tap-hold-next-release 500 z @FUN)
   z21 (tap-hold-next-release 500 x @NUM)
   z22 c
-  z23 (tap-hold-next-release 500 v @OSK) 
-  z24 j 
+  z23 (tap-hold-next-release 500 v @OSK)
+  z24 j
   z25 b
   z26 (tap-hold-next-release 500 h @OSK)
   z27 ,
   z28 (tap-hold-next-release 500 . @NUM)
   z29 (tap-hold-next-release 500 / @FUN))
 (deflayer BASE_LAYER_SOUL
-  _    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX  
+  _    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @z00 @z01 @z02 @z03 @z04      @z05 @z06 @z07 @z08 @z09 XX   XX   XX
   XX   @z10 @z11 @z12 @z13 @z14      @z15 @z16 @z17 @z18 @z19 XX   XX
@@ -238,7 +220,7 @@
   ;; TOP ROW
   s00 !
   s11 @
-  s12 { 
+  s12 {
   s13 r
   s14 t
 
@@ -307,7 +289,7 @@
   l45 `
 )
 (deflayer SPACEBAR
-  _    _    _    _    _    _    _    _    _    _    _    _    _    
+  _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @l00 @l01 @l02 @l03 @l04      @l05 @l06 @l07 @l08 @l09 XX   XX   XX
   XX   @l10 @l11 @l12 @l13 @l14      @l15 @l16 @l17 @l18 @l19 XX   XX
@@ -318,7 +300,7 @@
 ;;#| ---------------------------------------------------------------
 ;;
 ;; ARROW NAV LAYER
-;; 
+;;
 ;; layer dedicated to handling all kinds of arrow keys edge
 ;; cases where no vim programs apply or work. i put arrow keys
 ;; on right hand and all modifiers in left hand so that you
@@ -375,7 +357,7 @@
   v21 pp
   v22 bldn
   v23 blup
-  v24 mctl 
+  v24 mctl
   v25 lp  ;; ----------
   v26 mctl
   v27 pp
@@ -391,7 +373,7 @@
 )
 
 (deflayer VIM_MODE
-  _    _    _    _    _    _    _    _    _    _    _    _    _    
+  _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @v00 @v01 @v02 @v03 @v04      @v05 @v06 @v07 @v08 @v09 XX   XX   XX
   XX   @v10 @v11 @v12 @v13 @v14      @v15 @v16 @v17 @v18 @v19 XX   XX
@@ -435,7 +417,7 @@
   t21 pp
   t22 bldn
   t23 blup
-  t24 mctl 
+  t24 mctl
   t25 lp  ;; ----------
   t26 mctl
   t27 pp
@@ -452,7 +434,7 @@
 )
 
 (deflayer OS_KEYS
-  _    _    _    _    _    _    _    _    _    _    _    _    _    
+  _    _    _    _    _    _    _    _    _    _    _    _    _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   @t00 @t01 @t02 @t03 @t04      @t05 @t06 @t07 @t08 @t09 XX   XX   XX
   XX   @t10 @t11 @t12 @t13 @t14      @t15 @t16 @t17 @t18 @t19 XX   XX
