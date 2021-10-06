@@ -235,7 +235,7 @@
   XX   @s00 @    {    }    \         *    7    8    9    &    XX   XX   XX
   XX   #    $    \(   @syP `         0    @sy4 5    6    =    XX   XX
   XX   ^    %    [    ]    ~    @BQ  '    1    2    3    -    XX   XX
-  XX   XX   _    lctl           lsft           lctl _    _    XX   XX
+  XX   XX   @BQ  lctl           lsft           lctl @BQ  _    XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
@@ -294,7 +294,7 @@
   XX   @l00 @l01 @l02 @l03 @l04      @l05 @l06 @l07 @l08 @l09 XX   XX   XX
   XX   @l10 @l11 @l12 @l13 @l14      @l15 @l16 @l17 @l18 @l19 XX   XX
   XX   @l20 @l21 @l22 @l23 @l24 XX   @l25 @l26 @l27 @l28 @l29 XX   XX
-  XX   XX   @l40 @l41           @l42           @l44 @l45 XX   XX   XX
+  XX   XX   @BQ  @l41           @l42           @l44 @BQ  XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
@@ -321,7 +321,7 @@
   XX   f9   f10  f11  f12  @TUT      @TUT f21  f22  f23  f24  XX   XX   XX
   XX   f5   f6   f7   f8   @RTR      @RTR f17  f18  f19  f20  XX   XX
   XX   f1   f2   f3   f4   XX   @BQ  XX   f13  f14  f15  f16  XX   XX
-  XX   XX   _    esc            _              esc  _    XX   XX   XX
+  XX   XX   @BQ  esc            _              esc  @BQ  XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
@@ -378,7 +378,7 @@
   XX   @v00 @v01 @v02 @v03 @v04      @v05 @v06 @v07 @v08 @v09 XX   XX   XX
   XX   @v10 @v11 @v12 @v13 @v14      @v15 @v16 @v17 @v18 @v19 XX   XX
   XX   @v20 @v21 @v22 @v23 @v24 XX   @v25 @v26 @v27 @v28 @v29 XX   XX
-  XX   XX   @v40 @v41           @v42           @v44 @v45 XX   XX   XX
+  XX   XX   @BQ  @v41           @v42           @v44 @BQ  XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
@@ -439,7 +439,7 @@
   XX   @t00 @t01 @t02 @t03 @t04      @t05 @t06 @t07 @t08 @t09 XX   XX   XX
   XX   @t10 @t11 @t12 @t13 @t14      @t15 @t16 @t17 @t18 @t19 XX   XX
   XX   @t20 @t21 @t22 @t23 @t24 XX   @t25 @t26 @t27 @t28 @t29 XX   XX
-  XX   XX   @t40 @t41           @t42           @t44 @t45 XX   XX   XX
+  XX   XX   @BQ  @t41           @t42           @t44 @BQ  XX   XX   XX
 )
 
 ;;#| ---------------------------------------------------------------
